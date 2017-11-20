@@ -9,38 +9,74 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
+```{r libraries}
 
 library(rvest)
 library(stringr)
+library(plyr)
+library(tidyverse)
 
-url <- "http://www.tandfonline.com/toc/uasa20/108/502?nav=tocList"
+```
 
-read_issues <- function(url) {
+```{r year_volume, cache = TRUE}
+
+url <- "http://www.tandfonline.com/loi/uasa20"
+
+h = read_html(url)
+
+volume_year = h %>%
+    html_nodes(".volume_link h3") %>%
+    html_text()
+
+list_volume_year = str_split(volume_year, pattern = " ") 
+
+data_volume_year = matrix(data = unlist(list_volume_year), nrow = 75, ncol = 112) %>%
+                    t() %>%
+                    .[, which(.[1,] == "Volume"):(which(.[1,] == "Volume") + 2)] %>%
+                    as.data.frame() %>%
+                    as.tbl() %>%
+                    separate(V3, into = c("Year", "remove"), sep = "\n") %>%
+                    separate(Year, into = c("Year", "remove2"), sep = "-") %>%
+                    mutate(Year = pmax(Year, remove2, na.rm = T),
+                           Volume = as.character(V2)) %>%
+                    select(-remove, -remove2, -V1, -V2)
   
+```
+
+```{r issue_volume, cache = TRUE}
+
+issue <- data_volume_year[1, ]
+
+read_issues <- function(issue) {
+  
+  url <- str_c("http://www.tandfonline.com/loi/uasa20?open=",issue[2],"&year=",issue[1],"&repitition")
+
   h = read_html(url)
   
-  issue = h %>%
+  issue_list = h %>%
     html_nodes(".issue-num") %>%
-    html_text()
+    html_text() %>% str_split(pattern = "Issue") %>%
+    unlist() %>%
+    .[which(.  != "")]
   
-  data_frame(title, stars, text)
+  data_frame(Volume = rep(as.character(issue[2]), length(issue_list)), Issue = issue_list)
+             
 }
 
-
-
+issues_volume = adply(data_volume_year, 1, read_issues)
 
 ```
 
 
+```{r write_data}
+
+write_csv(data_volume_year, "./data_volume_year.csv")
+write_csv(issues_volume, "./data_issues_volume.csv")
+
+```
 
 
-## R Markdown
-```{r}
-
-library(rvest)
-library(stringr)
-library(tidyverse)
+```{r issue_articles, cache = TRUE}
 
 url <- "http://www.tandfonline.com/toc/uasa20/108/502?nav=tocList"
 
@@ -67,12 +103,6 @@ read_page_reviews <- function(url) {
   data_frame(title, views, citations, authors)
   
 }
-
-url_base = "https://www.amazon.com/product-reviews/B00005JNBQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&reviewerType=avp_only_reviews&sortBy=recent&pageNumber="
-urls = stringr::str_c(url_base, 1:100)
-
-dynamite_reviews = map(urls, read_page_reviews) %>% 
-  bind_rows
 
 ```
 
