@@ -14,7 +14,11 @@ knitr::opts_chunk$set(echo = TRUE)
 library(rvest)
 library(stringr)
 library(plyr)
+library(dplyr)
 library(tidyverse)
+library(janitor)
+
+
 
 ```
 
@@ -86,23 +90,42 @@ read_page_reviews <- function(url) {
   
   title = h %>%
     html_nodes(".hlFld-Title") %>%
-    html_text()
+    html_text() %>% 
+    as.data.frame() %>%
+    rename(title = ".")
+  
   
   views = h %>%
     html_nodes("li:nth-child(1) span") %>%
-    html_text()
+    html_text() %>% 
+    as.data.frame() %>% 
+    rename(views = ".")
+  
   
   citations = h %>%
     html_nodes("li:nth-child(2) span") %>%
-    html_text()
+    html_text() %>% 
+    as.data.frame() %>% 
+    rename(citations = ".")
+  
+  title_views_citations = cbind(title, views, citations) %>% 
+    filter(title != "Book Reviews")
   
   authors = h %>%
     html_nodes(".all") %>%
     html_text()
   
-  data_frame(title, views, citations, authors)
+title_views_citations = merge(title_views_citations, authors) %>% 
+  as.data.frame() %>% 
+  rename(authors = y)
   
 }
+
+```
+
+```{r write data}
+
+write_csv(title_views_citations, "./title_views_citations.csv")
 
 ```
 
