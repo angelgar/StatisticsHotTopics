@@ -1,5 +1,5 @@
 ---
-title: "StatHopTopics"
+title: "StatHotTopics"
 author: "Angel Garcia de la Garza"
 date: "11/20/2017"
 output: html_document
