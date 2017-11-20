@@ -9,22 +9,70 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r}
+
+library(rvest)
+library(stringr)
+
+url <- "http://www.tandfonline.com/toc/uasa20/108/502?nav=tocList"
+
+read_issues <- function(url) {
+  
+  h = read_html(url)
+  
+  issue = h %>%
+    html_nodes(".issue-num") %>%
+    html_text()
+  
+  data_frame(title, stars, text)
+}
+
+
+
+
+```
+
+
+
+
 ## R Markdown
+```{r}
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+library(rvest)
+library(stringr)
+library(tidyverse)
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+url <- "http://www.tandfonline.com/toc/uasa20/108/502?nav=tocList"
 
-```{r cars}
-summary(cars)
+read_page_reviews <- function(url) {
+  
+  h = read_html(url)
+  
+  title = h %>%
+    html_nodes(".hlFld-Title") %>%
+    html_text()
+  
+  views = h %>%
+    html_nodes("li:nth-child(1) span") %>%
+    html_text()
+  
+  citations = h %>%
+    html_nodes("li:nth-child(2) span") %>%
+    html_text()
+  
+  authors = h %>%
+    html_nodes(".all") %>%
+    html_text()
+  
+  data_frame(title, views, citations, authors)
+  
+}
+
+url_base = "https://www.amazon.com/product-reviews/B00005JNBQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&reviewerType=avp_only_reviews&sortBy=recent&pageNumber="
+urls = stringr::str_c(url_base, 1:100)
+
+dynamite_reviews = map(urls, read_page_reviews) %>% 
+  bind_rows
+
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
