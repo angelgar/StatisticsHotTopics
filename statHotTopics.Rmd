@@ -11,13 +11,36 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 
+url <- "http://www.tandfonline.com/loi/uasa20"
+
+h = read_html(url)
+
+volume_year = h %>%
+    html_nodes(".volume_link h3") %>%
+    html_text()
+
+map_dfr(volume_year, str_split(pattern = " "))
+
+```
+
+
+
+```{r}
+
 library(rvest)
 library(stringr)
 
-url <- "http://www.tandfonline.com/toc/uasa20/108/502?nav=tocList"
 
-read_issues <- function(url) {
+url <- "http://www.tandfonline.com/loi/uasa20?open=111&year=2016"
+
+volume <- 1:112
+
+read_issues <- function(issue) {
   
+  issues <- volume <- 1:112 + 
+  
+  url <- str_c("http://www.tandfonline.com/loi/uasa20?open=",volume,"111&year=",issues)
+
   h = read_html(url)
   
   issue = h %>%
