@@ -154,13 +154,19 @@ read_articles <- function(volume, issue) {
   
 }
 
-
+## First 20 issues
 start.time <- Sys.time()
-articles_data_1_20 <- map2_df(issues_volume$Volume[1:20], issues_volume$Issue[1:20], ~read_articles(.x,.y))
-write_csv(articles_data_1_20, "./output_issues_1_20.csv")
+#articles_data_1_20 <- map2_df(issues_volume$Volume[1:20], issues_volume$Issue[1:20], ~read_articles(.x,.y))
+#write_csv(articles_data_1_20, "./output_issues_1_20.csv")
 time.taken <- start.time - Sys.time()
 time.taken
 
+## From 21 to 70 issue
+start.time <- Sys.time()
+articles_data_21_70 <- map2_df(issues_volume$Volume[21:70], issues_volume$Issue[21:70], ~read_articles(.x,.y))
+write_csv(articles_data_21_70, "./output_issues_21_70.csv")
+time.taken <- start.time - Sys.time()
+time.taken
 
 ```
 
