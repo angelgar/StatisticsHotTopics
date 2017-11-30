@@ -8,12 +8,12 @@ output:
 Row
 -------------------------------------
     
-### Chart 1
+### Top words per year
     
 ```{r}
 ```
  
-### Chart 2
+### Trend of keywords over time
     
 ```{r}
 ``` 
@@ -21,12 +21,12 @@ Row
 Row
 -------------------------------------
     
-### Chart 3
+### Number of collaborators per article per year
     
 ```{r}
 ```
     
-### Chart 4
+### Number of citations per keyword
 
 ```{r}
 ```
