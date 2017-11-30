@@ -1,11 +1,7 @@
 ---
-title: "Statistics Hot Topics"
+title: "Background Information"
 ---
 
-### About this site
+The purpose of this website is to serve as an interactive exploratory analysis to demonstrate the evolution of statistics over time, specifically in regards to "hot topics" used in research. Here you will find plots depicting the distribution of keywords, trends in the number of collaborators over time, as well as the number of citations per paper.
 
-*** This should be a summarized version of the Rmd/HTML being submitted
-
-Describe dataset and data collection
-
-Goal of the project
+Data were gathered from the Journal of the American Statistical Association (JASA) and compiled into one comprehensive dataset that was used in the analysis.

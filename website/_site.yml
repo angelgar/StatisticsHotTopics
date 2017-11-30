@@ -3,11 +3,11 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
+    - text: "Background"
       href: about.html
-    - icon: "Exploratory Analysis"
+    - text: "Visual Analysis"
       href: plots.html
-    - icon: "Contact"
+    - text: "Contact Information"
       href: contact.html
     - icon: fa-github fa-lg
       href: http://github.com/<YOUR_GH_NAME>/

@@ -1,7 +1,5 @@
 ---
-title: "plots"
-author: "Rebecca Venetianer"
-date: "11/30/2017"
+title: "Visual Analysis"
 output: html_document
 ---
 
