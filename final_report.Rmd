@@ -5,26 +5,27 @@ date: "11/30/2017"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+## Motivation
+The goal of our analysis is to understand the evolution of statistics over time, specifically in regards to "hot topics" used in research. We analyzed the titles of articles published in the Journal of the American Statistical Association (JASA) since 1888, as well as other factors such as authors, number of citations, etc. We used data gathered to create exploratory plots regarding the aforementioned factors. Specifically, we then found correlations of specific "hot topics" with article impact as measured by article views and citations.
 
-## R Markdown
+## Related work
+Anything that inspired you, such as a paper, a web site, or something we discussed in class.
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+@ Angel talk about the seminar you went to
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+## Initial questions
+The main question of interest is to undertand if/how keywords used in the titles of JASA-published papers have evolved over time, and when certain topcs arose 
 
-```{r cars}
-summary(cars)
-```
+What questions are you trying to answer? How did these questions evolve over the course of the project? What new questions did you consider in the course of your analysis?
 
-## Including Plots
+## Data
+Source, scraping method, cleaning, etc.
 
-You can also embed plots, for example:
+## Exploratory analysis
+Visualizations, summaries, and exploratory statistical analyses. Justify the steps you took, and show any major changes to your ideas.
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+## Additional analysis
+If you undertake formal statistical analyses, describe these in detail
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Discussion
+What were your findings? Are they what you expect? What insights into the data can you make?
