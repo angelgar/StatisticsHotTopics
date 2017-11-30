@@ -18,8 +18,8 @@ data("stop_words")
 
 jasa_articles = read_csv("./jasa_articles_dataset_complete.csv") %>%
   clean_names() %>% 
-  separate(authors, into = c("author1", "author19"), sep = " & ") %>% 
-  separate(author1, into = paste("author", 1:18), sep = ", ") %>% 
+  separate(authors, into = paste("author", 1:18, sep = "_"), sep = ", ") %>% 
+  separate(author_1, into = c("author_1", "author_19"), sep = " & ") %>% 
   unnest_tokens(word, title)
 
 jasa_articles = anti_join(jasa_articles, stop_words)
