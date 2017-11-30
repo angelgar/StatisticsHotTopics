@@ -200,8 +200,8 @@ issues_volume <- issues_volume %>%
 
 ## From 371 to 520 issue
 start.time <- Sys.time()
-articles_data_371_520 <- map2_df(issues_volume$Volume[371:520], issues_volume$Issue[371:520], ~read_articles(.x,.y))
-write_csv(articles_data_371_520, "./output_issues_371_520.csv")
+#articles_data_371_520 <- map2_df(issues_volume$Volume[371:520], issues_volume$Issue[371:520], ~read_articles(.x,.y))
+#write_csv(articles_data_371_520, "./output_issues_371_520.csv")
 time.taken <- start.time - Sys.time()
 time.taken
 
