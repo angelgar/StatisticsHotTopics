@@ -1,7 +1,6 @@
 ---
-title: "final_report"
-author: "Rebecca Venetianer"
-date: "11/30/2017"
+title: "Final Report"
+author: "Hyewon Choi, Angel Garcia de la Garza, Soo Hyun Kim, Rebecca Venetianer"
 output: html_document
 ---
 

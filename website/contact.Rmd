@@ -1,8 +1,15 @@
 ---
-title: "contact"
-author: "Rebecca Venetianer"
-date: "11/30/2017"
+title: "Contact Information"
 output: html_document
 ---
 
-Contact information
+This website was created by the following students at Columbia University's Mailman School of Public Health.
+
+<a href="https://hc2847.github.io/hc2847.github.io/">Choi, Hyewon</a>
+
+<a href="https://angelgar.github.io/angelgar.github.io/">Garcia de la Garza, Angel</a>
+
+<a href="https://sk4382.github.io/sk4382.github.io/">Kim, Soo Hyun</a>
+
+<a href="https://rvenetianer.github.io/-rebeccavenetianer-.github.io/">Venetianer, Rebecca</a>
+
