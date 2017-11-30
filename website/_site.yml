@@ -10,6 +10,6 @@ navbar:
     - text: "Contact Information"
       href: contact.html
     - icon: fa-github fa-lg
-      href: http://github.com/<YOUR_GH_NAME>/
+      href: https://github.com/angelgar/StatisticsHotTopics
 output:
   html_document

@@ -13,7 +13,7 @@ Anything that inspired you, such as a paper, a web site, or something we discuss
 @ Angel talk about the seminar you went to
 
 ## Initial questions
-The main question of interest is to undertand if/how keywords used in the titles of JASA-published papers have evolved over time, and when certain topcs arose to be of interest in research. While scraping the data and further investigating the JASA website, we came up with other questions, such as how do certain keywords affect the number of citations, and how has the average number of authors changed over time?
+The main question of interest is to undertand if/how keywords used in the titles of JASA-published papers have evolved over time, and when certain topcs arose to be of interest in research. While scraping the data and further investigating the JASA website, we came up with other questions, such as how do certain keywords affect the number of citations, and how has the average number of authors changed over time, and what is the most common word in titles for each year?
 
 ## Data
 Source, scraping method, cleaning, etc.
