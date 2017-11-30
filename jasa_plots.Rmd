@@ -5,7 +5,23 @@ output: html_notebook
 
 ```{r}
 library(readr)
+library(dplyr)
+library(stringr)
+library(tidyverse)
+library(tidytext)
+library(janitor)
+library(ggplot2)
 
-jasa_articles <- read_csv("./jasa_articles_dataset_complete.csv")
+data("stop_words")
+
+jasa_articles = read_csv("./jasa_articles_dataset_complete.csv") %>%
+  clean_names() %>% 
+  separate(authors, into = c("author1", "author19"), sep = " & ") %>% 
+  separate(author1, into = paste("author", 1:18), sep = ", ") %>% 
+  unnest_tokens(word, title)
+
+jasa_articles = anti_join(jasa_articles, stop_words)
+
+
 
 ```
