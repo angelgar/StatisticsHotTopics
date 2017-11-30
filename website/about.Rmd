@@ -1,0 +1,11 @@
+---
+title: "Statistics Hot Topics"
+---
+
+### About this site
+
+*** This should be a summarized version of the Rmd/HTML being submitted
+
+Describe dataset and data collection
+
+Goal of the project
