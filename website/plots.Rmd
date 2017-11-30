@@ -2,35 +2,31 @@
 title: "Visual Analysis"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: columns
-    vertical_layout: fill
+    orientation: rows
+    theme: yeti 
 ---
-
-```{r setup, include=FALSE}
-library(flexdashboard)
+Row
+-------------------------------------
+    
+### Chart 1
+    
+```{r}
 ```
+ 
+### Chart 2
+    
+```{r}
+``` 
 
-Column {data-width=650}
------------------------------------------------------------------------
-
-### Chart A
+Row
+-------------------------------------
+    
+### Chart 3
+    
+```{r}
+```
+    
+### Chart 4
 
 ```{r}
-
 ```
-
-Column {data-width=350}
------------------------------------------------------------------------
-
-### Chart B
-
-```{r}
-
-```
-
-### Chart C
-
-```{r}
-
-```
-
