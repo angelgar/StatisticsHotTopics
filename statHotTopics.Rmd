@@ -146,7 +146,8 @@ read_articles <- function(volume, issue) {
                                 authors,
                                 views,
                                 citations) %>% 
-                            as_tibble()
+                                as_tibble(stringsAsFactors = FALSE) %>%
+                                mutate(Issue = as.character(Issue))
   
 }
 
@@ -228,7 +229,17 @@ data_articles <- rbind(issues_1_20,
                        issues_271_370,
                        issues_371_520)
 
-data_articles <- left_join(data_articles, issues_volume, by = c("Issue","Volume"))
+data_articles <- left_join(data_articles, issues_volume, by = c("Issue","Volume")) %>%
+  filter(title != "Comment",
+         title != "Book Review",
+         title != "Correction",
+         !grepl("Comment",title),
+         title != "Rejoinder",
+         title != "A Rejoinder",
+         title != "Editorial",
+         title != "Editors Report",
+         title != "Reply",
+         complete.cases(.))
 
 write_csv(data_articles, "jasa_articles_dataset_complete.csv")
 
