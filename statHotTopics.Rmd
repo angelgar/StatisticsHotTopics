@@ -172,8 +172,8 @@ time.taken
 ## For Soohyun
 
 start.time <- Sys.time()
-#articles_data_71_170 <- map2_df(issues_volume$Volume[71:170], issues_volume$Issue[71:170], ~read_articles(.x,.y))
-#write_csv(articles_data_71_170, "./output_issues_71_170.csv")
+articles_data_71_170 <- map2_df(issues_volume$Volume[71:170], issues_volume$Issue[71:170], ~read_articles(.x,.y))
+write_csv(articles_data_71_170, "./output_issues_71_170.csv")
 time.taken <- start.time - Sys.time()
 time.taken
 
@@ -186,11 +186,9 @@ time.taken <- start.time - Sys.time()
 time.taken
 
 ## From 271 to 370 issue
-## Soohyun ran this
-
 start.time <- Sys.time()
-#articles_data_271_370 <- map2_df(issues_volume$Volume[271:370], issues_volume$Issue[271:370], ~read_articles(.x,.y))
-#write_csv(articles_data_271_370, "./output_issues_271_370.csv")
+articles_data_271_370 <- map2_df(issues_volume$Volume[271:370], issues_volume$Issue[271:370], ~read_articles(.x,.y))
+write_csv(articles_data_271_370, "./output_issues_271_370.csv")
 time.taken <- start.time - Sys.time()
 time.taken
 
