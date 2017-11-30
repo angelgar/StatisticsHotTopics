@@ -3,7 +3,7 @@ title: "Contact Information"
 output: html_document
 ---
 
-This website was created by the following students at Columbia University's Mailman School of Public Health.
+This website was created by the following students at Columbia University's Mailman School of Public Health. Bios and contact information fror group members can be found below.
 
 <a href="https://hc2847.github.io/hc2847.github.io/">Choi, Hyewon</a>
 
