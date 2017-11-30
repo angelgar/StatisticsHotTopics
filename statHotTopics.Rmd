@@ -215,6 +215,7 @@ time.taken
 
 ```{r}
 
+issues_volume <- read_csv("./data_issues_volume.csv")
 issues_1_20 <- read_csv("./output_issues_1_20.csv")
 issues_21_70 <- read_csv("./output_issues_21_70.csv")
 issues_71_170 <- read_csv("./output_issues_71_170.csv")
@@ -239,10 +240,20 @@ data_articles <- left_join(data_articles, issues_volume, by = c("Issue","Volume"
          title != "Editorial",
          title != "Editors Report",
          title != "Reply",
-         complete.cases(.))
+         complete.cases(.)) %>%
+  mutate(title = stringi::stri_trans_general(title, "latin-ascii"),
+         authors = stringi::stri_trans_general(authors, "latin-ascii"))
 
-write_csv(data_articles, "jasa_articles_dataset_complete.csv")
+#write_csv(data_articles, "jasa_articles_dataset_complete.csv")
 
 ```
+
+```{r}
+
+data_test <- read_csv("jasa_articles_dataset_complete.csv")
+
+
+```
+
 
 

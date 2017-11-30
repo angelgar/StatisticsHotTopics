@@ -1,7 +1,7 @@
 Issue,Volume,title,authors,views,citations
 449,95,Statisticians' Significance,Jonas H. Ellenberg Vice President and Senior Biostatistician,114,1
 449,95,Functional Components of Variation in Handwriting,J. O. Ramsay,126,23
-449,95,"Transitional Regression Models, with Application to Environmental Time Series","Babette A. Brumback, Louise M. Ryan, Joel D. Schwartz, Lucas M. Neas, Paul C. Stark & Harriet A. Burge",227,44
+449,95,"Transitional Regression Models, with Application to Environmental Time Series","Babette A. Brumback, Louise M. Ryan, Joel D. Schwartz, Lucas M. Neas, Paul C. Stark & Harriet A. Burge",228,44
 449,95,Genetic Susceptibility and Survival: Application to Breast Cancer,"Edwin S. Iversen Jr., Giovanni Parmigiani, Donald A. Berry & Joellen M. Schildkraut",78,4
 449,95,"Analyzing a Randomized Cancer Prevention Trial with a Missing Binary Outcome, an Auxiliary Variable, and All-or-None Compliance",Stuart G. Baker,53,9
 449,95,Estimation and Inference for Logistic Regression with Covariate Misclassification and Measurement Error in Main Study/Validation Study Designs,"Donna Spiegelman, Bernard Rosner & Roger Logan",177,21
@@ -13,13 +13,13 @@ Issue,Volume,title,authors,views,citations
 449,95,Rejoinder,Joel L. Horowitz & Charles F. Manski,43,0
 449,95,A Nonparametric “Trim and Fill” Method of Accounting for Publication Bias in Meta-Analysis,Sue Duval & Richard Tweedie,613,70
 449,95,Efficient Monte Carlo Methods for Conditional Logistic Regression,"Cyrus R. Mehta, Nitin R. Patel & Pralay Senchaudhuri",160,18
-449,95,Estimation of Discrete Distributions with a Class of Simplex Constraints,Chuanhai Liu,62,3
-449,95,The Multiple-Try Method and Local Optimization in Metropolis Sampling,"Jun S. Liu, Faming Liang & Wing Hung Wong",363,73
+449,95,Estimation of Discrete Distributions with a Class of Simplex Constraints,Chuanhai Liu,63,3
+449,95,The Multiple-Try Method and Local Optimization in Metropolis Sampling,"Jun S. Liu, Faming Liang & Wing Hung Wong",364,73
 449,95,Safe and Effective Importance Sampling,Art Owen & Yi Zhou Associate,430,74
-449,95,Inference with Imputed Conditional Means,Joseph L. Schafer & Nathaniel Schenker,99,18
+449,95,Inference with Imputed Conditional Means,Joseph L. Schafer & Nathaniel Schenker,100,18
 449,95,React Scatterplot Smoothers: Superefficiency through Basis Economy,Rudolf Beran,49,4
 449,95,Extending the Scope of Wavelet Regression Methods by Coefficient-Dependent Thresholding,Arne Kovac & Bernard W. Silverman,88,22
-449,95,Statistical Properties and Uses of the Wavelet Variance Estimator for the Scale Analysis of Time Series,"A. Serroukh, A. T. Walden & D. B. Percival",137,32
+449,95,Statistical Properties and Uses of the Wavelet Variance Estimator for the Scale Analysis of Time Series,"A. Serroukh, A. T. Walden & D. B. Percival",138,32
 449,95,Window Subsampling of Estimating Functions with Application to Regression Models,Patrick J. Heagerty & Thomas Lumley,95,27
 449,95,Asymptotics for Analysis of Variance When the Number of Levels is Large,Michael Akritas & Steven Arnold,54,16
 449,95,Reference Bayesian Methods for Generalized Linear Mixed Models,Ranjini Natarajan & Robert E. Kass,271,47
@@ -30,7 +30,7 @@ Issue,Volume,title,authors,views,citations
 449,95,Statistics in the Year 2000: Vignettes,"Adrian E. Raftery, Martin A. Tanner & Martin T. Wells",49,1
 449,95,Statistics in the Life and Medical Sciences,Norman E. Breslow,52,1
 449,95,Survival Analysis,David Oakes,115,5
-449,95,Causal Analysis in the Health Sciences,Sander Greenland,148,0
+449,95,Causal Analysis in the Health Sciences,Sander Greenland,149,0
 449,95,Environmental Statistics,Peter Guttorp,58,3
 449,95,Capture-Recapture Models,Kenneth H. Pollock,254,27
 449,95,Statistics in Animal Breeding,Daniel Gianola,96,1
@@ -50,7 +50,7 @@ Issue,Volume,title,authors,views,citations
 448,94,A Method-of-Moments Estimation Procedure for Categorical Quality-of-Life Data with Nonignorable Missingness,"Marco Bonetti, Bernard F. Cole & Richard D. Gelber",45,1
 448,94,Comparison of Partially Measured Latent Traits across Nominal Subgroups,Jon D. Cohen & Tao Jiang,33,7
 448,94,An Evaluation of California's Inmate Classification System Using a Generalized Regression Discontinuity Design,Richard A. Berk & Jan de Leeuw,230,0
-448,94,Causal Effects in Nonexperimental Studies: Reevaluating the Evaluation of Training Programs,Rajeev H. Dehejia & Sadek Wahba,2109,493
+448,94,Causal Effects in Nonexperimental Studies: Reevaluating the Evaluation of Training Programs,Rajeev H. Dehejia & Sadek Wahba,2112,494
 448,94,Account-Level Modeling for Trade Promotion: An Application of a Constrained Parameter Hierarchical Model,"Peter Boatwright, Robert McCulloch & Peter Rossi",128,27
 448,94,Hierarchical Bayes Estimation of Unemployment Rates for the States of the U.S.,"G. S. Datta, P. Lahiri, T. Maiti & K. L. Lu",125,26
 448,94,Evaluation and Comparison of EEG Traces: Latent Structure in Nonstationary Time Series,"Mike West, Raquel Prado & Andrew D. Krystal",47,15
@@ -71,7 +71,7 @@ Issue,Volume,title,authors,views,citations
 448,94,An Improved Estimator of the Density Function at the Boundary,"S. Zhang, R. J. Karunamuni & M. C. Jones",105,15
 448,94,Bayes Factors and Approximations for Variance Component Models,"Donna K. Pauler, Jonathan C. Wakefield & Robert E. Kass",119,24
 448,94,Nonconjugate Bayesian Estimation of Covariance Matrices and its Use in Hierarchical Models,Michael J. Daniels & Robert E. Kass,303,53
-448,94,Parameter Expansion for Data Augmentation,Jun S. Liu & Ying Nian Wu,214,66
+448,94,Parameter Expansion for Data Augmentation,Jun S. Liu & Ying Nian Wu,215,66
 448,94,On Single-Index Coefficient Regression Models,Yingcun Xia & W. K. Li,265,39
 448,94,"Regression Analysis, Nonlinear or Nonnormal: Simple and Accurate p Values from Likelihood Analysis","D. A. S. Fraser, Augustine Wong & Jianrong Wu Ph.D.",210,7
 448,94,Goodness of Fit and Related Inference Processes for Quantile Regression,Roger Koenker & José A. F. Machado,1034,259
@@ -90,7 +90,7 @@ Issue,Volume,title,authors,views,citations
 447,94,Comment,Joseph B. Kadane,23,0
 447,94,Comment,Michael J. Schell,22,0
 447,94,Rejoinder,"Scott M. Berry, C. Shane Reese & Patrick D. Larkey",23,0
-447,94,Estimation of the Causal Effect of a Time-Varying Exposure on the Marginal Mean of a Repeated Binary Outcome,"James M. Robins, Sander Greenland & Fu-Chang Hu",321,43
+447,94,Estimation of the Causal Effect of a Time-Varying Exposure on the Marginal Mean of a Repeated Binary Outcome,"James M. Robins, Sander Greenland & Fu-Chang Hu",322,43
 447,94,Comment,John M. Neuhaus,29,0
 447,94,Comment,Donald B. Rubin & Constantine E. Frangakis,37,0
 447,94,Comment,Larry Wasserman,35,0
@@ -101,14 +101,14 @@ Issue,Volume,title,authors,views,citations
 447,94,Pseudolikelihood Modeling of Multivariate Outcomes in Developmental Toxicology,"Helena Geys, Geert Molenberghs & Louise M. Ryan",72,41
 447,94,A Signal Extraction Approach to Modeling Hormone Time Series with Pulses and a Changing Baseline,"Wensheng Guo, Yuedong Wang & Morton B. Brown",58,12
 447,94,Analyzing Multiple Emotions over Time by Autoregressive Negative Multinomial Regression Models,Ulf Böckenholt,64,1
-447,94,Modeling Uncertainty in Latent Class Membership: A Case Study in Criminology,"Kathryn Roeder, Kevin G. Lynch & Daniel S. Nagin",433,118
+447,94,Modeling Uncertainty in Latent Class Membership: A Case Study in Criminology,"Kathryn Roeder, Kevin G. Lynch & Daniel S. Nagin",434,118
 447,94,Variable Selection and Function Estimation in Additive Nonparametric Regression Using a Data-Based Prior,"Thomas S. Shively, Robert Kohn & Sally Wood",136,20
 447,94,Comment,"Babette A. Brumback, David Ruppert & M. P. Wand",122,8
 447,94,Comment,E. I. George & R. E. McCulloch,27,0
 447,94,Comment,Steven N. Maceachern & Xiaotong Shen,28,0
 447,94,Comment,Peter Müller,25,0
 447,94,Rejoinder,"Thomas S. Shively, Robert Kohn & Sally Wood",27,0
-447,94,SiZer for Exploration of Structures in Curves,Probal Chaudhuri & J. S. Marron,339,138
+447,94,SiZer for Exploration of Structures in Curves,Probal Chaudhuri & J. S. Marron,339,139
 447,94,Nonparametric Methods for Doubly Truncated Data,Bradley Efron & Vahe Petrosian,469,44
 447,94,Random Sieve Likelihood and General Regression Models,"Xiaotong Shen, Jian Shi & Wing Hung Wong",78,4
 447,94,A Test for Global Maximum,Li Gan & Jiming Jiang,51,2
@@ -130,7 +130,7 @@ Issue,Volume,title,authors,views,citations
 446,94,Data and Dogma in Public Policy,Daniel Patrick Moynihan,47,0
 446,94,A Dynamic Model of Purchase Timing with Application to Direct Marketing,"Greg M. Allenby, Robert P. Leone & Lichung Jen",348,53
 446,94,Evaluation and Comparison of EEG Traces: Latent Structure in Nonstationary Time Series,"Mike West, Raquel Prado & Andrew D. Krystal",94,6
-446,94,Regression Depth,Peter J. Rousseeuw & Mia Hubert,176,60
+446,94,Regression Depth,Peter J. Rousseeuw & Mia Hubert,177,60
 446,94,Comment,Xuming He,24,0
 446,94,Comment,Roger Koenker,30,0
 446,94,Comment,Regina Y. Liu & Kesar Singh,26,0
@@ -145,19 +145,19 @@ Issue,Volume,title,authors,views,citations
 446,94,Stepwise Confidence Intervals without Multiplicity Adjustment for Dose—Response and Toxicity Studies,Jason C. Hsu & Roger L. Berger,92,0
 446,94,Exact Confidence Bounds for all Contrasts of Three or More Regression Lines,John D. Spurrier,52,12
 446,94,Multiple Confidence Sets Based on Stagewise Tests,Sture Holm,43,5
-446,94,A Proportional Hazards Model for the Subdistribution of a Competing Risk,Jason P. Fine & Robert J. Gray,3671,2897
+446,94,A Proportional Hazards Model for the Subdistribution of a Competing Risk,Jason P. Fine & Robert J. Gray,3675,2898
 446,94,A General Theory on Stochastic Curtailment for Censored Survival Data,"D. Y. Lin, Q. Yao & Zhiliang Ying",78,0
 446,94,Invariant Exponential Models Applied to Reliability Theory and Survival Analysis,Joan Del Castillo & Pedro Puig,35,1
 446,94,The Best Test of Exponentiality against Singly Truncated Normal Alternatives,Joan del Castillo & Pedro Puig,70,11
 446,94,A Conditional Saddlepoint Approximation for Testing Problems,Riccardo Gatto & S. Rao Jammalamadaka,45,6
 446,94,Default Bayes Factors for Nonnested Hypothesis Testing,J. O. Berger & J. Mortera,84,31
 446,94,Bayesian Morphology: Fast Unsupervised Bayesian Image Analysis,Florence Forbes & Adrian E. Raftery,49,3
-446,94,On Subsampling Estimators with Unknown Rate of Convergence,"Patrice Bertail, Dimitris N. Politis & Joseph P. Romano",65,9
+446,94,On Subsampling Estimators with Unknown Rate of Convergence,"Patrice Bertail, Dimitris N. Politis & Joseph P. Romano",66,9
 446,94,Iterated Transformation–Kernel Density Estimation,Lijian Yang & James S. Marron,59,6
-446,94,Filtering via Simulation: Auxiliary Particle Filters,Michael K. Pitt & Neil Shephard,1234,380
+446,94,Filtering via Simulation: Auxiliary Particle Filters,Michael K. Pitt & Neil Shephard,1235,381
 446,94,Combining Classifiers via Discretization,Majid Mojirsheibani,57,16
 446,94,Implementation of a Maximin Power Clustering Criterion to Select near Replicates for Regression Lack-of-Fit Tests,"Forrest R. Miller, James W. Neill & Brian W. Sherfey",36,3
-446,94,Pooled Mean Group Estimation of Dynamic Heterogeneous Panels,"M. Hashem Pesaran, Yongcheol Shin & Ron P. Smith",1494,591
+446,94,Pooled Mean Group Estimation of Dynamic Heterogeneous Panels,"M. Hashem Pesaran, Yongcheol Shin & Ron P. Smith",1495,591
 446,94,Extensions of Calibration Estimators in Survey Sampling,Alain Théberge,78,3
 446,94,Book Reviews,,41,0
 446,94,Telegraphic Reviews,,29,0
@@ -171,7 +171,7 @@ Issue,Volume,title,authors,views,citations
 445,94,Estimating Multistate Transition Hazards from Last-Move Data,Carl P. Schmertmann,45,3
 445,94,The Influence of Social Programs in Source Countries on Various Classes of U.S. Immigration,"Michael J. Greenwood, John M. McDowell, Donald M. Waldman & Steven S. Zahniser",39,1
 445,94,Comparing Predictions and Outcomes: Theory and Application to Income Changes,"Marcel Das, Jeff Dominitz & Arthur van Soest",56,5
-445,94,Prediction of Spatial Cumulative Distribution Functions Using Subsampling,"Soumendra N. Lahiri, Mark S. Kaiser, Noel Cressie & Nan-Jung Hsu",93,17
+445,94,Prediction of Spatial Cumulative Distribution Functions Using Subsampling,"Soumendra N. Lahiri, Mark S. Kaiser, Noel Cressie & Nan-Jung Hsu",94,17
 445,94,Comment,Peter Bühlmann & Hans R. Künsch,23,0
 445,94,Comment,Ronald Christensen,22,0
 445,94,Comment,Mark S. Handcock,22,0
@@ -179,9 +179,9 @@ Issue,Volume,title,authors,views,citations
 445,94,Comment,Michael L. Stein,22,0
 445,94,Rejoinder,"Soumendra N. Lahiri, Mark S. Kaiser, Noel Cressie & Nan-Jung Hsu",21,0
 445,94,Semiparametric Regression Models for Repeated Events with Random Effects and Measurement Error,"Wenxin Jiang, Bruce W. Turnbull & Larry C. Clark",78,5
-445,94,Semiparametric Inference in the Proportional Odds Regression Model,Song Yang & Ross L. Prentice,157,0
+445,94,Semiparametric Inference in the Proportional Odds Regression Model,Song Yang & Ross L. Prentice,158,0
 445,94,Censored Median Regression Using Weighted Empirical Survival and Hazard Functions,Song Yang,108,41
-445,94,Nonparametric Estimation of a Recurrent Survival Function,Mei-Cheng Wang & Shu-Hui Chang,237,43
+445,94,Nonparametric Estimation of a Recurrent Survival Function,Mei-Cheng Wang & Shu-Hui Chang,238,43
 445,94,Methods for Estimating a Conditional Distribution Function,"Peter Hall, Rodney C. L. Wolff & Qiwei Yao",294,95
 445,94,Improved Estimators in Nonparametric Regression Problems,Linda H. Zhao,38,1
 445,94,A Class of Locally and Globally Robust Regression Estimates,"Nelida Ferretti, Diana Kelmansky, Victor J. Yohai & Ruben H. Zamar",50,10
@@ -230,7 +230,7 @@ Issue,Volume,title,authors,views,citations
 444,93,1998 Editorial Collaborators,,20,0
 444,93,Editorial Board Page,,19,0
 443,93,Adrian Raftery,George Casella & Karen Kafadar,41,0
-443,93,Not Asked and Not Answered: Multiple Imputation for Multiple Surveys,"Andrew Gelman, Gary King & Chuanhai Liu",221,42
+443,93,Not Asked and Not Answered: Multiple Imputation for Multiple Surveys,"Andrew Gelman, Gary King & Chuanhai Liu",223,42
 443,93,Comment,David A. Binder,33,0
 443,93,Comment,John Brehm,34,0
 443,93,Comment,David R. Judkins,37,0
@@ -243,7 +243,7 @@ Issue,Volume,title,authors,views,citations
 443,93,Bayesian Identification of Outliers in Computerized Adaptive Tests,"Eric T. Bradlow, Robert E. Weiss & Meehyung Cho",68,18
 443,93,A Model for Evaluating Sensitivity and Specificity for Correlated Diagnostic Tests in Efficacy Studies with an Imperfect Reference Test,Yinsheng Qu & Alula Hadgu,102,0
 443,93,Analysis of Survival Data from a Randomized Trial with All-or-None Compliance: Estimating the Cost-Effectiveness of a Cancer Screening Program,Stuart G. Baker,83,30
-443,93,Bayesian CART Model Search,"Hugh A. Chipman, Edward I. George & Robert E. McCulloch",448,145
+443,93,Bayesian CART Model Search,"Hugh A. Chipman, Edward I. George & Robert E. McCulloch",450,145
 443,93,Comment,Heping Zhang,34,0
 443,93,Comment,"Keith Knight, Rafal Kustra & Robert Tibshirani",30,0
 443,93,Comment,"D. G. T. Denison, A. F. M. Smith & B. K. Mallick",32,0
@@ -279,12 +279,12 @@ Issue,Volume,title,authors,views,citations
 443,93,Telegraphic Reviews,,23,0
 443,93,Corrections,,27,0
 443,93,Editorial Board Page,,17,0
-442,93,A New Strategy for Evaluating the Impact of Epidemiologic Risk Factors for Cancer with Application to Melanoma,"Colin B. Begg, Jaya M. Satagopan & Marianne Berwick",42,2
+442,93,A New Strategy for Evaluating the Impact of Epidemiologic Risk Factors for Cancer with Application to Melanoma,"Colin B. Begg, Jaya M. Satagopan & Marianne Berwick",43,2
 442,93,Analysis of Censored Survival Data with Intermittently Observed Time-Dependent Binary Covariates,"Cheryl L. Faucett, Nathaniel Schenker & Robert M. Elashoff",69,14
 442,93,Model for the Analysis of Binary Longitudinal Pain Data Subject to Informative Dropout through Remedication,"Erik P. Pulkstenis, Thomas R. Ten Have & J. Richard Landis",70,17
 442,93,Estimating Bowhead Whale Population Size and Rate of Increase from the 1993 Census,Adrian E. Raftery & Judith E. Zeh,67,14
 442,93,On the Fairness of Death-Penalty Jurors: A Comparison of Bayesian Models with Different Levels of Hierarchy and Various Missing-Data Mechanisms,"Elizabeth A. Stasny, Joseph B. Kadane & Kathleen S. Fritsch",35,2
-442,93,Forecasting the U.S. Unemployment Rate,"Alan L. Montgomery, Victor Zarnowitz, Ruey S. Tsay & George C. Tiao",648,54
+442,93,Forecasting the U.S. Unemployment Rate,"Alan L. Montgomery, Victor Zarnowitz, Ruey S. Tsay & George C. Tiao",650,54
 442,93,Correcting for Omitted-Variables and Measurement-Error Bias in Regression with an Application to the Effect of Lead on IQ,M. Laurentius Marais & William E. Wecker,65,3
 442,93,Comment: Problems with Using Auxiliary Information to Correct for Omitted Variables when Estimating the Effect of Lead on IQ,"Christine Waternaux, Eva Petkova & William Dumouchel",30,0
 442,93,Comment,Walter J. Rogan & James H. Ware,29,0
@@ -299,11 +299,11 @@ Issue,Volume,title,authors,views,citations
 442,93,Comment,Y. Vardi,25,0
 442,93,Comment,Robert McCulloch,20,0
 442,93,Rejoinder,Claudia Tebaldi & Mike West,23,0
-442,93,Nearest-Neighbor Clutter Removal for Estimating Features in Spatial Point Processes,Simon Byers & Adrian E. Raftery,212,66
+442,93,Nearest-Neighbor Clutter Removal for Estimating Features in Spatial Point Processes,Simon Byers & Adrian E. Raftery,213,66
 442,93,Auxiliary Variable Methods for Markov Chain Monte Carlo with Applications,David M. Higdon,176,33
 442,93,Saddlepoint Approximation for Multivariate Cumulative Distribution Functions and Probability Computations in Sampling Theory and Outlier Testing,Ronald W. Butler & Richard K. Sutton,60,3
 442,93,A Fully Automated Bandwidth Selection Method for Fitting Additive Models,Jean D. Opsomer & David Ruppert,74,19
-442,93,One-Sided Cross-Validation,Jeffrey D. Hart & Seongbaek Yi,83,23
+442,93,One-Sided Cross-Validation,Jeffrey D. Hart & Seongbaek Yi,84,23
 442,93,Some Linear Models for Estimating the Motion of Rigid Bodies with Applications to Geometric Quality Assurance,Louis-Paul Rivest,30,3
 442,93,Monotone B-Spline Smoothing,Xuming He & Peide Shi,223,15
 442,93,Filtered-Variate Prior Distributions for Histogram Smoothing,James M. Dickey & Thomas J. Jiang,38,2
@@ -313,8 +313,8 @@ Issue,Volume,title,authors,views,citations
 442,93,Restricted Mean Life with Covariates: Modification and Extension of a Useful Survival Analysis Method,David M. Zucker,167,28
 442,93,Semiparametric Stochastic Mixed Models for Longitudinal Data,"Daowen Zhang, Xihong Lin, Jonathan Raz & Maryfran Sowers",274,70
 442,93,Consistent Estimators in Generalized Linear Mixed Models,Jiming Jiang,206,29
-442,93,Partial Residual Plots in Generalized Linear Models,R. Dennis Cook & Rodney Croos-dabrera,92,7
-442,93,Weighted Likelihood Equations with Bootstrap Root Search,"Marianthi Markatou, Ayanendranath Basu & Bruce G. Lindsay",110,27
+442,93,Partial Residual Plots in Generalized Linear Models,R. Dennis Cook & Rodney Croos-dabrera,95,7
+442,93,Weighted Likelihood Equations with Bootstrap Root Search,"Marianthi Markatou, Ayanendranath Basu & Bruce G. Lindsay",111,27
 442,93,The Power of Some Tests for Difference Stationarity under Local Heteroscedastic Integration,Brendan P. M. McCabe & Richard J. Smith,36,3
 442,93,Data-Driven Efficient Estimation of the Spectral Density,Sam Efromovich,51,5
 442,93,A Unified Approach to Identifying Multivariate Time Series Models,Hong Li & Ruey S. Tsay,48,6
@@ -336,27 +336,27 @@ Issue,Volume,title,authors,views,citations
 441,93,Comment,Ker-Chau Li,25,0
 441,93,Rejoinder,R. Dennis Cook,23,0
 441,93,Triogram Models,"Mark Hansen, Charles Kooperberg & Sylvain Sardy",43,9
-441,93,On Measuring and Correcting the Effects of Data Mining and Model Selection,Jianming Ye,417,101
-441,93,Determining the Dimension in Sliced Inverse Regression and Related Methods,Louis Ferré,97,11
+441,93,On Measuring and Correcting the Effects of Data Mining and Model Selection,Jianming Ye,418,101
+441,93,Determining the Dimension in Sliced Inverse Regression and Related Methods,Louis Ferré,98,11
 441,93,Bootstrap Approximations in Model Checks for Regression,"W. Stute, W. González Manteiga & M. Presedo Quindimil",158,65
 441,93,Lorelogram: A Regression Approach to Exploring Dependence in Longitudinal Categorical Responses,Patrick J. Heagerty & Scott L. Zeger,85,11
 441,93,Change Curve Estimation via Wavelets,Yazhen Wang,87,8
 441,93,Nonlinear Wavelet Shrinkage with Bayes Rules and Bayes Factors,Brani Vidakovic,156,91
-441,93,Classification Trees for Multiple Binary Responses,Heping Zhang,159,26
+441,93,Classification Trees for Multiple Binary Responses,Heping Zhang,160,26
 441,93,Assessing the Order of Dependence for Partially Exchangeable Binary Data,Fernando A. Quintana & Michael A. Newton,53,5
 441,93,A Bayesian Approach to Robust Binary Nonparametric Regression,Sally Wood & Robert Kohn,104,11
 441,93,Local Estimating Equations,"Raymond J. Carroll, David Ruppert & Alan H. Welsh",149,31
-441,93,Local Linear Quantile Regression,Keming Yu & M. C. Jones,845,146
+441,93,Local Linear Quantile Regression,Keming Yu & M. C. Jones,847,146
 441,93,A Coupling-Regeneration Scheme for Diagnosing Convergence in Markov Chain Monte Carlo Algorithms,Valen E. Johnson,63,4
-441,93,Bias Analysis and SIMEX Approach in Generalized Linear Mixed Measurement Error Models,"Naisyin Wang, Xihong Lin, Roberto G. Gutierrez & Raymond J. Carroll",159,38
+441,93,Bias Analysis and SIMEX Approach in Generalized Linear Mixed Measurement Error Models,"Naisyin Wang, Xihong Lin, Roberto G. Gutierrez & Raymond J. Carroll",160,38
 441,93,Standard Errors of Prediction in Generalized Linear Mixed Models,James G. Booth & James P. Hobert,218,33
 441,93,Generalized Linear Models for Small-Area Estimation,"Malay Ghosh, Kannan Natarajan, T. W. F. Stroud & Bradley P. Carlin",241,47
 441,93,A Sample Coverage Approach to Multiple-System Estimation with Application to Census Undercount,Anne Chao & P. K. Tsay,66,8
 441,93,Detecting Features in Spatial Point Processes with Clutter via Model-Based Clustering,Abhijit Dasgupta & Adrian E. Raftery,243,94
 441,93,Estimation of a Common Mean and Weighted Means Statistics,Andrew L. Rukhin & Mark G. Vangel,118,28
 441,93,Confidence Intervals with More Power to Determine the Sign: Two Ends Constrain the Means,"Y. Benjamini, Y. Hochberg & P. B. Stark",49,5
-441,93,Inference Based on Imputed Failure Times for the Proportional Hazards Model with Interval-Censored Data,"Glen A. Satten, Somnath Datta & John M. Williamson",90,20
-441,93,Discrimination and Clustering for Multivariate Time Series,"Yoshihide Kakizawa, Robert H. Shumway & Masanobu Taniguchi",416,58
+441,93,Inference Based on Imputed Failure Times for the Proportional Hazards Model with Interval-Censored Data,"Glen A. Satten, Somnath Datta & John M. Williamson",91,20
+441,93,Discrimination and Clustering for Multivariate Time Series,"Yoshihide Kakizawa, Robert H. Shumway & Masanobu Taniguchi",417,58
 441,93,Smoothing Spline Models with Correlated Random Errors,Yuedong Wang,246,48
 441,93,Median Unbiased Estimation of Coefficient Variance in a Time-Varying Parameter Model,James H. Stock & Mark W. Watson,255,54
 441,93,On Bayesian Modeling of Fat Tails and Skewness,Carmen Fernández & Mark F. J. Steel,687,54
@@ -385,7 +385,7 @@ Issue,Volume,title,authors,views,citations
 440,92,Semiparametric Efficiency and its Implication on the Design and Analysis of Group-Sequential Studies,"Daniel O. Scharfstein, Anastasios A. Tsiatis & James M. Robins",99,0
 440,92,A Semiparametric Approach to Hazard Estimation with Randomly Censored Observations,Djokouri A. Kouassi & Jagbir Singh,45,7
 440,92,Accurate Bootstrap Confidence Limits for the Cumulative Hazard and Survivor Functions under Random Censoring,Robert L. Strawderman & Martin T. Wells,71,4
-440,92,Latent Variable Regression for Multiple Discrete Outcomes,"Karen Bandeen-roche, Diana L. Miglioretti, Scott L. Zeger & Paul J. Rathouz",484,106
+440,92,Latent Variable Regression for Multiple Discrete Outcomes,"Karen Bandeen-roche, Diana L. Miglioretti, Scott L. Zeger & Paul J. Rathouz",486,106
 440,92,Efficiency Lost by Analyzing Counts Rather than Event Times in Poisson and Overdispersed Poisson Regression Models,C. B. Dean & R. Balshaw,66,0
 440,92,Testing Goodness-of-Fit Based on a Roughness Measure,Li-Shan Huang,33,1
 440,92,Dynamic Conditional Independence Models and Markov Chain Monte Carlo Methods,"Carlo Berzuini, Nicola G. Best, Walter R. Gilks & Cristiana Larizza",163,31
@@ -398,7 +398,7 @@ Issue,Volume,title,authors,views,citations
 440,92,Approximating the Distribution of the Scan Statistic Using Moments of the Number of Clumps,Fred W. Huffer & Chien-Tai Lin,33,6
 440,92,A Spatial Scan Statistic for Stochastic Scan Partitions,"Carey E. Priebe, Tim Olson & Dennis M. Healy Jr.",49,2
 440,92,Nonparametric Maximum Likelihood Estimation of Features in Spatial Point Processes Using Voronoï Tessellation,Denis Allard & Chris Fraley,81,5
-440,92,Box-Type Approximations in Nonparametric Factorial Designs,"Edgar Brunner, Holger Dette & Axel Munk",160,66
+440,92,Box-Type Approximations in Nonparametric Factorial Designs,"Edgar Brunner, Holger Dette & Axel Munk",162,66
 440,92,Robust Designs Based on the Infinitesimal Approach,Douglas P. Wiens & Julie Zhou,30,5
 440,92,An Analysis of Transformations for Additive Nonparametric Regression,"Oliver B. Linton, Rong Chen, Naiysin Wang & Wolfgang Härdle",82,10
 440,92,A Bayesian Approach to Nonparametric Bivariate Regression,Michael Smith & Robert Kohn,90,9
@@ -426,7 +426,7 @@ Issue,Volume,title,authors,views,citations
 439,92,Using Expectations Data to Study Subjective Income Expectations,Jeff Dominitz & Charles F. Manski,281,52
 439,92,Analysis of Subtidal Coastal Sea Level Fluctuations Using Wavelets,Donald B. Percival & Harold O. Mofjeld,142,59
 439,92,"Modeling Long-Range Dependence, Nonlinearity, and Periodic Phenomena in Sea Surface Temperatures Using TSMARS",Peter A. W. Lewis & Bonnie K. Ray,53,12
-439,92,Practical Bayesian Density Estimation Using Mixtures of Normals,Kathryn Roeder & Larry Wasserman,310,108
+439,92,Practical Bayesian Density Estimation Using Mixtures of Normals,Kathryn Roeder & Larry Wasserman,311,108
 439,92,Computing Bayes Factors by Combining Simulation and Asymptotic Approximations,"Thomas J. Diciccio, Robert E. Kass, Adrian Raftery & Larry Wasserman",195,65
 439,92,Bayesian Tests and Model Diagnostics in Conditionally Independent Hierarchical Models,Jim Albert & Siddhartha Chib,83,19
 439,92,Hierarchical Selection Models with Applications in Meta-Analysis,Nancy Paul Silliman,90,17
@@ -470,29 +470,29 @@ Issue,Volume,title,authors,views,citations
 438,92,Comment,Noel Cressie,27,0
 438,92,Rejoinder,"R. J. Carroll, R. Chen, E. I. George, T. H. Li, H. J. Newton, H. Schmiediche & N. Wang",31,0
 438,92,Efficient Matrix Sampling Instruments for Correlated Latent Traits: Examples from the National Assessment of Educational Progress,Linda M. Zeger & Neal Thomas,58,2
-438,92,"A Nested Frailty Model for Survival Data, with an Application to the Study of Child Survival in Northeast Brazil",Narayan Sastry,182,23
+438,92,"A Nested Frailty Model for Survival Data, with an Application to the Study of Child Survival in Northeast Brazil",Narayan Sastry,183,23
 438,92,"A Two-Step Approach to Measurement Error in Time-Dependent Covariates in Nonlinear Mixed-Effects Models, with Application to IGF-I Pharmacokinetics","Karen M. Higgins, Marie Davidian & David M. Giltinan",105,23
 438,92,No-Observed-Adverse-Effect Levels in Severity Data,"Takashi Yanagawa, Yasuki Kikuchi & Kenneth G. Brown",40,1
 438,92,A Panel Analysis of Liquidity Constraints and Firm Investment,Cheng Hsiao & A. Kamil Tahmiscioglu,140,24
 438,92,Interpolation Methods for Adapting to Sparse Design in Nonparametric Regression,Peter Hall & Berwin A. Turlach,63,10
 438,92,Comment,Stephen Portnoy,26,0
 438,92,Rejoinder,Peter Hall & Berwin A. Turlach,26,0
-438,92,Generalized Partially Linear Single-Index Models,"R. J. Carroll, Jianqing Fan, Irène Gijbels & M. P. Wand",657,258
+438,92,Generalized Partially Linear Single-Index Models,"R. J. Carroll, Jianqing Fan, Irène Gijbels & M. P. Wand",660,258
 438,92,Graphics for Assessing the Adequacy of Regression Models,R. Dennis Cook & Sanford Weisberg,108,15
 438,92,Smoothing Parameter Selection for Power Optimality in Testing of Regression Curves,K. B. Kulasekera & J. Wang,72,29
-438,92,Weighted Semiparametric Estimation in Regression Analysis with Missing Covariate Data,"C. Y. Wang, Suojin Wang, Lue-Ping Zhao & Shyh-Tyan Ou",159,29
+438,92,Weighted Semiparametric Estimation in Regression Analysis with Missing Covariate Data,"C. Y. Wang, Suojin Wang, Lue-Ping Zhao & Shyh-Tyan Ou",160,29
 438,92,Density Estimation for the Case of Supersmooth Measurement Error,Sam Efromovich,57,21
 438,92,Root n Bandwidth Selectors for Kernel Estimation of Density Derivatives,Tiee-Jian Wu,45,2
-438,92,Improvements on Cross-Validation: The 632+ Bootstrap Method,Bradley Efron & Robert Tibshirani,1443,48
+438,92,Improvements on Cross-Validation: The 632+ Bootstrap Method,Bradley Efron & Robert Tibshirani,1445,48
 438,92,A Nonparametric Test of Independence between Two Vectors,Peter W. Gieser & Ronald H. Randles,78,10
 438,92,Nonparametric Methods for Factorial Designs with Censored Data,Michael G. Akritas & Edgar Brunner,63,8
 438,92,A Multidimensional Goodness-of-Fit Test Based on Interpoint Distances,"Robert Bartoszyński, Dennis K. Pearl & John Lawrence",71,4
 438,92,Hierarchical Mixture Models in Neurological Transmission Analysis,Mike West,52,7
 438,92,Hierarchical Spatio-Temporal Mapping of Disease Rates,"Lance A. Waller, Bradley P. Carlin, Hong Xia & Alan E. Gelfand",735,144
-438,92,Hierarchical Poisson Regression Modeling,Cindy L. Christiansen & Carl N. Morris,412,44
+438,92,Hierarchical Poisson Regression Modeling,Cindy L. Christiansen & Carl N. Morris,414,44
 438,92,Dirichlet Process Mixed Generalized Linear Models,Saurabh Mukhopadhyay & Alan E. Gelfand,186,21
 438,92,Bayesian Forecasting of Multinomial Time Series through Conditionally Gaussian Dynamic Models,"Claudia Cargnoni, Peter Müller & Mike West",156,3
-438,92,Estimating Bayes Factors via Posterior Simulation with the Laplace—Metropolis Estimator,Steven M. Lewis & Adrian E. Raftery,192,13
+438,92,Estimating Bayes Factors via Posterior Simulation with the Laplace—Metropolis Estimator,Steven M. Lewis & Adrian E. Raftery,193,13
 438,92,Approximate Bayes Factors When a Mode Occurs on the Boundary,Chuhsing Kate Hsiao,43,7
 438,92,Spherical-Radial Integration Rules for Bayesian Computation,John Monahan & Alan Genz,98,15
 438,92,The k-Ratio Multiple Comparisons Bayes Rule for the Balanced Two-Way Design,Gene Pennello,33,2
@@ -528,14 +528,14 @@ Issue,Volume,title,authors,views,citations
 437,92,High-Breakdown Linear Discriminant Analysis,Douglas M. Hawkins & Geoffrey J. McLachlan,60,31
 437,92,Monotone Discriminant Functions and Their Applications in Rheumatology,Daniel A. Bloch & Bernard W. Silverman,51,7
 437,92,Bounded Influence Estimation in the Mixed Linear Model,Alice M. Richardson,99,10
-437,92,Maximum Likelihood Algorithms for Generalized Linear Mixed Models,Charles E. McCulloch,1050,187
+437,92,Maximum Likelihood Algorithms for Generalized Linear Mixed Models,Charles E. McCulloch,1052,187
 437,92,Inferences for the Linear Errors-in-Variables with Changepoint Models,Yi-Ping Chang & Wen-Tao Huang,48,3
-437,92,Bayesian Model Averaging for Linear Regression Models,"Adrian E. Raftery, David Madigan & Jennifer A. Hoeting",1611,405
+437,92,Bayesian Model Averaging for Linear Regression Models,"Adrian E. Raftery, David Madigan & Jennifer A. Hoeting",1613,405
 437,92,Product Partition Models for Normal Means,Evelyn M. Crowley,79,20
 437,92,On the Variability of Case-Deletion Importance Sampling Weights in the Bayesian Linear Model,Mario Peruggia,58,11
 437,92,Bayesian Analysis of Stochastically Ordered Distributions of Categorical Variables,"Michael Evans, Zvi Gilula, Irwin Guttman & Tim Swartz",46,10
-437,92,Likelihood Ratio-Based Confidence Bands for Survival Functions,"Myles Hollander, Ian W. McKeague & Ian W. McKeague",74,22
-437,92,Predicting Survival Probabilities with Semiparametric Transformation Models,"S. C. Cheng, L. J. Wei & Z. Ying",156,44
+437,92,Likelihood Ratio-Based Confidence Bands for Survival Functions,"Myles Hollander, Ian W. McKeague & Ian W. McKeague",75,22
+437,92,Predicting Survival Probabilities with Semiparametric Transformation Models,"S. C. Cheng, L. J. Wei & Z. Ying",157,44
 437,92,Semiparametric Likelihood Ratio-Based Inferences for Truncated Data,"Gang Li, Jing Qin & Ram C. Tiwari",56,3
 437,92,Stochastic Network Models for Survival Analysis,Ronald W. Butler & Aparna V. Huzurbazar,80,15
 437,92,Nonparametric Hypotheses and Rank Statistics for Unbalanced Factorial Designs,"Michael G. Akritas, Steven F. Arnold & Edgar Brunner",206,71
@@ -558,7 +558,7 @@ Issue,Volume,title,authors,views,citations
 437,92,Editorial Board Page,,26,0
 436,91,Separate Estimation of Primary and Secondary Cancer Preventive Impact: Analysis of a Case-Control Study of Skin Self-Examination and Melanoma,"Colin B. Begg, Ying Huang & Marianne Berwick",14,0
 436,91,Parametric Event Sequence Analysis: An Application to an Analysis of Gender and Racial/Ethnic Differences in Patterns of Drug-Use Progression,Kazuo Yamaguchi & Denise B. Kandel,17,5
-436,91,Physiological Pharmacokinetic Analysis Using Population Modeling and Informative Prior Distributions,"Andrew Gelman, Frederic Bois & Jiming Jiang",65,94
+436,91,Physiological Pharmacokinetic Analysis Using Population Modeling and Informative Prior Distributions,"Andrew Gelman, Frederic Bois & Jiming Jiang",66,94
 436,91,A Random-Effects Model for Cycle Viability in Fertility Studies,"Haibo Zhou, Clarice R. Weinberg, Allen J. Wilcox & Donna D. Baird",23,22
 436,91,Estimation of Median Income of Four-Person Families: A Bayesian Time Series Approach,"Malay Ghosh, Narinder Nangia & Dal Ho Kim",19,19
 436,91,Time-Dependent Hazard Ratio: Modeling and Hypothesis Testing with Application in Lupus Nephritis,"Michal Abrahamowicz, Todd Mackenzie & John M. Esdaile",58,46
@@ -569,7 +569,7 @@ Issue,Volume,title,authors,views,citations
 436,91,Predictive Oscillation Patterns: A Synthesis of Methods for Spatial-Temporal Decomposition of Random Fields,Charles Kooperberg & Finbarr O'sullivan,18,2
 436,91,Nonhomogeneity Analysis Using Borrowed Strength,Carey E. Priebe,11,2
 436,91,"Modeling Flat Stretches, Bursts Outliers in Time Series Using Mixture Transition Distribution Models","Nhu D. Le, R. Douglas Martin & Adrian E. Raftery",22,10
-436,91,Bootstrap Confidence Regions for the Intensity of a Poisson Point Process,"Ann Cowling, Peter Hall & Michael J. Phillips",40,27
+436,91,Bootstrap Confidence Regions for the Intensity of a Poisson Point Process,"Ann Cowling, Peter Hall & Michael J. Phillips",41,27
 436,91,On Locally Adaptive Density Estimation,Stephan R. Sain & David W. Scott,41,32
 436,91,A Frequency Domain Bootstrap-Based Method for Checking the Fit of a Transfer Function Model,Efstathios Paparoditis,13,1
 436,91,On Periodic Structures and Testing for Seasonal Unit Roots,"Eric Ghysels, Alastair Hall & Hahn Shik Lee",24,5
@@ -627,7 +627,7 @@ Issue,Volume,title,authors,views,citations
 435,91,Bootstrap Selection of the Smoothing Parameter in Nonparametric Hazard Rate Estimation,"W. Gonzàlez-Manteiga, R. Cao & J. S. Marron",19,5
 435,91,A Smooth Nonparametric Estimate of a Mixing Distribution Using Mixtures of Gaussians,Laurence S. Magder & Scott L. Zeger,31,30
 435,91,Bivariate Estimation with Right-Truncated Data,Ülkü Gürler,20,6
-435,91,Nonparametric Estimation and Regression Analysis with Left-Truncated and Right-Censored Data,Shulamith T. Gross & Tze Leung Lai,66,28
+435,91,Nonparametric Estimation and Regression Analysis with Left-Truncated and Right-Censored Data,Shulamith T. Gross & Tze Leung Lai,67,28
 435,91,The Product-Moment Correlation Coefficient and Linear Regression for Truncated Data,"Chen-Hsin Chen, Wei-Yann Tsai & Wei-Hsiung Chao",20,10
 435,91,Equivalence and Interval Testing for Lehmann's Alternative,Axel Munk,18,3
 435,91,Prediction via Orthogonalized Model Mixing,"Merlise Clyde, Heather Desimone & Giovanni Parmigiani",27,23
@@ -638,25 +638,25 @@ Issue,Volume,title,authors,views,citations
 435,91,Nonparametric Importance Sampling,Ping Zhang,55,35
 435,91,Fitting Full-Information Item Factor Models and an Empirical Investigation of Bridge Sampling,Xiao-Li Meng & Stephen Schilling,28,33
 435,91,Assessing Evidence in Multiple Hypotheses,"Constantinos Goutis, George Casella & Martin T. Wells",19,10
-435,91,Bootstrap for Imputed Survey Data,Jun Shao & Randy R. Sitter,93,0
+435,91,Bootstrap for Imputed Survey Data,Jun Shao & Randy R. Sitter,94,0
 435,91,Efficient Estimators with Simple Variance in Unequal Probability Sampling,Carl-Erik Särndal,37,3
 435,91,On the Asymptotic Properties of LDU-Based Tests of the Rank of a Matrix,John G. Cragg & Stephen G. Donald,21,20
 435,91,"Nonlinear Additive Models for Environmental Time Series, with Applications to Ground-Level Ozone Data Analysis",Xu-Feng Niu,16,8
 435,91,An EM Algorithm Fitting First-Order Conditional Autoregressive Models to Longitudinal Data,Christopher H. Schmid,25,7
 435,91,"Testing for Serial Correlation against an ARMA(1, 1) Process",Donald W. K. Andrews & Werner Ploberger,21,2
-435,91,The Selection of Prior Distributions by Formal Rules,Robert E. Kass & Larry Wasserman,143,309
+435,91,The Selection of Prior Distributions by Formal Rules,Robert E. Kass & Larry Wasserman,143,311
 435,91,Book Reviews,,10,0
 435,91,Telegraphic Reviews,,9,0
 435,91,Correction,,9,0
 435,91,Editorial Board Page,,9,0
 434,91,Editors' Report for 1995,"Diane Lambert, Myles Hollander & Alan Agresti",12,1
-434,91,Identification of Causal Effects Using Instrumental Variables,"Joshua D. Angrist, Guido W. Imbens & Donald B. Rubin",1080,995
+434,91,Identification of Causal Effects Using Instrumental Variables,"Joshua D. Angrist, Guido W. Imbens & Donald B. Rubin",1081,996
 434,91,Comment,James M. Robins & Sander Greenland,33,2
 434,91,Comment,James J. Heckman,29,1
 434,91,Comment,Robert A. Moffitt,32,2
 434,91,Comment,Paul R. Rosenbaum,27,0
 434,91,Rejoinder,"Joshua D. Angrist, Guido W. Imbens & Donald B. Rubin",31,0
-434,91,Multiple Imputation after 18+ Years,Donald B. Rubin,374,855
+434,91,Multiple Imputation after 18+ Years,Donald B. Rubin,374,856
 434,91,Alternative Paradigms for the Analysis of Imputed Survey Data,Robert E. Fay,33,27
 434,91,On Variance Estimation with Imputed Survey Data,J. N. K. Rao,55,36
 434,91,Comment,David R. Judkins,19,2
@@ -676,7 +676,7 @@ Issue,Volume,title,authors,views,citations
 434,91,Rejoinder,Bradley Efron,15,0
 434,91,Replicate Histograms,Michael Sherman & Edward Carlstein,15,11
 434,91,Time Trend Estimation for a Geographic Region,Knut Sølna & Paul Switzer,16,1
-434,91,Inference for Autocorrelations under Weak Assumptions,Joseph P. Romano & Lori A. Thombs,33,36
+434,91,Inference for Autocorrelations under Weak Assumptions,Joseph P. Romano & Lori A. Thombs,33,37
 434,91,Some Models for Discretized Series of Events,A. C. Davison & N. I. Ramesh,20,7
 434,91,Bandwidth Selection for Indirect Density Estimation Based on Corrupted Histogram Data,Finbarr O'sullivan & Yudi Pawitan,14,2
 434,91,Partial Least Squares Regression on Smooth Factors,Constantinos Goutis & Tom Fearn,29,13
@@ -704,13 +704,13 @@ Issue,Volume,title,authors,views,citations
 434,91,A Simple Multivariate Test for One-Sided Alternatives,Dean Follmann,19,0
 434,91,On a Geometric Notion of Quantiles for Multivariate Data,Probal Chaudhuri,77,84
 434,91,The Lorenz Zonoid of a Multivariate Distribution,Gleb Koshevoy & Karl Mosler,25,13
-434,91,Markov Chain Monte Carlo Convergence Diagnostics: A Comparative Review,Mary Kathryn Cowles & Bradley P. Carlin,328,489
+434,91,Markov Chain Monte Carlo Convergence Diagnostics: A Comparative Review,Mary Kathryn Cowles & Bradley P. Carlin,329,489
 434,91,Book Reviews,,12,0
 434,91,Telegraphic Reviews,,11,0
 434,91,Correction,,9,0
 434,91,Editorial Board Page,,9,0
 433,91,Statistics in Action,Mitchell H. Gail,27,7
-433,91,Statistics in Epidemiology: The Case-Control Study,N. E. Breslow,106,112
+433,91,Statistics in Epidemiology: The Case-Control Study,N. E. Breslow,107,112
 433,91,Discharge Rates of Medicare Stroke Patients to Skilled Nursing Facilities: Bayesian Logistic Regression with Unobserved Heterogeneity,Michael J. Kahn & Adrian E. Raftery,18,10
 433,91,On Bayesian Analysis of Multirater Ordinal Data: An Application to Automated Essay Grading,Valen E. Johnson,23,28
 433,91,Nonparametric Mixed-Effects Models for Repeated Binary Data Arising in Serial Dilution Assays: An Application to Estimating Viral Burden in AIDS,"Robert Zackin, Victor De Gruttola & Nan Laird",14,2
@@ -720,7 +720,7 @@ Issue,Volume,title,authors,views,citations
 433,91,Multivariate Logistic Models for Incomplete Binary Responses,"Garrett M. Fitzmaurice, Nan M. Laird & Gwendolyn E. P. Zahner",43,22
 433,91,The Intrinsic Bayes Factor for Model Selection and Prediction,James O. Berger & Luis R. Pericchi,89,205
 433,91,Robust Bayesian Model Selection for Autoregressive Processes with Additive Outliers,"Nhu D. Le, Adrian E. Raftery & R. Douglas Martin",17,5
-433,91,Local Adaptive Importance Sampling for Multivariate Densities with Strong Nonlinear Relationships,Geof H. Givens & Adrian E. Raftery,31,31
+433,91,Local Adaptive Importance Sampling for Multivariate Densities with Strong Nonlinear Relationships,Geof H. Givens & Adrian E. Raftery,32,31
 433,91,Bayesian Inference for Semiparametric Binary Regression,"Michael A. Newton, Claudia Czado & Rick Chappell",38,23
 433,91,Studying Convergence of Markov Chain Monte Carlo Algorithms Using Coupled Sample Paths,Valen E. Johnson,24,12
 433,91,Maximum Likelihood Estimation under Order Restrictions by the Prior Feedback Method,Christian P. Robert & J. T. Gene Hwang,13,5
@@ -730,10 +730,10 @@ Issue,Volume,title,authors,views,citations
 433,91,The Matrix-Logarithmic Covariance Model,"Tom Y. M. Chiu, Tom Leonard & Kam-Wah Tsui",62,52
 433,91,"A Path Length Inequality for the Multivariate-t Distribution, with Applications to Multiple Comparisons",Melinda McCann & Don Edwards,14,4
 433,91,A Linear Mixed-Effects Model with Heterogeneity in the Random-Effects Population,Geert Verbeke & Emmanuel Lesaffre,208,159
-433,91,Indicator and Stratification Methods for Missing Explanatory Variables in Multiple Linear Regression,Michael P. Jones,85,52
+433,91,Indicator and Stratification Methods for Missing Explanatory Variables in Multiple Linear Regression,Michael P. Jones,86,52
 433,91,Bootstrap Confidence Region Estimation of the Motion of Rigid Bodies,Shyamal Das Peddada & Ted Chang,12,2
 433,91,Asymptotics for the SIMEX Estimator in Nonlinear Measurement Error Models,"Raymond J. Carroll, Helmut Küchenhoff, F. Lombard & Leonard A. Stefanski",42,37
-433,91,Quasi-Likelihood for Median Regression Models,Sin-Ho Jung,44,40
+433,91,Quasi-Likelihood for Median Regression Models,Sin-Ho Jung,44,41
 433,91,On Local Smoothing of Nonparametric Curve Estimators,"Jianqing Fan, Peter Hall, Michael A. Martin & Prakash Patil",23,11
 433,91,Finite-Sample Variance of Local Polynomials: Analysis and Solutions,Burkhardt Seifert & Theo Gasser,23,26
 433,91,Spline Estimation of Paths Using Bearings-Only Tracking Data,Richard Anderson-Sprecher & Russell V. Lenth,16,2
@@ -756,13 +756,13 @@ Issue,Volume,title,authors,views,citations
 433,91,Book Reviews,,12,0
 433,91,Telegraphic Reviews,,10,0
 433,91,Editorial Board Page,,10,0
-432,90,Are People Bayesian? Uncovering Behavioral Strategies,Mahmoud A. El-Gamal & David M. Grether,55,63
+432,90,Are People Bayesian? Uncovering Behavioral Strategies,Mahmoud A. El-Gamal & David M. Grether,56,63
 432,90,Stochastic Modeling of Early Hematopoiesis,"Michael A. Newton, Peter Guttorp, Sandra Catlin, Renato Assunção & Janis L. Abkowitz",13,3
 432,90,Bayesian Models for Multiple Local Sequence Alignment and Gibbs Sampling Strategies,"Jun S. Liu, Andrew F. Neuwald & Charles E. Lawrence",78,67
 432,90,A Nonparametric Regression Approach to Syringe Grading for Quality Improvement,"Doug Nychka, Gerry Gray, Perry Haaland, David Martin & Michael O'connell",25,13
 432,90,Searching for Structure in Curve Samples,Theo Gasser & Alois Kneip,31,2
 432,90,Local Prediction of a Spatio-Temporal Process with an Application to Wet Sulfate Deposition,Timothy C. Haas,40,51
-432,90,Adapting to Unknown Smoothness via Wavelet Shrinkage,David L. Donoho & Iain M. Johnstone,419,755
+432,90,Adapting to Unknown Smoothness via Wavelet Shrinkage,David L. Donoho & Iain M. Johnstone,419,757
 432,90,Overdispersion Diagnostics for Generalized Linear Models,Diane Lambert & Kathryn Roeder,30,9
 432,90,Tests of Homogeneity for Generalized Linear Models,Hélène Jacqmin-Gadda & Daniel Commenges,24,12
 432,90,Simulation-Extrapolation: The Measurement Error Jackknife,L. A. Stefanski & J. R. Cook,46,56
@@ -771,7 +771,7 @@ Issue,Volume,title,authors,views,citations
 432,90,Fixed-Domain Asymptotics for Spatial Periodograms,Michael L. Stein,29,16
 432,90,Bootstrap Inference for a First-Order Autoregression with Positive Innovations,Somnath Datta & William P. McCormick,20,10
 432,90,Bayesian Inference in Cyclical Component Dynamic Linear Models,Mike West,16,10
-432,90,Marginal Likelihood from the Gibbs Output,Siddhartha Chib,134,399
+432,90,Marginal Likelihood from the Gibbs Output,Siddhartha Chib,134,400
 432,90,Optimal Design via Curve Fitting of Monte Carlo Experiments,Peter Müller & Giovanni Parmigiani,43,7
 432,90,Modeling and Inference with υ-Spherical Distributions,"Carmen Fernández, Jacek Osiewalski & Mark F. J. Steel",25,15
 432,90,Information and Conditional Inference,Thomas A. Severini,22,2
@@ -831,7 +831,7 @@ Issue,Volume,title,authors,views,citations
 431,90,Simultaneous Confidence Bands for Linear Regression with Heteroscedastic Errors,Julian J. Faraway & Jiayang Sun,17,9
 431,90,An Alternative Definition of Finite-Sample Breakdown Point with Applications to Regression Model Estimators,Shinichi Sakata & Halbert White,10,2
 431,90,Minimax Estimation of Proportions under Random Sample Size,Peter Amrhein,12,2
-431,90,Modeling the Drop-Out Mechanism in Repeated-Measures Studies,Roderick J. A. Little,144,396
+431,90,Modeling the Drop-Out Mechanism in Repeated-Measures Studies,Roderick J. A. Little,145,396
 431,90,Book Reviews,,12,0
 431,90,Telegraphic Reviews,,8,0
 431,90,Correction,,8,0
@@ -869,7 +869,7 @@ Issue,Volume,title,authors,views,citations
 430,90,Estimating Exact p Values by the Method of Control Variates or Monte Carlo Rescue,"Pralay Senchaudhuri, Cyrus R. Mehta & Nitin R. Patel",28,3
 430,90,Projection-Method Mantel-Haenszel Estimator for K 2 × J Tables,Takashi Yanagawa & Yoshinori Fujii,11,1
 430,90,Information Distinguishability with Application to Analysis of Failure Data,"Ehsan S. Soofi, Nader Ebrahimi & Mohamed Habibullah",18,23
-430,90,Survival Analysis Using a Scale Change Random Effects Model,Jon E. Anderson & Thomas A. Louis,20,10
+430,90,Survival Analysis Using a Scale Change Random Effects Model,Jon E. Anderson & Thomas A. Louis,21,10
 430,90,Efficiency and Power of Tests for Multiple Binary Outcomes,"Julie M. Legler, Myrto Lefkopoulou & Louise M. Ryan",28,34
 430,90,A Method for Calibrating False-Match Rates in Record Linkage,Thomas R. Belin & Donald B. Rubin,39,32
 430,90,The Restricted EM Algorithm for Maximum Likelihood Estimation under Linear Restrictions on the Parameters,Dong K. Kim & Jeremy M. G. Taylor,21,23
@@ -880,7 +880,7 @@ Issue,Volume,title,authors,views,citations
 430,90,Confidence Intervals for Autocorrelations Based on Cyclic Samples,Murray K. Clayton & Brian D. Hudelson,22,2
 430,90,Robust Estimation of Mean Squared Error of Small Area Estimators,P. Lahiri & J. N. K. Rao,39,22
 430,90,Testing the Mean of Skewed Distributions,Ling Chen,37,28
-430,90,Bayes Factors,Robert E. Kass & Adrian E. Raftery,915,3544
+430,90,Bayes Factors,Robert E. Kass & Adrian E. Raftery,917,3546
 430,90,Book Reviews,,12,0
 430,90,Telegraphic Reviews,,12,0
 430,90,Comment on Hadi and Simonoff,Thomas P. Ryan,11,1
@@ -896,13 +896,13 @@ Issue,Volume,title,authors,views,citations
 429,90,A Split Questionnaire Survey Design,Trivellore E. Raghunathan & James E. Grizzle,69,37
 429,90,An Evaluation of Population Projection Errors for Census Tracts,Stanley K. Smith & Mohammed Shahidullah,35,25
 429,90,"An Exploratory Analysis of a Record of El Niño Events, 1800–1987",Andrew R. Solow,12,0
-429,90,Hazard Regression,"Charles Kooperberg, Charles J. Stone & Young K. Truong",54,79
+429,90,Hazard Regression,"Charles Kooperberg, Charles J. Stone & Young K. Truong",55,79
 429,90,Semiparametric Regression Functionals,Michael Leblanc & John Crowley,27,6
-429,90,Analysis of Semiparametric Regression Models for Repeated Outcomes in the Presence of Missing Data,"James M. Robins, Andrea Rotnitzky & Lue Ping Zhao",191,393
+429,90,Analysis of Semiparametric Regression Models for Repeated Outcomes in the Presence of Missing Data,"James M. Robins, Andrea Rotnitzky & Lue Ping Zhao",191,394
 429,90,Semiparametric Efficiency in Multivariate Regression Models with Missing Data,James M. Robins & Andrea Rotnitzky,130,141
 429,90,Estimation of Linear and Nonlinear Errors-in-Variables Models Using Validation Data,Lung-Fei Lee & Jungsywan H. Sepanski,45,26
 429,90,Local Polynomial Kernel Regression for Generalized Linear Models and Quasi-Likelihood Functions,"Jianqing Fan, Nancy E. Heckman & M. P. Wand",160,83
-429,90,Consistent Variable Selection in Linear Models,Xiaodong Zheng & Wei-Yin Loh,42,14
+429,90,Consistent Variable Selection in Linear Models,Xiaodong Zheng & Wei-Yin Loh,43,14
 429,90,Prospective Analysis of Logistic Case-Control Studies,"R. J. Carroll, Suojin Wang & C. Y. Wang",23,19
 429,90,The Theil-Sen Estimator with Doubly Censored Data and Applications to Astronomy,"Michael G. Akritas, Susan A. Murphy & Michael P. Lavalley",64,49
 429,90,Survival Analysis with Median Regression Models,"Z. Ying, S. H. Jung & L. J. Wei",62,85
@@ -941,15 +941,15 @@ Issue,Volume,title,authors,views,citations
 428,89,Rejoinder,Samuel Merrill III,9,0
 428,89,Statistical Quality Control of HIV-1 ELISA Test Performance,"R. C. Gentleman, M. S. Hamada, D. E. Matthews & A. R. Wilson",17,3
 428,89,Characterization and Optimization of a Wave-Soldering Process,"Peter Mesenbrink, Jye-Chyi Lu, Richard McKenzie & Javad Taheri",15,2
-428,89,Modeling Household Purchase Behavior with Logistic Normal Regression,Greg M. Allenby & Peter J. Lenk,65,58
+428,89,Modeling Household Purchase Behavior with Logistic Normal Regression,Greg M. Allenby & Peter J. Lenk,66,58
 428,89,Some Applications of Radial Plots,Rex F. Galbraith,26,14
 428,89,Capturing the Intangible Concept of Information,Ehsan S. Soofi,43,44
 428,89,Flexible Discriminant Analysis by Optimal Scoring,"Trevor Hastie, Robert Tibshirani & Andreas Buja",103,116
 428,89,Generalized S-Estimators,"Christophe Croux, Peter J. Rousseeuw & Ola Hössjer",23,30
 428,89,Bootstrap Methods for Finite Populations,"James G. Booth, Ronald W. Butler & Peter Hall",27,29
 428,89,A Comparison of Certain Bootstrap Confidence Intervals in the Cox Model,Deborah Burr,30,24
-428,89,The Stationary Bootstrap,Dimitris N. Politis & Joseph P. Romano,175,489
-428,89,Simulation-Extrapolation Estimation in Parametric Measurement Error Models,J. R. Cook & L. A. Stefanski,90,171
+428,89,The Stationary Bootstrap,Dimitris N. Politis & Joseph P. Romano,175,491
+428,89,Simulation-Extrapolation Estimation in Parametric Measurement Error Models,J. R. Cook & L. A. Stefanski,90,172
 428,89,Fast Very Robust Methods for the Detection of Multiple Outliers,A. C. Atkinson,88,58
 428,89,Wavelet Methods for Curve Estimation,"A. Antoniadis, G. Gregoire & I. W. McKeague",33,44
 428,89,Semiparametric Regression in Likelihood-Based Models,Sally Hunsberger,20,8
@@ -959,7 +959,7 @@ Issue,Volume,title,authors,views,citations
 428,89,Group Duration Analysis of the Proportional Hazard Model: Minimum Chi-squared Estimators and Specification Tests,Keunkwan Ryu,13,3
 428,89,Nonparametric Identification of Nonlinear Time Series: Projections,Dag Tjøstheim & Bjørn H. Auestad,37,17
 428,89,Nonparametric Identification of Nonlinear Time Series: Selecting Significant Lags,Dag Tjøstheim & Bjørn H. Auestad,29,8
-428,89,Efficient Tests of Nonstationary Hypotheses,P. M. Robinson,35,219
+428,89,Efficient Tests of Nonstationary Hypotheses,P. M. Robinson,35,220
 428,89,Dynamic Stochastic Models for Time-Dependent Ordered Paired Comparison Systems,Ludwig Fahrmeir & Gerhard Tutz,23,18
 428,89,Resolution of Additive Mixtures into Source Components and Contributions: A Compositional Approach,Karen Bandeen-Roche,20,2
 428,89,Competing Risks on Coherent Reliability Systems: Estimation in the Parametric Case,Isaac Meilijson,15,3
@@ -972,7 +972,7 @@ Issue,Volume,title,authors,views,citations
 428,89,Controlling Correlations in Latin Hypercube Samples,Art B. Owen,79,74
 428,89,Random Effects Models for Combining Results from Controlled and Uncontrolled Studies in a Meta-Analysis,Zhaohai Li & Colin B. Begg,29,15
 428,89,Group Sequential Clinical Trials: A Classical Evaluation of Bayesian Decision-Theoretic Designs,Roger J. Lewis & Donald A. Berry,35,29
-428,89,Model Selection and Accounting for Model Uncertainty in Graphical Models Using Occam's Window,David Madigan & Adrian E. Raftery,118,231
+428,89,Model Selection and Accounting for Model Uncertainty in Graphical Models Using Occam's Window,David Madigan & Adrian E. Raftery,119,231
 428,89,Statistical Disclosure in Two-Dimensional Tables: General Tables,"Filipa Duarte de Carvalho, Nico P. Dellaert & Margarida de Sanches Osório",13,10
 428,89,Book Reviews,,14,0
 428,89,Telegraphic Reviews,,11,0
@@ -1007,7 +1007,7 @@ Issue,Volume,title,authors,views,citations
 427,89,Screening with Cost-Effective Quality Control: Potential Applications to HIV and Drug Testing,J. L. Gastwirth & Wesley O. Johnson,22,28
 427,89,A Two-Stage Adaptive Group-Testing Procedure for Estimating Small Proportions,Jacqueline M. Hughes-Oliver & William H. Swallow,20,17
 427,89,Some Tests for Comparing Cumulative Incidence Functions and Cause-Specific Hazard Rates,"Emad-Eldin A. A. Aly, Subhash C. Kochar & Ian W. McKeague",33,29
-427,89,Data-Driven Version of Neyman's Smooth Test of Fit,Teresa Ledwina,28,57
+427,89,Data-Driven Version of Neyman's Smooth Test of Fit,Teresa Ledwina,29,57
 427,89,Uniformly More Powerful Tests in a One-Sided Multivariate Problem,Dei-In Tang,25,11
 427,89,P Values Maximized Over a Confidence Set for the Nuisance Parameter,Roger L. Berger & Dennis D. Boos,51,19
 427,89,Inference for Shift Functions in the Two-Sample Problem With Right-Censored Data: With Applications,"Henry H. S. Lu, Martin T. Wells & Ram C. Tiwari",16,6
@@ -1028,7 +1028,7 @@ Issue,Volume,title,authors,views,citations
 427,89,Book Reviews,,12,0
 427,89,Telegraphic Reviews,,9,0
 427,89,Editorial Board Page,,12,0
-426,89,W. Edwards Deming 1990–1993,Nancy R. Mann,14,1
+426,89,W. Edwards Deming 1990–1993,Nancy R. Mann,15,1
 426,89,Editors' Report for 1993,"Roderick J. A. Little, Myles Hollander & Alan Agresti",10,0
 426,89,An Approach to Statistical Spatial-Temporal Modeling of Meteorological Fields,Mark S. Handcock & James R. Wallis,93,65
 426,89,Comment,Noel Cressie,14,0
@@ -1044,11 +1044,11 @@ Issue,Volume,title,authors,views,citations
 426,89,Empirical Evaluation of Prior Beliefs about Frequencies: Methodology and a Case Study in Congenital Heart Disease,"David J. Spiegelhalter, Nomi L. Harris, Kate Bull & Rodney C. G. Franklin",20,5
 426,89,Analytical Use of Data from Army Training Exercises: A Case Study of Tactical Reconnaissance,James S. Hodges,18,0
 426,89,Survival Analysis of the Gamma-Ray Burst Data,Bradley Efron & Vahé Petrosian,19,5
-426,89,"Missing Data, Imputation, and the Bootstrap",Bradley Efron,184,101
-426,89,Comment,Donald B. Rubin,23,0
-426,89,Rejoinder,Bradley Efron,20,0
+426,89,"Missing Data, Imputation, and the Bootstrap",Bradley Efron,187,101
+426,89,Comment,Donald B. Rubin,24,0
+426,89,Rejoinder,Bradley Efron,21,0
 426,89,Approximations to Joint Distributions of Definite Quadratic Forms,D. R. Jensen & Herbert Solomon,19,6
-426,89,A Graphical Technique for Determining the Number of Components in a Mixture of Normals,Kathryn Roeder,39,27
+426,89,A Graphical Technique for Determining the Number of Components in a Mixture of Normals,Kathryn Roeder,40,27
 426,89,Nonparametric Estimation of the Moments of a General Statistic Computed from Spatial Data,Michael Sherman & Edward Carlstein,21,13
 426,89,Quasi-Likelihood Estimation in Semiparametric Models,Thomas A. Severini & Joan G. Staniswalis,93,93
 426,89,Estimating Functions in Chaotic Systems,Subhash Lele,18,3
@@ -1083,11 +1083,11 @@ Issue,Volume,title,authors,views,citations
 426,89,Correction,,8,0
 426,89,Editorial Board Page,,10,0
 425,89,Statistics as a Profession,J. Stuart Hunter,19,0
-425,89,"Nonparametric Estimation for a form of Doubly Censored Data, with Application to Two Problems in AIDS","Nicholas P. Jewell, Hina M. Malani & Eric Vittinghoff",20,18
+425,89,"Nonparametric Estimation for a form of Doubly Censored Data, with Application to Two Problems in AIDS","Nicholas P. Jewell, Hina M. Malani & Eric Vittinghoff",21,18
 425,89,Cell lineage analysis: Variance Components Models for Dependent Cell Populations,Richard M. Huggins & Robert G. Staudte,17,4
 425,89,Comparison of Variance Estimators of the Horvitz-Thompson Estimator for Randomized Variable Probability Systematic Sampling,Stephen V. Stehman & W. Scott Overton,45,5
 425,89,Models for Categorical Data with Nonignorable Nonresponse,Taesung Park & Morton B. Brown,30,26
-425,89,Adaptive Principal Surfaces,Michael Leblanc & Robert Tibshirani,21,36
+425,89,Adaptive Principal Surfaces,Michael Leblanc & Robert Tibshirani,22,36
 425,89,The L 1 Method for Robust Nonparametric Regression,Ferdinand T. Wang & David W. Scott,41,16
 425,89,Feasible Nonparametric Estimation of Multiargument Monotone Functions,Hari Mukarjee & Steven Stern,17,12
 425,89,Nonparametric Estimation of Mean Functionals with Data Missing at Random,Philip E. Cheng,89,65
@@ -1131,15 +1131,15 @@ Issue,Volume,title,authors,views,citations
 424,88,Correcting for Nonavailability Bias in Surveys by Weighting Based on Number of Callbacks,"Richard F. Potthoff, Kenneth G. Manton & Max A. Woodbury",13,15
 424,88,"Errors in Survey Reports of Earnings, Hours Worked, and Hourly Wages","Willard L. Rodgers, Charles Brown & Greg J. Duncan",20,28
 424,88,Consumer Purchase Behavior in a Frequently Bought Product Category: Estimation Issues and Managerial Insights from a Hazard Function Model with Heterogeneity,Füsun Gönül & Kannan Srinivasan,35,7
-424,88,Forecasting Hourly Electricity Demand Using Time-Varying Splines,Andrew Harvey & Siem Jan Koopman,62,52
+424,88,Forecasting Hourly Electricity Demand Using Time-Varying Splines,Andrew Harvey & Siem Jan Koopman,64,52
 424,88,Bayesian Nonparametrics for Compliance to Exposure Standards,"Michael J. Symons, Chu-Chih Chen & Michael R. Flynn",16,0
 424,88,"The Fisher, Neyman-Pearson Theories of Testing Hypotheses: One Theory or Two?",E. L. Lehmann,105,92
 424,88,Hodges-Lehmann Point Estimates of Treatment Effect in Observational Studies,Paul R. Rosenbaum,32,12
 424,88,The Use and Interpretation of Residuals Based on Robust Estimation,"Joseph W. McKean, Simon J. Sheather & Thomas P. Hettmansperger",22,0
 424,88,Procedures for the Identification of Multiple Outliers in Linear Models,Ali S. Hadi & Jeffrey S. Simonoff,92,97
-424,88,Alternatives to the Median Absolute Deviation,Peter J. Rousseeuw & Christophe Croux,280,393
+424,88,Alternatives to the Median Absolute Deviation,Peter J. Rousseeuw & Christophe Croux,281,393
 424,88,Optimal Kernel Weights under a Power Criterion,Stephen Blyth,16,1
-424,88,Confidence Bands in Nonparametric Regression,R. L. Eubank & P. L. Speckman,63,36
+424,88,Confidence Bands in Nonparametric Regression,R. L. Eubank & P. L. Speckman,64,36
 424,88,Locally Adaptive Bandwidth Choice for Kernel Regression Estimators,"Michael Brockmann, Theo Gasser & Eva Herrmann",40,0
 424,88,Analytical and Bootstrap Approximations to Estimator Distributions in L 1 Regression,"D. De Angelis, Peter Hall & G. A. Young",21,0
 424,88,On Estimating Distribution Functions Using Nomination Samples,Paul H. Kvam & Francisco J. Samaniego,16,3
@@ -1183,7 +1183,7 @@ Issue,Volume,title,authors,views,citations
 423,88,Comment,A. H. Welsh,15,1
 423,88,Rejoinder,Laurie Davies & Ursula Gather,18,0
 423,88,Computer-Intensive Methods for Tests about the Mean of an Asymmetrical Distribution,Clifton D. Sutton,20,19
-423,88,Some Graphical Displays and Marginal Regression Analyses for Recurrent Failure Times and Time Dependent Covariates,Margaret Sullivan Pepe & Jianwen Cai,65,83
+423,88,Some Graphical Displays and Marginal Regression Analyses for Recurrent Failure Times and Time Dependent Covariates,Margaret Sullivan Pepe & Jianwen Cai,66,83
 423,88,ATS Methods: Nonparametric Regression for Non-Gaussian Data,"William S. Cleveland, Colin L. Mallows & Jean E. McRae",25,2
 423,88,Exploring Regression Structure Using Nonparametric Functional Estimation,Alexander M. Samarov,36,29
 423,88,A Cross-Validatory Choice of Smoothing Parameter in Adaptive Location Estimation,Byeong U. Park,15,1
@@ -1200,7 +1200,7 @@ Issue,Volume,title,authors,views,citations
 423,88,Optimal Data Augmentation Strategies for Additive Models,"Richard M. Heiberger, Dulal K. Bhaumik & Burt Holland",14,4
 423,88,Exact Inference about the Within-Subject Variability in 2 × 2 Crossover Trials,Olivier Guilbaud,26,4
 423,88,Fitting Continuous ARMA Models to Unequally Spaced Spatial Data,Richard H. Jones & Aldo V. Vecchia,42,12
-423,88,Nonlinear Additive ARX Models,Rong Chen & Ruey S. Tsay,44,41
+423,88,Nonlinear Additive ARX Models,Rong Chen & Ruey S. Tsay,45,41
 423,88,Bayesian Inference and Prediction for Mean and Variance Shifts in Autoregressive Time Series,Robert E. McCulloch & Ruey S. Tsay,55,44
 423,88,Semiparametric Bayesian Analysis of Multiple Event Time Data,Debajyoti Sinha,20,18
 423,88,Multiple Imputation in Mixture Models for Nonignorable Nonresponse with Follow-ups,"Robert J. Glynn, Nan M. Laird & Donald B. Rubin",44,51
@@ -1244,7 +1244,7 @@ Issue,Volume,title,authors,views,citations
 422,88,Survival Trees by Goodness of Split,Michael Leblanc & John Crowley,64,84
 422,88,Multivariate Normal Mixtures: A Fast Consistent Method of Moments,Bruce G. Lindsay & Prasanta Basak,27,17
 422,88,A Semiparametric Bootstrap Technique for Simulating Extreme Order Statistics,Daniel Zelterman,29,8
-422,88,Linear Model Selection by Cross-validation,Jun Shao,322,418
+422,88,Linear Model Selection by Cross-validation,Jun Shao,324,418
 422,88,Smoothing Spline Density Estimation: A Dimensionless Automatic Algorithm,Chong Gu,26,14
 422,88,Robust Singular Value Decompositions: A New Approach to Projection Pursuit,Larry P. Ammann,31,19
 422,88,Unmasking Outliers and Leverage Points: A Confirmation,Wing-Kam Fung,30,28
@@ -1279,7 +1279,7 @@ Issue,Volume,title,authors,views,citations
 422,88,Editorial Board Page,,11,0
 421,88,Editorial Board,,15,0
 421,88,Enhancing Statistical Literacy: Enriching Our Society,Katherine K. Wallman,104,6
-421,88,Approximate Inference in Generalized Linear Mixed Models,N. E. Breslow & D. G. Clayton,477,241
+421,88,Approximate Inference in Generalized Linear Mixed Models,N. E. Breslow & D. G. Clayton,479,241
 421,88,The AIDS Epidemic: Estimating Survival After AIDS Diagnosis From Surveillance Data,"Xin Ming Tu, Xiao-Li Meng & Marcello Pagano",15,5
 421,88,Using Events From Dropouts in Nonparametric Survival Function Estimation With Application to Incubation of AIDS,"D. R. Hoover, A. Muñoz, V. Carey, J. M. G. Taylor, M. VanRaden, J. S. Chmiel, L. Kingsley & The Multicenter AIDS Cohort Study",14,0
 421,88,Use of Compliance Measures in an Analysis of the Effect of Diltiazem on Mortality and Reinfarction After Myocardial Infarction,"D. Oakes, A. J. Moss, J. L. Fleiss, J. T. Bigger, T. Therneau, S. W. Eberly, M. P. McDermott, A. Manatunga, E. Carleen, J. Benhorin & The Multicenter Diltiazem Post-Infarction Trial Research Group",11,2
@@ -1318,7 +1318,7 @@ Issue,Volume,title,authors,views,citations
 421,88,Computation of Certain Minimum Distance Estimators in AR[k] Model,Sunil K. Dhar,19,1
 421,88,Joint Estimation of Model Parameters and Outlier Effects in Time Series,Chung Chen & Lon-Mu Liu,264,37
 421,88,Functional-Coefficient Autoregressive Models,Rong Chen & Ruey S. Tsay,105,47
-421,88,A Bayesian Analysis for Change Point Problems,Daniel Barry & J. A. Hartigan,163,23
+421,88,A Bayesian Analysis for Change Point Problems,Daniel Barry & J. A. Hartigan,165,23
 421,88,Asymptotic Behavior of the Gibbs Sampler,K. S. Chan,28,3
 421,88,Understanding Elongation: The Scale Contaminated Normal Family,John R. Gleason,16,3
 421,88,Bivariate Distributions With Nonmonotone Dependence Structure,Marco Scarsini & Achilles Venetoulias,35,1
@@ -1330,10 +1330,10 @@ Issue,Volume,title,authors,views,citations
 420,87,On the Quality of Reinterview Data with Application to the Current Population Survey,Paul P. Biemer & Gösta Forsman,16,9
 420,87,Estimation Using Multiyear Rotation Design Sampling in Agricultural Surveys,Raj S. Chhikara & Lih-Yuan Deng,16,2
 420,87,The Chilean Plebiscite: Projections without Historic Data,Eduardo Engel & Achilles Venetoulias,15,1
-420,87,"Flexible Methods for Analyzing Survival Data Using Splines, with Applications to Breast Cancer Prognosis",Robert J. Gray,111,129
-420,87,Secondary Data Analysis when there are Missing Observations,"R. Wang, J. Sedransk & J. H. Jinn",31,5
+420,87,"Flexible Methods for Analyzing Survival Data Using Splines, with Applications to Breast Cancer Prognosis",Robert J. Gray,112,129
+420,87,Secondary Data Analysis when there are Missing Observations,"R. Wang, J. Sedransk & J. H. Jinn",32,5
 420,87,Estimating the Size-selectivity of Fishing Gear by Conditioning on the Total Catch,Russell B. Millar,40,60
-420,87,"Estimating a Multivariate Proportional Hazards Model for Clustered Data Using the EM Algorithm, with an Application to Child Survival in Guatemala",Guang Guo & Germán Rodríguez,37,42
+420,87,"Estimating a Multivariate Proportional Hazards Model for Clustered Data Using the EM Algorithm, with an Application to Child Survival in Guatemala",Guang Guo & Germán Rodríguez,38,42
 420,87,Age Patterns of Marital Fertility: Revising the Coale–Trussell Method,Yu Xie & Ellen Efron Pimentel,30,1
 420,87,Leverage and Superleverage in Nonlinear Regression,Roy T. St Laurent & R. Dennis Cook,18,6
 420,87,Breakdown in Nonlinear Regression,Arnold J. Stromberg & David Ruppert,25,21
@@ -1364,7 +1364,7 @@ Issue,Volume,title,authors,views,citations
 420,87,Comment,Max G. Arellano,12,0
 420,87,Rejoinder,"Howard B. Newcombe, Martha E. Fair & Pierre Lalonde",13,0
 420,87,Power Calculations for General Linear Multivariate Models Including Repeated Measures Applications,"Keith E. Muller, Lisa M. Lavange, Sharon Landesman Ramey & Craig T. Ramey",78,46
-420,87,Regression with Missing X's: A Review,Roderick J. A. Little,169,56
+420,87,Regression with Missing X's: A Review,Roderick J. A. Little,171,56
 420,87,Book Reviews,,11,0
 420,87,Publications Received,,11,0
 420,87,Correction,,11,0
@@ -1376,7 +1376,7 @@ Issue,Volume,title,authors,views,citations
 419,87,Comment,Jeremy M. G. Taylor & Mark R. Segal,11,0
 419,87,Rejoinder,"Nicholas Lange, Bradley P. Carlin & Alan E. Gelfand",10,0
 419,87,"Pediatric AIDS in New York City: Estimating the Distributions of Infection, Latency, and Reporting Delay and Projecting Future Incidence","Victor Degruttola, Xin Ming Tu & Marcello Pagano",13,5
-419,87,Time-Dependent Association Measures for Bivariate Survival Distributions,"Jon E. Anderson, Thomas A. Louis, Niels V. Holm & Bent Harvald",25,27
+419,87,Time-Dependent Association Measures for Bivariate Survival Distributions,"Jon E. Anderson, Thomas A. Louis, Niels V. Holm & Bent Harvald",26,27
 419,87,Bivariate Latent Variable Models for Clustered Discrete and Continuous Outcomes,Paul J. Catalano & Louise M. Ryan,45,0
 419,87,Modeling and Forecasting U.S. Mortality,Ronald D. Lee & Lawrence R. Carter,266,134
 419,87,Comment,Robert McNown,11,3
@@ -1487,11 +1487,11 @@ Issue,Volume,title,authors,views,citations
 417,87,Robust Wald-Type Tests of One-Sided Hypotheses in the Linear Model,Mervyn J. Silvapulle,19,15
 417,87,A Step-Up Multiple Test Procedure,Charles W. Dunnett & Ajit C. Tamhane,43,83
 417,87,A Test for Extreme Value Domain of Attraction,A. M. Hasofer & Z. Wang,22,13
-417,87,Generalized Collinearity Diagnostics,John Fox & Georges Monette,150,168
+417,87,Generalized Collinearity Diagnostics,John Fox & Georges Monette,150,169
 417,87,General Classes of Influence Measures for Multivariate Regression,Bruce E. Barrett & Robert F. Ling,21,23
 417,87,Exact and Optimum Tests in Unbalanced Split-Plot Designs under Mixed and Random Models,Thomas Mathew & Bimal Kumar Sinha,19,6
 417,87,Nonlinear Regression with Variance Components,Marcia L. Gumpertz & Sastry G. Pantula,26,5
-417,87,Estimating the Number of Classes via Sample Coverage,Anne Chao & Shen-Ming Lee,85,303
+417,87,Estimating the Number of Classes via Sample Coverage,Anne Chao & Shen-Ming Lee,85,304
 417,87,Bandwidth Choice for Average Derivative Estimation,"W. Härdle, J. Hart, J. S. Marron & A B. Tsybakov",38,7
 417,87,Regression Smoothing Parameters that are not Far from their Optimum,"W. Härdle, P. Hall & J. S. Marron",22,11
 417,87,A Generalized Moments Specification Test of the Proportional Hazards Model,Joel L. Horowitz & George R. Neumann,16,8
@@ -1549,7 +1549,7 @@ Issue,Volume,title,authors,views,citations
 416,86,Editorial Board Page,,12,0
 415,86,"Some Bayesian and Non-Bayesian Procedures for the Analysis of Comparative Experiments and for Small-Area Estimation: Computational Aspects, Frequentist Properties, and Relationships",Frederick L. Hulting & David A. Harville,22,0
 415,86,Modeling the Progression of HIV Infection,"Victor Degruttola, Nicholas Lange & Urania Dafni",36,24
-415,86,Estimating Second-Order Parameters of Volcanicity from Historical Data,Peter Guttorp & Mary Lou Thompson,20,9
+415,86,Estimating Second-Order Parameters of Volcanicity from Historical Data,Peter Guttorp & Mary Lou Thompson,20,10
 415,86,The Draft Lottery and Voluntary Enlistment in the Vietnam Era,Joshua D. Angrist,113,16
 415,86,State-Space Analysis of Wildlife Telemetry Data,Richard Anderson-Sprecher & Johannes Ledolter,19,7
 415,86,Forecasting Output with the Composite Leading Index: A Real-Time Analysis,Francis X. Diebold & Glenn D. Rudebusch,27,64
@@ -1568,14 +1568,14 @@ Issue,Volume,title,authors,views,citations
 415,86,M Estimators of Location for Gaussian and Related Processes With Slowly Decaying Serial Correlations,Jan Beran,16,3
 415,86,Influence Functions of Iteratively Reweighted Least Squares Estimators,Michael B. Dollinger & Robert G. Staudte,30,8
 415,86,Constrained Maximum Likelihood Exemplified by Isotonic Convex Logistic Regression,Charles J. Geyer,36,24
-415,86,Goodness-of-Fit Analysis for the Cox Regression Model Based on a Class of Parameter Estimators,D. Y. Lin,36,29
+415,86,Goodness-of-Fit Analysis for the Cox Regression Model Based on a Class of Parameter Estimators,D. Y. Lin,38,29
 415,86,Efficient Calculation of the Permutation Distribution of Trimmed Means,Cathie Spino & Marcello Pagano,23,5
 415,86,Excess Mass Estimates and Tests for Multimodality,D. W. Müller & G. Sawitzki,48,15
 415,86,A Test for a Specific Principal Component of a Correlation Matrix,James R. Schott,20,6
 415,86,Small-Sample Characterizations of near Replicate Lack-of-Fit Tests,Ronald Christensen,18,7
 415,86,Sequential Comparison of Changes with Repeated Measurements Data,Jae Won Lee & David L. Demets,20,0
 415,86,Dynamic Linear Models with Switching,R. H. Shumway & D. S. Stoffer,48,59
-415,86,Inference for Events with Dependent Risks in Multiple Endpoint Studies,Margaret Sullivan Pepe,65,66
+415,86,Inference for Events with Dependent Risks in Multiple Endpoint Studies,Margaret Sullivan Pepe,66,66
 415,86,On the Efficiency of Raking Ratio Estimation for Multiple Frame Surveys,C. J. Skinner,25,16
 415,86,"Slowly Decaying Correlations, Testing Normality, Nuisance Parameters",Jan Beran & Sucharita Ghosh,12,9
 415,86,Intrablock Analysis of Designs with Multiple Blocking Criteria,Ralph A. Bradley & Frances P. Stewart,13,1
@@ -1596,7 +1596,7 @@ Issue,Volume,title,authors,views,citations
 414,86,Using Medical Malpractice Data to Predict the Frequency of Claims: A Study of Poisson Process Models with Random Effects,Bruce Cooil,24,7
 414,86,Hierarchical Models for the Probabilities of a Survey Classification and Nonresponse: An Example from the National Crime Survey,Elizabeth A. Stasny,24,9
 414,86,Shrinkage Estimation of Price and Promotional Elasticities: Seemingly Unrelated Equations,Robert C. Blattberg & Edward I. George,36,35
-414,86,Sliced Inverse Regression for Dimension Reduction,Ker-Chau Li,296,450
+414,86,Sliced Inverse Regression for Dimension Reduction,Ker-Chau Li,297,450
 414,86,Comment,R. Dennis Cook & Sanford Weisberg,66,48
 414,86,Comment,W. Härdle & A. B. Tsybakov,24,5
 414,86,Comment,David R. Brillinger,25,8
@@ -1656,7 +1656,7 @@ Issue,Volume,title,authors,views,citations
 413,86,Models for Contingency Tables with Known Margins when Target and Sampled Populations Differ,Roderick J. A. Little & Mei-Miau Wu,29,22
 413,86,"Semiparametric Estimation in the Rasch Model and Related Exponential Response Models, Including a Simple Latent Class Model for Item Analysis","Bruce Lindsay, Clifford C. Clogg & John Grego",38,77
 413,86,A Nonparametric Method for Dealing with Mismeasured Covariate Data,Margaret Sullivan Pepe & Thomas R. Fleming,36,60
-413,86,Weighted Least Squares Estimation for Aalen's Additive Risk Model,Fred W. Huffer & Ian W. McKeague,33,48
+413,86,Weighted Least Squares Estimation for Aalen's Additive Risk Model,Fred W. Huffer & Ian W. McKeague,34,48
 413,86,Nonparametric Estimation from Cross-Sectional Survival Data,Mei-Cheng Wang,54,108
 413,86,“Optimal” Estimation of Correlated Response Variance under Additive Models,"J. Kleffe, N. G. N. Prasad & J. N. K. Rao",15,0
 413,86,Testing Variance Components in Mixed Models with Generalized p Values,Samaradasa Weerahandi,28,13
@@ -1677,7 +1677,7 @@ Issue,Volume,title,authors,views,citations
 412,85,Reporting Delays and the Incidence of AIDS,Jeffrey E. Harris,23,13
 412,85,A Statistical Analysis of Adverse Impact of Employer Decisions,Joseph B. Kadane,28,8
 412,85,The Use of Intentions Data to Predict Behavior: A Best-Case Analysis,Charles F. Manski,52,66
-412,85,Regression Splines in the Cox Model with Application to Covariate Effects in Liver Disease,Lynn A. Sleeper & David P. Harrington,52,40
+412,85,Regression Splines in the Cox Model with Application to Covariate Effects in Liver Disease,Lynn A. Sleeper & David P. Harrington,53,40
 412,85,Lognormal and Moving Window Methods of Estimating Acid Deposition,Timothy C. Haas,46,61
 412,85,Predicting Rodent Carcinogenicity from Four in vitro Genetic Toxicity Assays: An Evaluation of 114 Chemicals Studied by the National Toxicology Program,"Joseph K. Haseman, Errol Zeiger, Michael D. Shelby, Barry H. Margolin & Raymond W. Tennant",20,11
 412,85,Illustration of Bayesian Inference in Normal Data Models Using Gibbs Sampling,"Alan E. Gelfand, Susan E. Hills, Amy Racine-Poon & Adrian F. M. Smith",174,262
@@ -1687,7 +1687,7 @@ Issue,Volume,title,authors,views,citations
 412,85,Regression Diagnostics for Rank-Based Methods,"Joseph W. McKean, Simon J. Sheather & Thomas P. Hettmansperger",20,0
 412,85,The Adjoint Projection Pursuit Regression,Naihua Duan,18,2
 412,85,Bootstrap Test for Difference between Means in Nonparametric Regression,Peter Hall & Jeffrey D. Hart,64,56
-412,85,Adaptive Cluster Sampling,Steven K. Thompson,108,94
+412,85,Adaptive Cluster Sampling,Steven K. Thompson,109,94
 412,85,M Estimation of Multivariate Regressions,Roger Koenker & Stephen Portnoy,26,0
 412,85,Inference for Near-Integrated Time Series with Infinite Variance,Ngai Hang Chan,16,12
 412,85,Double Sampling for Exact Values in Some Multivariate Measurement Error Problems,John P. Buonaccorsi,22,7
@@ -1767,7 +1767,7 @@ Issue,Volume,title,authors,views,citations
 410,85,A Multivariate Generalization of Quantile-Quantile Plots,George S. Easton & Robert E. McCulloch,38,11
 410,85,Testing the Goodness of Fit of a Linear Model via Nonparametric Regression Techniques,R. L. Eubank & C. H. Spiegelman,73,69
 410,85,Influence on Confidence Regions for Regression Coefficients in Generalized Linear Models,William Thomas,20,0
-410,85,Sampling-Based Approaches to Calculating Marginal Densities,Alan E. Gelfand & Adrian F. M. Smith,398,1528
+410,85,Sampling-Based Approaches to Calculating Marginal Densities,Alan E. Gelfand & Adrian F. M. Smith,400,1529
 410,85,Kernel Quantile Estimators,Simon J. Sheather & J. S. Marron,61,78
 410,85,Refining Bootstrap Simultaneous Confidence Sets,Rudolf Beran,27,14
 410,85,Small-Sample Confidence Intervals,Maureen Tingley & Christopher Field,36,19
@@ -1867,8 +1867,8 @@ Issue,Volume,title,authors,views,citations
 408,84,A Distribution-Free Multivariate Sign Test Based on Interdirections,Ronald H. Randles,40,50
 408,84,Bayesian Marginal Inference,"Tom Leonard, John S. J. Hsu & Kam-Wah Tsui",19,12
 408,84,Analysis of Nonadditive Multiway Classifications,Robert J. Boik & Mervyn G. Marasinghe,19,5
-408,84,Regression Analysis of Multivariate Incomplete Failure Time Data by Modeling Marginal Distributions,"L. J. Wei, D. Y. Lin & L. Weissfeld",176,522
-408,84,The Robust Inference for the Cox Proportional Hazards Model,D. Y. Lin & L. J. Wei,373,656
+408,84,Regression Analysis of Multivariate Incomplete Failure Time Data by Modeling Marginal Distributions,"L. J. Wei, D. Y. Lin & L. Weissfeld",177,523
+408,84,The Robust Inference for the Cox Proportional Hazards Model,D. Y. Lin & L. J. Wei,374,656
 408,84,Bayesian Estimation and Prediction for Pareto Data,Barry C. Arnold & S. James Press,37,49
 408,84,Smoothing and Interpolation with the State-Space Model,Piet de Jong,55,47
 408,84,Median Unbiasedness and Pitman Closeness,Malay Ghosh & Pranab Kumar Sen,25,27
@@ -1967,7 +1967,7 @@ Issue,Volume,title,authors,views,citations
 405,84,Analysis of Sets of Two-Way Contingency Tables Using Association Models,Mark P. Becker & Clifford C. Clogg,26,36
 405,84,Compatible Conditional Distributions,Barry C. Arnold & S. James Press,45,46
 405,84,Relative Entropy Measures of Multivariate Dependence,Harry Joe,107,75
-405,84,Regularized Discriminant Analysis,Jerome H. Friedman,230,467
+405,84,Regularized Discriminant Analysis,Jerome H. Friedman,231,468
 405,84,A Nonmetric Approach to Linear Discriminant Analysis,Adi Raveh,16,2
 405,84,Approximate Confidence Intervals for the Number of Clusters,"Roger Peck, Lloyd Fisher & John Van Ness",63,9
 405,84,Uniformly More Powerful Tests for Hypotheses concerning Linear Inequalities and Normal Means,Roger L. Berger,18,21
@@ -2005,7 +2005,7 @@ Issue,Volume,title,authors,views,citations
 404,83,Importance Sampling for Estimating Exact Probabilities in Permutational Inference,"Cyrus R. Mehta, Nitin R. Patel & Pralay Senchaudhuri",33,20
 404,83,Methods for the Analysis of Contingency Tables with Large and Small Cell Counts,"Jenny Baglivo, Donald Olivier & Marcello Pagano",17,11
 404,83,Newton—Raphson and EM Algorithms for Linear Mixed-Effects Models for Repeated-Measures Data,Mary J. Lindstrom & Douglas M. Bates,213,52
-404,83,Bayesian Variable Selection in Linear Regression,T. J. Mitchell & J. J. Beauchamp,174,209
+404,83,Bayesian Variable Selection in Linear Regression,T. J. Mitchell & J. J. Beauchamp,175,209
 404,83,Comment,James Berger,16,0
 404,83,Comment,C. L. Mallows,15,0
 404,83,Rejoinder,T. J. Mitchell & J. J. Beauchamp,15,0
@@ -2018,7 +2018,7 @@ Issue,Volume,title,authors,views,citations
 404,83,The Cost of Generalizing Logistic Regression,Jeremy M. G. Taylor,25,0
 404,83,A Unifying Approach to Nonparametric Regression Estimation,Christine Jennen-Steinmetz & Theo Gasser,28,15
 404,83,Minimax Estimates in a Semiparametric Model,Nancy E. Heckman,29,7
-404,83,Testing for Common Trends,James H. Stock & Mark W. Watson,86,343
+404,83,Testing for Common Trends,James H. Stock & Mark W. Watson,86,344
 404,83,A Graphical Procedure for Determining Nonstationarity in Time Series,Noel Cressie,19,16
 404,83,Rank-Based Tests for Randomness against First-Order Serial Dependence,Marc Hallin & Guy Mélard,27,12
 404,83,A Bayesian Approach to the Best-Choice Problem,Mitsushi Tamaki,23,3
@@ -2033,7 +2033,7 @@ Issue,Volume,title,authors,views,citations
 404,83,Sign-Preserving Unbiased Estimators in Linear Exponential Families,Shaul K. Bar-Lev & Peter Enis,13,0
 404,83,Approximations to the Distribution Function of the Anderson—Darling Test Statistic,C. D. Sinclair & B. D. Spurr,30,3
 404,83,Tables and Large-Sample Distribution Theory for Censored-Data Correlation Statistics for Testing Normality,Steve Verrill & Richard A. Johnson,19,4
-404,83,A Test of Missing Completely at Random for Multivariate Data with Missing Values,Roderick J. A. Little,283,1198
+404,83,A Test of Missing Completely at Random for Multivariate Data with Missing Values,Roderick J. A. Little,284,1198
 404,83,Student's t Approximations for Three Simple Robust Estimators,"Kartik R. Patel, Govind S. Mudholkar & J. L. Indrasiri Fernando",24,17
 404,83,Book Reviews,,14,0
 404,83,Letters to the Editor,,13,0
@@ -2041,7 +2041,7 @@ Issue,Volume,title,authors,views,citations
 404,83,Editorial Board Page,,14,0
 403,83,A Look Backward on the Occasion of the Centenary of JASA,Stephen M. Stigler,18,4
 403,83,An Archaeological Inference Problem,J. C. Naylor & A. F. M. Smith,21,2
-403,83,Locally Weighted Regression: An Approach to Regression Analysis by Local Fitting,William S. Cleveland & Susan J. Devlin,483,1377
+403,83,Locally Weighted Regression: An Approach to Regression Analysis by Local Fitting,William S. Cleveland & Susan J. Devlin,484,1377
 403,83,Evaluating Logistic Models for Large Contingency Tables,"Edward B. Fowlkes, Anne E. Freeny & James M. Landwehr",49,11
 403,83,Estimation of Interviewer Effects for Categorical Items in a Random Digit Dial Telephone Survey,Lynne Stokes,14,1
 403,83,Analysis of Repeated Ordered Categorical Outcomes with Possibly Missing Observations and Time-Dependent Covariates,"Daniel O. Stram, L J. Wei & James H. Ware",25,33
@@ -2057,7 +2057,7 @@ Issue,Volume,title,authors,views,citations
 403,83,Tree-Structured Classification via Generalized Discriminant Analysis,Wei-Yin Loh & Nunta Vanichsetakul,61,86
 403,83,Comment,Leo Breiman & Jerome H. Friedman,22,3
 403,83,Rejoinder,Wei-Yin Loh & Nunta Vanichsetakul,16,0
-403,83,Identification of Binary Response Models,Charles F. Manski,101,58
+403,83,Identification of Binary Response Models,Charles F. Manski,102,58
 403,83,On Errors-in-Variables in Binary Regression—Berkson Case,Deborah Burr,34,6
 403,83,Estimation and Testing in a Two-Sample Generalized Odds-Rate Model,Dorota M. Dabrowska & Kjell A. Doksum,29,41
 403,83,Kernel and Probit Estimates in Quantal Bioassay,Hans-Georg Müller & Thomas Schmitt,22,12
@@ -2097,7 +2097,7 @@ Issue,Volume,title,authors,views,citations
 402,83,Characterization of a Ranked-Set Sample with Application to Estimating Distribution Functions,S. Lynne Stokes & Thomas W. Sager,31,82
 402,83,Optimal Sequential Selection from a Known Distribution with Holding Costs,E. Z. Ferenstein & E. G. Enns,19,4
 402,83,Richardson Extrapolation and the Bootstrap,Peter J. Bickel & Joseph A. Yahav,23,11
-402,83,Estimating Transformations for Regression via Additivity and Variance Stabilization,Robert Tibshirani,55,53
+402,83,Estimating Transformations for Regression via Additivity and Variance Stabilization,Robert Tibshirani,56,53
 402,83,High Breakdown-Point Estimates of Regression by Means of the Minimization of an Efficient Scale,Victor J. Yohai & Ruben H. Zamar,49,97
 402,83,"Logistic Regression, Survival Analysis, and the Kaplan-Meier Curve",Bradley Efron,287,189
 402,83,Generalized Logistic Models,Thérèse A. Stukel,86,0
@@ -2129,7 +2129,7 @@ Issue,Volume,title,authors,views,citations
 401,83,An Error-Components Model for Prediction of County Crop Areas Using Survey and Satellite Data,"George E. Battese, Rachel M. Harter & Wayne A. Fuller",46,136
 401,83,Mixed Model for Analyzing Geographic Variability in Mortality Rates,Robert K. Tsutakawa,22,31
 401,83,An Interactive PC-Based Procedure for Reliability Assessment Incorporating Expert Opinion and Survival Data,Nozer D. Singpurwalla,18,15
-401,83,"Comparing Two Samples: Extensions of the t, Rank-Sum, and Log-Rank Tests",Peter C. O'brien,36,15
+401,83,"Comparing Two Samples: Extensions of the t, Rank-Sum, and Log-Rank Tests",Peter C. O'brien,37,15
 401,83,Regression Analysis for Categorical Variables with Outcome Subject to Nonignorable Nonresponse,Stuart G. Baker & Nan M. Laird,40,57
 401,83,Police Responses to Family Violence Incidents,Richard A. Berk & Lawrence W. Sherman,24,4
 401,83,Estimating Continuous-Time Processes Subject to Time Deformation,James H. Stock,26,15
@@ -2153,7 +2153,7 @@ Issue,Volume,title,authors,views,citations
 401,83,Homogeneity Tests against Central-Mixture Alternatives,Daniel Zelterman & Chan-Fu Chen,24,16
 401,83,Statistical Models for Intercepted Data,Yehuda Vardi,16,1
 401,83,The Power Function of Conditional Log-Linear Model Tests,Alan P. Fenech & Peter H. Westfall,14,6
-401,83,A Graphical Method for Assessing Goodness of Fit in Cox's Proportional Hazards Model,Elja Arjas,42,0
+401,83,A Graphical Method for Assessing Goodness of Fit in Cox's Proportional Hazards Model,Elja Arjas,43,0
 401,83,Exact Kolmogorov-Type Tests for Left-Truncated and/or Right-Censored Data,Olivier Guilbaud,24,5
 401,83,Pearson-Type Goodness-of-Fit Tests: The Univariate Case,Michael G. Akritas,21,31
 401,83,Resampling Inference with Complex Survey Data,J. N. K. Rao & C. F. J. Wu,86,108
@@ -2181,7 +2181,7 @@ Issue,Volume,title,authors,views,citations
 400,82,Comment,Ruey S. Tsay,16,1
 400,82,Rejoinder,Genshiro Kitagawa,14,0
 400,82,Benchmarking of Economic Time Series,Steven C. Hillmer & Abdelwahed Trabelsi,22,23
-400,82,Estimating Properties of Autoregressive Forecasts,Robert A. Stine,33,44
+400,82,Estimating Properties of Autoregressive Forecasts,Robert A. Stine,34,44
 400,82,Variance Function Estimation,M. Davidian & R. J. Carroll,108,158
 400,82,Analysis of Covariance Structures under Elliptical Distributions,Alexander Shapiro & Michael W. Browne,23,42
 400,82,Optimal Designs for Binary Data,Salomon Minkin,42,30
@@ -2190,11 +2190,11 @@ Issue,Volume,title,authors,views,citations
 400,82,The Efficiency of Multinomial Logistic Regression Compared with Multiple Group Discriminant Analysis,Shelley B. Bull & Allan Donner,44,13
 400,82,An Approach to Inference following Model Selection with Applications to Transformation-Based and Adaptive Inference,Arthur Cohen & H. B. Sackrowitz,17,2
 400,82,Biased and Unbiased Cross-Validation in Density Estimation,David W. Scott & George R. Terrell,81,123
-400,82,Fine-Tuning Some Resistant Rules for Outlier Labeling,David C. Hoaglin & Boris Iglewicz,99,210
+400,82,Fine-Tuning Some Resistant Rules for Outlier Labeling,David C. Hoaglin & Boris Iglewicz,100,210
 400,82,Least-Absolute-Value Prediction Lines in Closed Form,Gideon Schwarz,14,1
 400,82,Robust Empirical Bayes Estimation of Means from Stratified Samples,Malay Ghosh & Parthasarathi Lahiri,25,27
 400,82,Inference and Prediction for a General Order Statistic Model with Unknown Population Size,Adrian E. Raftery,26,24
-400,82,Restricted Mean Life with Adjustment for Covariates,Theodore Karrison,28,24
+400,82,Restricted Mean Life with Adjustment for Covariates,Theodore Karrison,29,24
 400,82,Book Reviews,,15,0
 400,82,Letters to the Editor,,10,0
 400,82,Editorial Board Page,,12,0
@@ -2254,7 +2254,7 @@ Issue,Volume,title,authors,views,citations
 398,82,Conditional Properties of Some Estimators in Stratified Sampling,Richard Valliant,24,4
 398,82,A Constructive Procedure for Unbiased Controlled Rounding,Lawrence H. Cox,25,30
 398,82,Compound Random Number Generators,Bruce Jay Collings,17,14
-398,82,The Calculation of Posterior Distributions by Data Augmentation,Martin A. Tanner & Wing Hung Wong,265,927
+398,82,The Calculation of Posterior Distributions by Data Augmentation,Martin A. Tanner & Wing Hung Wong,266,927
 398,82,Comment,A. P. Dempster,15,0
 398,82,Comment,C. N. Morris,19,4
 398,82,Comment,Donald B. Rubin,48,32
@@ -2268,7 +2268,7 @@ Issue,Volume,title,authors,views,citations
 398,82,Bayes Linear Estimators for Randomized Response Models,A. O'hagan,22,11
 398,82,Computable MINQUE-Type Estimates of Variance Components,Peter H. Westfall,18,2
 398,82,Conditional Heteroscedastic Time Series Models,Ruey S. Tsay,38,46
-398,82,Asymptotic Properties of Maximum Likelihood Estimators and Likelihood Ratio Tests under Nonstandard Conditions,Steven G. Self & Kung-Yee Liang,184,685
+398,82,Asymptotic Properties of Maximum Likelihood Estimators and Likelihood Ratio Tests under Nonstandard Conditions,Steven G. Self & Kung-Yee Liang,184,686
 398,82,Chi-Squared Tests for and against an Order Restriction on Multinomial Parameters,Chu-In Charles Lee,15,10
 398,82,Order-Restricted Score Parameters in Association Models for Contingency Tables,"Alan Agresti, Christy Chuang & Abbas Kezouh",14,23
 398,82,Goodness-of-Fit Tests for Large Sparse Multinomial Distributions,Daniel Zelterman,33,22
@@ -2308,7 +2308,7 @@ Issue,Volume,title,authors,views,citations
 397,82,Assessing the Accuracy of Normal Approximations,James S. Hodges,18,4
 397,82,Calibrating Confidence Coefficients,Wei-Yin Loh,31,47
 397,82,Bootstrap Confidence Intervals and Bootstrap Approximations,Thomas Diciccio & Robert Tibshirani,70,26
-397,82,Better Bootstrap Confidence Intervals,Bradley Efron,419,930
+397,82,Better Bootstrap Confidence Intervals,Bradley Efron,419,931
 397,82,Comment,S. C. Peters & D. A. Freedman,22,0
 397,82,Comment,Thomas Diciccio & Robert Tibshirani,20,0
 397,82,Comment,Wei-Yin Loh & C. F. J. Wu,20,1
@@ -2333,7 +2333,7 @@ Issue,Volume,title,authors,views,citations
 397,82,Tests for Patterned Alternatives in k-Sample Problems,Thomas P. Hettmansperger & Robert M. Norton,22,26
 397,82,Minimax Estimation of the Mixing Proportion of Two Known Distributions,J. C. Van Houwelingen & L de Vries,14,2
 397,82,Nonparametric Estimation of the Probability of Discovering a New Species,Murray K. Clayton & Edward W. Frees,22,13
-397,82,Supremum Versions of the Log-Rank and Generalized Wilcoxon Statistics,"Thomas R. Fleming, David P. Harrington & Margaret O'sullivan",32,32
+397,82,Supremum Versions of the Log-Rank and Generalized Wilcoxon Statistics,"Thomas R. Fleming, David P. Harrington & Margaret O'sullivan",33,32
 397,82,Introductory Textbooks: A Framework for Evaluation,George W. Cobb,28,20
 397,82,Book Reviews,Roger Farrell,20,0
 397,82,Editorial Board Page,,12,0
@@ -2341,11 +2341,11 @@ Issue,Volume,title,authors,views,citations
 396,81,Methods for National Population Forecasts: A Review,Kenneth C. Land,25,24
 396,81,"Joint Forecasts of U.S. Marital Fertility, Nuptiality, Births, and Marriages Using Time Series Models",Lawrence R. Carter & Ronald D. Lee,20,8
 396,81,A Successive Differences Method for Growth Curves with Missing Data and Random Observation Times,Neil C. Schwertman & Lance K. Heilbrun,15,5
-396,81,Effect of Categorizing a Continuous Covariate on the Comparison of Survival Time,Timothy M. Morgan & Robert M. Elashoff,24,11
+396,81,Effect of Categorizing a Continuous Covariate on the Comparison of Survival Time,Timothy M. Morgan & Robert M. Elashoff,25,11
 396,81,A Linear Model Approach to Backcalculation of Fish Length,Sanford Weisberg,13,5
 396,81,"A Mean Squared Error Model for Dual Frame, Mixed Mode Survey Design",James M. Lepkowski & Robert M. Groves,29,10
 396,81,The Use of Multiple Diaries in a Household Expenditure Survey in Hong Kong,Christiaan Grootaert,15,12
-396,81,Statistics and Causal Inference,Paul W. Holland,1481,926
+396,81,Statistics and Causal Inference,Paul W. Holland,1481,927
 396,81,Comment,Donald B. Rubin,107,29
 396,81,Comment,D. R. Cox,32,3
 396,81,Comment,Clark Glymour,31,4
@@ -2405,7 +2405,7 @@ Issue,Volume,title,authors,views,citations
 395,81,Grouping and Association in Contingency Tables: An Exploratory Canonical Correlation Approach,Zvi Gilula,18,13
 395,81,Canonical Analysis of Contingency Tables by Maximum Likelihood,Zvi Gilula & Shelby J. Haberman,21,29
 395,81,The Effect of Sample Design on Principal Component Analysis,"C. J. Skinner, D. J. Holmes & T. M. F. Smith",23,1
-395,81,Multivariate Two-Sample Tests Based on Nearest Neighbors,Mark F. Schilling,57,61
+395,81,Multivariate Two-Sample Tests Based on Nearest Neighbors,Mark F. Schilling,59,61
 395,81,Experimental Designs for Estimating the Correlation between Two Destructively Tested Variables,Sebastiao de Amorim & Richard A. Johnson,17,3
 395,81,First-Order Deletion Designs and the Construction of Efficient Nearly Orthogonal Factorial Designs in Small Blocks,Daniel T. Voss,14,2
 395,81,Locally Optimal Tests for Multiparameter Hypotheses,Ashis Sen Gupta & Lea Vermeire,19,12
@@ -2435,7 +2435,7 @@ Issue,Volume,title,authors,views,citations
 394,81,Combining Minimax Shrinkage Estimators,Edward I. George,24,10
 394,81,Bayesian Estimation and Prediction Using Asymmetric Loss Functions,Arnold Zellner,133,230
 394,81,"Aggregate Data, Ecological Regression, and Voting Transitions",Philip J. Brown & Clive D. Payne,22,15
-394,81,How Biased is the Apparent Error Rate of a Prediction Rule?,Bradley Efron,81,120
+394,81,How Biased is the Apparent Error Rate of a Prediction Rule?,Bradley Efron,82,120
 394,81,Judging Inference Adequacy in Logistic Regression,Dennis E. Jennings,26,26
 394,81,Maximum Likelihood Methods for Log-Linear Models When Expected Frequencies are Subject to Linear Constraints,Michael Haber & Morton B. Brown,14,4
 394,81,Goodness-of-Fit Tests for Log-Linear Models in Sparse Contingency Tables,Kenneth J. Koehler,28,39
@@ -2469,7 +2469,7 @@ Issue,Volume,title,authors,views,citations
 393,81,A Class of Life Distributions for Aging,"Myles Hollander, Dong Ho Park & Frank Proschan",18,13
 393,81,Automatic Smoothing of Regression Functions in Generalized Linear Models,"Finbarr O'sullivan, Brian S. Yandell & William J. Raynor Jr.",41,67
 393,81,The Conditional Distribution of Goodness-of-Fit Statistics for Discrete Data,Peter McCullagh,30,27
-393,81,"Cross-Validation, the Jackknife, and the Bootstrap: Excess Error Estimation in Forward Logistic Regression",Gail Gong,59,67
+393,81,"Cross-Validation, the Jackknife, and the Bootstrap: Excess Error Estimation in Forward Logistic Regression",Gail Gong,60,67
 393,81,The Retransformed Mean after a Fitted Power Transformation,Jeremy M. G. Taylor,28,24
 393,81,The Prediction Approach to Robust Variance Estimation in Two-Stage Cluster Sampling,Richard M. Royall,20,7
 393,81,"Bartlett's, Cochran's, and Hartley's Tests on Variances are Liberal When the Underlying Distribution is Long-Tailed",Louis-Paul Rivest,18,4
@@ -2523,7 +2523,7 @@ Issue,Volume,title,authors,views,citations
 392,80,Exact Power of Goodness-of-Fit Tests of Kolmogorov Type for Discontinuous Distributions,Leon Jay Gleser,35,9
 392,80,The Number of Classes in Chi-Squared Goodness-of-Fit Tests,"W. C. M. Kallenberg, J. Oosterhoff & B. F. Schriever",19,20
 392,80,Computing an Exact Confidence Interval for the Common Odds Ratio in Several 2×2 Contingency Tables,"Cyrus R. Mehta, Nitin R. Patel & Robert Gray",47,0
-392,80,Efficient Sequential Designs with Binary Data,C. F. Jeff Wu,47,52
+392,80,Efficient Sequential Designs with Binary Data,C. F. Jeff Wu,48,52
 392,80,Nearly Trend-Free Block Designs,"Ching-Ming Yeh, Ralph A. Bradley & William I. Notz",13,9
 392,80,Estimation of Latent Group Effects,Robert J. Mislevy,24,47
 392,80,Nonparametric Stepwise Multiple Comparison Procedures,Gregory Campbell & John H. Skillings,27,20
@@ -2538,16 +2538,16 @@ Issue,Volume,title,authors,views,citations
 392,80,Corrections,,11,0
 392,80,Editorial Board Page,,10,0
 391,80,Graphics and Human Information Processing: A Review of Five Books,Stephen M. Kosslyn,33,26
-391,80,The Hierarchical Logistic Regression Model for Multilevel Analysis,George Y. Wong & William M. Mason,224,104
+391,80,The Hierarchical Logistic Regression Model for Multilevel Analysis,George Y. Wong & William M. Mason,225,104
 391,80,A Time Series Model for Cohort Data,Joop de Beer,19,4
 391,80,Errors in Variables and Seasonal Adjustment Procedures,Jerry A. Hausman & Mark W. Watson,16,8
 391,80,Calculating the Variance of Seasonally Adjusted Series,Peter Burridge & Kenneth F. Wallis,15,10
 391,80,A Note on the Use of Local Maxima to Predict Turning Points in Related Series,Salih N. Neftci,12,2
 391,80,A One-Sided Goodness-of-Fit Test for a Multinomial Population,Irwin Greenberg,11,1
 391,80,Comment,Mark J. Schervish,10,3
-391,80,Optimal Data Quality,Bruce D. Spencer,21,6
+391,80,Optimal Data Quality,Bruce D. Spencer,22,6
 391,80,Orthogonal Central Composite Designs of the Third Order in the Evaluation of Sensitivity and Plant Growth Simulation Models,Fred D. Baker & Rolf E. Bargmann,18,6
-391,80,Estimating Optimal Transformations for Multiple Regression and Correlation,Leo Breiman & Jerome H. Friedman,264,323
+391,80,Estimating Optimal Transformations for Multiple Regression and Correlation,Leo Breiman & Jerome H. Friedman,264,324
 391,80,Comment,Daryl Pregibon & Yehuda Vardi,20,1
 391,80,Comment,Andreas Buja & Robert E. Kass,20,2
 391,80,Comment,E. B. Fowlkes & J. R. Kettenring,19,1
@@ -2649,7 +2649,7 @@ Issue,Volume,title,authors,views,citations
 389,80,Comment,John W. Tukey,12,0
 389,80,Rejoinder,Eugene P. Ericksen & Joseph B. Kadane,10,0
 389,80,Decomposition of Prediction Error,David A. Harville,26,0
-389,80,A Diagnostic for Cox Regression and General Conditional Likelihoods,Barry E. Storer & John Crowley,21,16
+389,80,A Diagnostic for Cox Regression and General Conditional Likelihoods,Barry E. Storer & John Crowley,22,16
 389,80,A Jackknifed Chi-Squared Test for Complex Samples,Robert E. Fay,15,22
 389,80,Optimal Design of Interviewer Variance Experiments in Complex Surveys,Paul P. Biemer & S. Lynne Stokes,12,11
 389,80,Bayesian Methods for Binomial Data with Applications to a Nonresponse Problem,James H. Albert & Arjun K. Gupta,35,5
@@ -2679,12 +2679,12 @@ Issue,Volume,title,authors,views,citations
 388,79,Approximations for Standard Errors of Estimators of Fixed and Random Effects in Mixed Linear Models,Raghu N. Kackar & David A. Harville,109,47
 388,79,On Simultaneous Pairwise Comparisons in Analysis of Covariance,Yosef Hochberg & Yetty Varon-Salomon,13,7
 388,79,Global Sensitivity Results for Generalized Least Squares Estimates,Edward E. Leamer,16,3
-388,79,Least Median of Squares Regression,Peter J. Rousseeuw,222,693
+388,79,Least Median of Squares Regression,Peter J. Rousseeuw,222,695
 388,79,A Likelihood Ratio Test regarding Two Nested but Oblique Order-Restricted Hypotheses,Giles Warrack & Tim Robertson,13,4
 388,79,"Selecting the Best Population, Provided it is Better than a Standard: The Unequal Variance Case",Rand R. Wilcox,16,6
 388,79,Common Principal Components in k Groups,Bernhard N. Flury,66,18
 388,79,Linear Discriminant Analysis with Misallocation in Training Samples,Raj S. Chhikara & Jim McKeon,16,10
-388,79,Measures of Conditional Linear Dependence and Feedback between Time Series,John F. Geweke,102,186
+388,79,Measures of Conditional Linear Dependence and Feedback between Time Series,John F. Geweke,102,187
 388,79,The Order of Differencing in ARIMA Models,Victor Solo,19,27
 388,79,Hypothesis Tests for Markov Process Models Estimated from Aggregate Frequency Data,W. David Kelton & Christina M.L. Kelton,17,7
 388,79,Small-Sample Comparisons for the Power Divergence Goodness-of-Fit Statistics,Timothy R.C. Read,26,25
@@ -2695,12 +2695,12 @@ Issue,Volume,title,authors,views,citations
 387,79,Probability Forecasting in Meteorology,Allan H. Murphy & Robert L. Winkler,56,16
 387,79,Improvement by Planned Multistage Selection,D. J. Finney,15,1
 387,79,Monitoring the 1982 Spanish Socialist Victory: A Bayesian Analysis,José M. Bernardo,18,6
-387,79,Reducing Bias in Observational Studies Using Subclassification on the Propensity Score,Paul R. Rosenbaum & Donald B. Rubin,467,1069
+387,79,Reducing Bias in Observational Studies Using Subclassification on the Propensity Score,Paul R. Rosenbaum & Donald B. Rubin,468,1071
 387,79,A Demographic Analogy for Shareowner Accounts,Paul A. Tukey & Kenneth W. Wachter,13,0
-387,79,"Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods",William S. Cleveland & Robert McGill,296,251
+387,79,"Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods",William S. Cleveland & Robert McGill,298,251
 387,79,Telephone Interview and Mail Questionnaire Applications of the Randomized Response Model,Donald E. Stem Jr. & R. Kirk Steinhorst,23,18
 387,79,Conditional Permutation Tests and the Propensity Score in Observational Studies,Paul R. Rosenbaum,48,21
-387,79,Cross-Validation of Regression Models,Richard R. Picard & R. Dennis Cook,340,464
+387,79,Cross-Validation of Regression Models,Richard R. Picard & R. Dennis Cook,341,465
 387,79,A Fast and Efficient Cross-Validation Method for Smoothing Parameter Choice in Spline Regression,B. W. Silverman,29,29
 387,79,A Comparison of Minimum Distance and Maximum Likelihood Estimation of a Mixture Proportion,"Wayne A. Woodward, William C. Parr, William R. Schucany & Hildegard Lindsey",28,24
 387,79,Projection Pursuit Density Estimation,"Jerome H. Friedman, Werner Stuetzle & Anne Schroeder",32,68
@@ -2708,7 +2708,7 @@ Issue,Volume,title,authors,views,citations
 387,79,A Refined Method of Robust Smoothing,Val Gebski & Don McNeil,17,8
 387,79,Design-Consistent versus Model-Dependent Estimation for Small Domains,Carl Erik Särndal,19,4
 387,79,Maximum Likelihood Estimation in the Mover-Stayer Model,Halina Frydman,28,26
-387,79,Tests for Differences in Tumor Incidence Based on Animal Carcinogenesis Experiments,Barbara McKnight & John Crowley,18,34
+387,79,Tests for Differences in Tumor Incidence Based on Animal Carcinogenesis Experiments,Barbara McKnight & John Crowley,19,34
 387,79,Testing Goodness of Fit for Proportional Hazards Model with Censored Observations,L. J. Wei,34,26
 387,79,Two-Sample Asymptotically Distribution-Free Tests for Incomplete Multivariate Observations,L. J. Wei & J. M. Lachin,53,84
 387,79,Required Sample Size for Categorical Matching,S. D. Walter,18,1
@@ -2730,7 +2730,7 @@ Issue,Volume,title,authors,views,citations
 386,79,Rejoinder,Marc Mangel & Francisco J. Samaniego,15,0
 386,79,New Estimates of Child Mortality in the United States at the Turn of the Century,Samuel H. Preston & Michael R. Haines,19,2
 386,79,"A Comparison of Population Estimation Methods: Housing Unit versus Component II, Ratio Correlation, and Administrative Records",Stanley K. Smith & Marylou Mandell,18,10
-386,79,Nonparametric Estimation of the Hazard Ratio,H. T. Thaler,19,3
+386,79,Nonparametric Estimation of the Hazard Ratio,H. T. Thaler,20,3
 386,79,"On the Behavior of Certain Maximum Likelihood Estimators from Large, Randomly Censored Samples",Sam C. Saunders & Janet M. Myhre,16,1
 386,79,The Analysis of Transformed Data,D. V. Hinkley & G. Runger,52,44
 386,79,Comment,Donald B. Rubin,19,2
@@ -2756,7 +2756,7 @@ Issue,Volume,title,authors,views,citations
 386,79,On the Distributions of Scan Statistics,David J. Gates & Mark Westcott,18,7
 386,79,Optimal Sequential Selection Based on Relative Ranks with Renewable Call Options,John S. Rose,14,2
 386,79,Probability Inequalities for Multivariate Distributions with Dependence Structures,Joseph Glaz & Bruce McK. Johnson,30,19
-386,79,Understanding Cox's Regression Model: A Martingale Approach,Richard D. Gill,33,0
+386,79,Understanding Cox's Regression Model: A Martingale Approach,Richard D. Gill,34,0
 386,79,Sigmoidally Constrained Maximum Likelihood Estimation in Quantal Bioassay,Richard L. Schmoyer,20,14
 386,79,A Truncated Maximum Likelihood Estimator of a Constrained Bivariate Linear Regression Coefficient,Y. C. Chang,19,0
 386,79,"Approximate Tolerance Intervals, Based on Maximum Likelihood Estimates",Corwin L. Atwood,25,12
@@ -2766,18 +2766,18 @@ Issue,Volume,title,authors,views,citations
 385,79,On the Nature and Discovery of Structure,J. W. Pratt & Robert Schlaifer,33,26
 385,79,Comment: Causal Inference from Messy Data,A. P. Dawid,26,0
 385,79,Comment: The Indispensable Art of Econometrics,John Geweke,23,0
-385,79,Comment: Estimating the Effects Caused by Treatments,Paul R. Rosenbaum & Donald B. Rubin,37,3
+385,79,Comment: Estimating the Effects Caused by Treatments,Paul R. Rosenbaum & Donald B. Rubin,38,3
 385,79,Rejoinder,J. W. Pratt & Robert Schlaifer,19,0
 385,79,Dynamic Representation of Multivariate Time Series Data,"J. J. Mezrich, S. Frysinger & R. Slivjanovski",31,19
 385,79,From Association to Causation in Observational Studies: The Role of Tests of Strongly Ignorable Treatment Assignment,Paul R. Rosenbaum,48,53
 385,79,"The Accuracy of Peizer Approximations to the Hypergeometric Distribution, with Comparisons to Some other Approximations",Robert F. Ling & John W. Pratt,22,5
-385,79,Graphical Methods for Assessing Logistic Regression Models,"James M. Landwehr, Daryl Pregibon & Anne C. Shoemaker",97,97
+385,79,Graphical Methods for Assessing Logistic Regression Models,"James M. Landwehr, Daryl Pregibon & Anne C. Shoemaker",98,97
 385,79,Comment,A. C. Atkinson & P. McCullagh,18,1
 385,79,Comment,Stephen E. Fienberg & Gail D. Gong,17,8
 385,79,Comment,Trevor J. Hastie,19,0
 385,79,Comment: Assessing the Fit of Logistic Regressions Using the Implied Discriminant Analysis,Donald B. Rubin,21,0
 385,79,Rejoinder,"James M. Landwehr, Daryl Pregibon & Anne C. Shoemaker",17,0
-385,79,Consistent Estimates of Autoregressive Parameters and Extended Sample Autocorrelation Function for Stationary and Nonstationary ARMA Models,Ruey S. Tsay & George C. Tiao,102,90
+385,79,Consistent Estimates of Autoregressive Parameters and Extended Sample Autocorrelation Function for Stationary and Nonstationary ARMA Models,Ruey S. Tsay & George C. Tiao,103,90
 385,79,Bootstrapping a Regression Equation: Some Empirical Results,David A. Freedman & Stephen C. Peters,50,104
 385,79,Choosing a Symmetrizing Power Transformation,Murray A. Cameron,18,1
 385,79,Rejoinder,John D. Emerson & Michael A. Stoto,13,0
@@ -2851,7 +2851,7 @@ Issue,Volume,title,authors,views,citations
 383,78,Rejoinder,E. B. Fowlkes & C. L. Mallows,12,0
 383,78,Generating Test Data with Independently Controllable Features for Multivariate General Linear Forms,"Richard M. Heiberger, Paul F. Velleman & M. Agelia Ypelaar",15,5
 383,78,Estimating a Finite Population Mean from Unequal Probability Samples,Roderick J.A. Little,29,12
-383,78,Smearing Estimate: A Nonparametric Retransformation Method,Naihua Duan,162,547
+383,78,Smearing Estimate: A Nonparametric Retransformation Method,Naihua Duan,163,547
 383,78,User-Oriented Inference,Mark J. Schervish,13,0
 383,78,General Variance Modifications for Linear Bayes Estimators,Michael Goldstein,15,3
 383,78,Unbiasedness as the Dual of Being Bayes,Siamak Noorbaloochi & Glen Meeden,25,6
@@ -2877,9 +2877,9 @@ Issue,Volume,title,authors,views,citations
 382,78,Evaluating a Hospital Cost-Containment Program in a Paired Experiment,Ben-Chieh Liu,12,0
 382,78,Comment,Dean E. Farley,12,0
 382,78,Small-Sample Properties of Predictions from the Regression Model with Autoregressive Errors,John J. Spitzer & Richard T. Baillie,15,1
-382,78,A Reanalysis of the Stanford Heart Transplant Data,"Murray Aitkin, Nan Laird & Brian Francis",38,23
+382,78,A Reanalysis of the Stanford Heart Transplant Data,"Murray Aitkin, Nan Laird & Brian Francis",39,23
 382,78,Comment,Mitchell H. Gail,13,0
-382,78,Comment,John Crowley & Barry E. Storer,16,3
+382,78,Comment,John Crowley & Barry E. Storer,17,3
 382,78,Comment,Thomas J. Boardman,13,0
 382,78,Comment,Martin A. Tanner & Wing Hung Wong,13,1
 382,78,Comment,D. Oakes,13,0
@@ -2891,7 +2891,7 @@ Issue,Volume,title,authors,views,citations
 382,78,Comment,Adrian F.M. Smith,15,1
 382,78,Comment,Robert E. Kass,13,1
 382,78,Rejoinder,William H. Dumouchel & Jeffrey E. Harris,12,0
-382,78,Estimating the Error Rate of a Prediction Rule: Improvement on Cross-Validation,Bradley Efron,253,564
+382,78,Estimating the Error Rate of a Prediction Rule: Improvement on Cross-Validation,Bradley Efron,254,565
 382,78,Testing for Random Pairing,"Piet de Jong, Malcolm Greig & Dilip Madan",14,0
 382,78,Estimating the Relative Risk with Censored Data,J. M. Begun & N. Reid,22,6
 382,78,On Testing Monotone Tendencies,Richard L. Dykstra & Tim Robertson,16,16
@@ -2927,7 +2927,7 @@ Issue,Volume,title,authors,views,citations
 381,78,Capitalizing on Nonrandom Assignment to Treatments: A Regression-Discontinuity Evaluation of a Crime-Control Program,Richard A. Berk & David Rauma,250,32
 381,78,Stable Distributions and the Mixtures of Distributions Hypotheses for Common Stock Returns,Bruce D. Fielitz & James P. Rozelle,24,26
 381,78,A “True” Time Series and its Indicators,Frank de Leeuw & Michael J. McKelvey,18,2
-381,78,Parametric Empirical Bayes Inference: Theory and Applications,Carl N. Morris,422,315
+381,78,Parametric Empirical Bayes Inference: Theory and Applications,Carl N. Morris,424,315
 381,78,Comment,James Berger,31,1
 381,78,Comment,A. P. Dempster,27,0
 381,78,Comment,David Hinkley,30,0
@@ -2979,7 +2979,7 @@ Issue,Volume,title,authors,views,citations
 380,77,Some Models for the Analysis of Association in Multiway Cross-Classifications Having Ordered Categories,Clifford C. Clogg,28,64
 380,77,A Time Series Analysis of Binary Data,Daniel Macrae Keenan,40,14
 380,77,Updating Subjective Probability,Persi Diaconis & Sandy L. Zabell,42,58
-380,77,An Inconsistent Maximum Likelihood Estimate,Thomas S. Ferguson,67,17
+380,77,An Inconsistent Maximum Likelihood Estimate,Thomas S. Ferguson,68,17
 380,77,Cluster Inference by using Transitivity Indices in Empirical Graphs,Ove Frank & Frank Harary,23,19
 380,77,A Hybrid Clustering Method for Identifying High-Density Clusters,M. Anthony Wong,39,36
 380,77,The Effect of Two-Stage Sampling on Ordinary Least Squares Methods,A. J. Scott & D. Holt,59,54
@@ -3047,7 +3047,7 @@ Issue,Volume,title,authors,views,citations
 378,77,Comment,David Rothman,16,0
 378,77,Comment,Nancy Brandon Tuma,15,0
 378,77,Rejoinder,Kenneth W. Wachter & James Trussell,16,0
-378,77,Measurement of Linear Dependence and Feedback between Multiple Time Series,John Geweke,246,453
+378,77,Measurement of Linear Dependence and Feedback between Multiple Time Series,John Geweke,246,454
 378,77,Comment,Arnold Zellner,18,0
 378,77,Comment,David A. Pierce,17,0
 378,77,Comment,William W. S. Wei,24,12
@@ -3073,7 +3073,7 @@ Issue,Volume,title,authors,views,citations
 378,77,An Empirical Quantile Function for Linear Models with iid Errors,Gilbert Bassett Jr. & Roger Koenker,42,20
 378,77,A Biweight Approach to the One-Sample Problem,Karen Kafadar,31,28
 378,77,A Simple Interaction Model for Two-Dimensional Contingency Tables,Gerard E. Dallal,17,2
-378,77,A k-Sample Median Test for Censored Data,Ron Brookmeyer & John Crowley,32,7
+378,77,A k-Sample Median Test for Censored Data,Ron Brookmeyer & John Crowley,33,7
 378,77,Confidence Intervals with Jointly Type-II Censored Samples from Two Exponential Distributions,Kishan G. Mehrotra & Gouri K. Bhattacharyya,17,2
 378,77,Discriminant Analysis Based on Binary and Continuous Variables,Ching-Tsao Tu & Chien-Pai Han,19,6
 378,77,A General Method for Constructing Simultaneous Confidence Intervals,J. Richmond,22,28
@@ -3125,7 +3125,7 @@ Issue,Volume,title,authors,views,citations
 376,76,Comment,John F. Long,13,2
 376,76,Comment,Kenneth F. Wallis,14,0
 376,76,Rejoinder,John McDonald,11,1
-376,76,Modeling Multiple Time Series with Applications,G. C. Tiao & G. E. P. Box,442,69
+376,76,Modeling Multiple Time Series with Applications,G. C. Tiao & G. E. P. Box,443,69
 376,76,Projection Pursuit Regression,Jerome H. Friedman & Werner Stuetzle,165,523
 376,76,Variation Diminishing Transformations: A Direct Approach to Total Positivity and its Statistical Applications,"Lawrence D. Brown, Iain M. Johnstone & K. Brenda Macgibbon",28,25
 376,76,Bayes Empirical Bayes,J. J. Deely & D. V. Lindley,81,58
@@ -3190,7 +3190,7 @@ Issue,Volume,title,authors,views,citations
 375,76,A Note on the Variance and Higher Central Moments of the Stopping Time of an SPRT,Adam T. Martinsek,14,1
 375,76,The EM Approach to the Multiple Indicators and Multiple Causes Model via the Estimation of the Latent Variable,Chan-Fu Chen,21,11
 375,76,A Class of Variate Transformations Causing Unbounded Likelihood,Wim J. Voorim,15,1
-375,76,A Monte Carlo Study of Some Two-Sample Rank Tests with Censored Data,Robert B. Latta,25,36
+375,76,A Monte Carlo Study of Some Two-Sample Rank Tests with Censored Data,Robert B. Latta,26,36
 375,76,Approximate Mean Squared Errors of Estimators of Reliability for k-out-of-m Systems in the Independent Exponential Case,Anne Chao,13,4
 375,76,On a Multivariate Analog of Studentized Range Test,Perla Subbaiah & Govind S. Mudholkar,12,2
 375,76,Kolmogorov Statistics for Tests of Fit for the Extreme-Value and Weibull Distributions,"M. Chandra, N. D. Singpurwalla & M. A. Stephens",48,16
@@ -3199,7 +3199,7 @@ Issue,Volume,title,authors,views,citations
 375,76,Book Reviews,,15,0
 375,76,Editorial Board Page,,11,0
 374,76,The Analysis of Categorical Data from Complex Sample Surveys: Chi-Squared Tests for Goodness of Fit and Independence in Two-Way Tables,J. N. K. Rao & A. J. Scott,141,261
-374,76,Covariance Analysis of Censored Survival Data Using Log-Linear Analysis Techniques,Nan Laird & Donald Olivier,93,133
+374,76,Covariance Analysis of Censored Survival Data Using Log-Linear Analysis Techniques,Nan Laird & Donald Olivier,94,133
 374,76,Closure of the Newman-Keuls Multiple Comparisons Procedure,Janet M. Begun & K. Ruben Gabriel,20,20
 374,76,The Grouping Problem and Beef Quality Standards,Robert S. Elder,16,0
 374,76,Seasonal Patterns of Fertility Measures: Theory and Data,Stan Becker,20,1
@@ -3215,7 +3215,7 @@ Issue,Volume,title,authors,views,citations
 374,76,Comment,C. L. Mallows,13,0
 374,76,Rejoinder,Jerome H. Friedman & Lawrence C. Rafsky,13,0
 374,76,An Analysis of Transformations Revisited,Peter J. Bickel & Kjell A. Doksum,75,113
-374,76,Censored Data and the Bootstrap,Bradley Efron,119,187
+374,76,Censored Data and the Bootstrap,Bradley Efron,120,187
 374,76,Association Models and Canonical Correlation in the Analysis of Cross-Classifications Having Ordered Categories,Leo A. Goodman,29,32
 374,76,An Interpretation of Completeness and Basu's Theorem,E. L. Lehmann,26,12
 374,76,Estimation in Covariance Components Models,"A. P. Dempster, D. B. Rubin & R. K. Tsutakawa",75,119
@@ -3227,7 +3227,7 @@ Issue,Volume,title,authors,views,citations
 374,76,Complexity: An Interpretability Criterion for Multiple Comparisons,Juliet Popper Shaffer,20,5
 374,76,On Partitioning a Sample with Binary-Type Questions in Lieu of Collecting Observations,"Kenneth J. Arrow, Leon Pesotchinsky & Milton Sobel",14,13
 374,76,Marginalization and Linear Opinion Pools,K. J. McConway,25,44
-374,76,A Necessary and Sufficient Condition for Reaching a Consensus Using DeGroot's Method,Roger L. Berger,33,51
+374,76,A Necessary and Sufficient Condition for Reaching a Consensus Using DeGroot's Method,Roger L. Berger,34,51
 374,76,Consequences and Detection of Misspecified Nonlinear Regression Models,Halbert White,47,64
 374,76,Efficiencies of Nine Two-Phase Ratio Estimators for the Mean,Poduri S. R. S. Rao,17,4
 374,76,Maximal Deviation between Sample and Population Means in Finite Populations,Barry C. Arnold & Richard A. Groeneveld,16,5
@@ -3473,7 +3473,7 @@ Issue,Volume,title,authors,views,citations
 368,74,Asymptotically Optimal Methods of Combining Tests,Robert H. Berk & Arthur Cohen,19,18
 368,74,SPRT's for the Normal Correlation Coefficient,Julian Köllerström & G. Barrie Wetherill,12,1
 368,74,An Efficient Adaptive Distribution-Free Test for Location,Douglas H. Jones,17,9
-368,74,Robust Locally Weighted Regression and Smoothing Scatterplots,William S. Cleveland,677,2361
+368,74,Robust Locally Weighted Regression and Smoothing Scatterplots,William S. Cleveland,677,2362
 368,74,Normal Bayesian Dialogues,Michael Bacharach,16,10
 368,74,A Note on the Distribution Functions of LIML and 2SLS Structural Coefficient in the Exactly Identified Case,Roberto S. Mariano & James B. McDonald,15,1
 368,74,Distribution of the Residual Cross-Correlation in Univariate ARMA Time Series Models,A. Ian McLeod,23,18
@@ -3496,7 +3496,7 @@ Issue,Volume,title,authors,views,citations
 367,74,Smooth Pycnophylactic Interpolation for Geographical Regions,Waldo R. Tobler,66,183
 367,74,Comment,"Nira Dyn, Nira Dyn & Wing-Hung Wong",19,2
 367,74,Rejoinder,Waldo R. Tobler,15,0
-367,74,Simple Models for the Analysis of Association in Cross-Classifications Having Ordered Categories,Leo A. Goodman,42,217
+367,74,Simple Models for the Analysis of Association in Cross-Classifications Having Ordered Categories,Leo A. Goodman,43,217
 367,74,Autoregressive Modeling of Canadian Money and Income Data,Cheng Hsiao,33,94
 367,74,Some Methods for Studying the Mixture of Two Normal (Lognormal) Distributions,Edward B. Fowlkes,44,33
 367,74,The Demand for Urban Rail Transportation,Glenn D. Westley,27,3
@@ -3526,54 +3526,54 @@ Issue,Volume,title,authors,views,citations
 367,74,Book Reviews,,23,0
 367,74,Corrigenda,,11,0
 367,74,Editorial Board Page,,11,0
-NA,74,Acknowledgments,Linda D. Anderson & Stephen E. Fienberg,8,0
-NA,74,Introduction,,8,0
-NA,74,Author Index,,15,0
-NA,74,Subject Index,,21,0
-NA,74,Editorial Board Page,,7,0
-NA,74,Estimates of Income for Small Places: An Application of James-Stein Procedures to Census Data,Robert E. Fay III & Roger A. Herriot,114,209
-NA,74,The Use of the Jackknife to Estimate Proportions from Toxicological Data in the Presence of Litter Effects,Beth Gladen,18,9
-NA,74,Karhunen-Loève Analysis of Historical Time Series with an Application to Plantation Births in Jamaica,Alexander Basilevsky & Derek P. J. Hum,15,2
-NA,74,Comovements in Stock Prices in the Very Short Run,Thomas W. Epps,35,35
-NA,74,Comparing Two Probability Appraisers,Glen Meeden,13,0
-NA,74,Comment on “Splines and Restricted Least Squares”,Paul D. Sampson,13,0
-NA,74,Fixed-State Assessment of Utility Functions,Melvin R. Novick & Dennis V. Lindley,15,1
-NA,74,Approximate Bayesian Predictive Distributions and Model Selection,William W. Davis,21,0
-NA,74,Using Multivariate Matched Sampling and Regression Adjustment to Control Bias in Observational Studies,Donald B. Rubin,59,26
-NA,74,An Iterative Method for Estimating a Multivariate Mode and Isopleth,Thomas W. Sager,14,1
-NA,74,Union-Intersection Test for the Mean Vector When the Covariance Matrix is Totally Reducible,Bimal Kumar Sinha & H. S. Wieand,14,0
-NA,74,Robust Estimates of the ED50,Martin A. Hamilton,19,0
-NA,74,A Predictive Approach to Subdomain Estimation in Finite Populations,Petter Laake,17,1
-NA,74,On Rounding Percentages,Persi Diaconis & David Freedman,29,4
-NA,74,On the Likelihood Ratio Test for a Shift in Location of Normal Populations,K. J. Worsley,38,25
-NA,74,Confidence Intervals for Proportions of Variability in Two-Factor Nested Variance Component Models,Franklin A. Graybill & Chih-Ming Wang,21,8
-NA,74,"Bounding Moments, the Gini Index and Lorenz Curve from Grouped Data for Unimodal Density Functions",Abba M. Krieger,16,3
-NA,74,Nonparametric Multiple Comparison Procedures,J. J. Shuster & James M. Boyett,21,2
-NA,74,The Bayesian Analysis of a Nonadditive Model,Mary A. Hartz & Donald L. Meyer,14,0
-NA,74,An Asymptotic Expansion for Unbalanced Quadratic Forms in Normal Variables,Joseph J. Walker,15,0
-NA,74,Efficiency of Smooth Goodness-of-Fit Tests,Kenneth J. Kopecky & Donald A. Pierce,14,12
-NA,74,Some Two-Stage K-Sample Tests,John E. Hewett & John D. Spurrier,14,3
-NA,74,A Model-Based Approach to Estimation for Small Subgroups of a Population,"D. Holt, T. M. F. Smith & T. J. Tomberlin",27,1
-NA,74,Regression Analysis Based on the Signs of the Residuals,Dana Quade,14,0
-NA,74,Sampling from the Binomial Distribution on a Computer,George S. Fishman,28,5
-NA,74,A Note on the Influence of the Sample on the Posterior Distribution,Ward Whitt,15,4
-NA,74,Distribution of the Estimators for Autoregressive Time Series with a Unit Root,David A. Dickey & Wayne A. Fuller,458,1489
-NA,74,Multiple Three-Decision Rules for Parametric Signs,Robert Bohrer,16,5
-NA,74,Variance Estimation Based on a Superpopulation Model in Two-Stage Sampling,Richard K. Burdick & Robert L. Sielken Jr.,14,2
-NA,74,Neyman's Smooth Goodness-of-Fit Test When the Hypothesis is Composite,David R. Thomas & Donald A. Pierce,18,17
-NA,74,On the Exactness of Confidence Bands about a Linear Model,Fariborz Khorasani & George A. Milliken,13,4
-NA,74,Estimating the Lag Structure of a Nonlinear Time Series Model,Melvin J. Hinich,12,2
-NA,74,Nonparametric Prediction Intervals for a Future Sample Median,Michael A. Fligner & Douglas A. Wolfe,21,5
-NA,74,Rows Adjusted for Columns versus Simple Row Means in Two-Way ANOVA: When are the Two Hypotheses Equivalent?,Donald S. Burdick,13,0
-NA,74,The Exact Noncentral Distributions of Spearman's r and other Related Correlation Coefficients,Fritz H.-H. Henze,16,1
-NA,74,Dispersion Matrices for Variance Components Models,S. R. Searle & Harold Y. Henderson,21,8
-NA,74,A Comparison of Procedures for Multiple Comparisons of Means with Unequal Variances,Ajit C. Tamhane,33,31
-NA,74,Log-Linear Models for Categorical Data with Misclassification and Double Sampling,T. Timothy Chen,15,10
-NA,74,Single-Variable Poisson Regression: A Goodness-of-Fit Test and the Comparison of Regression Coefficients,David A. Pyne,18,0
-NA,74,A Test for Heteroscedasticity Based on Ordinary Least Squares Residuals,M. J. Harrison & B. P. M. McCabe,34,15
-NA,74,Book Reviews,,8,0
-NA,74,Corrigenda,,7,0
-NA,74,Editorial Board Page,,7,0
+366b,74,Acknowledgments,Linda D. Anderson & Stephen E. Fienberg,8,0
+366b,74,Introduction,,8,0
+366b,74,Author Index,,15,0
+366b,74,Subject Index,,21,0
+366b,74,Editorial Board Page,,7,0
+366a,74,Estimates of Income for Small Places: An Application of James-Stein Procedures to Census Data,Robert E. Fay III & Roger A. Herriot,114,209
+366a,74,The Use of the Jackknife to Estimate Proportions from Toxicological Data in the Presence of Litter Effects,Beth Gladen,18,9
+366a,74,Karhunen-Loève Analysis of Historical Time Series with an Application to Plantation Births in Jamaica,Alexander Basilevsky & Derek P. J. Hum,15,2
+366a,74,Comovements in Stock Prices in the Very Short Run,Thomas W. Epps,35,35
+366a,74,Comparing Two Probability Appraisers,Glen Meeden,13,0
+366a,74,Comment on “Splines and Restricted Least Squares”,Paul D. Sampson,13,0
+366a,74,Fixed-State Assessment of Utility Functions,Melvin R. Novick & Dennis V. Lindley,15,1
+366a,74,Approximate Bayesian Predictive Distributions and Model Selection,William W. Davis,21,0
+366a,74,Using Multivariate Matched Sampling and Regression Adjustment to Control Bias in Observational Studies,Donald B. Rubin,59,26
+366a,74,An Iterative Method for Estimating a Multivariate Mode and Isopleth,Thomas W. Sager,14,1
+366a,74,Union-Intersection Test for the Mean Vector When the Covariance Matrix is Totally Reducible,Bimal Kumar Sinha & H. S. Wieand,14,0
+366a,74,Robust Estimates of the ED50,Martin A. Hamilton,19,0
+366a,74,A Predictive Approach to Subdomain Estimation in Finite Populations,Petter Laake,17,1
+366a,74,On Rounding Percentages,Persi Diaconis & David Freedman,29,4
+366a,74,On the Likelihood Ratio Test for a Shift in Location of Normal Populations,K. J. Worsley,38,25
+366a,74,Confidence Intervals for Proportions of Variability in Two-Factor Nested Variance Component Models,Franklin A. Graybill & Chih-Ming Wang,21,8
+366a,74,"Bounding Moments, the Gini Index and Lorenz Curve from Grouped Data for Unimodal Density Functions",Abba M. Krieger,16,3
+366a,74,Nonparametric Multiple Comparison Procedures,J. J. Shuster & James M. Boyett,21,2
+366a,74,The Bayesian Analysis of a Nonadditive Model,Mary A. Hartz & Donald L. Meyer,14,0
+366a,74,An Asymptotic Expansion for Unbalanced Quadratic Forms in Normal Variables,Joseph J. Walker,15,0
+366a,74,Efficiency of Smooth Goodness-of-Fit Tests,Kenneth J. Kopecky & Donald A. Pierce,14,12
+366a,74,Some Two-Stage K-Sample Tests,John E. Hewett & John D. Spurrier,14,3
+366a,74,A Model-Based Approach to Estimation for Small Subgroups of a Population,"D. Holt, T. M. F. Smith & T. J. Tomberlin",27,1
+366a,74,Regression Analysis Based on the Signs of the Residuals,Dana Quade,14,0
+366a,74,Sampling from the Binomial Distribution on a Computer,George S. Fishman,28,5
+366a,74,A Note on the Influence of the Sample on the Posterior Distribution,Ward Whitt,15,4
+366a,74,Distribution of the Estimators for Autoregressive Time Series with a Unit Root,David A. Dickey & Wayne A. Fuller,458,1489
+366a,74,Multiple Three-Decision Rules for Parametric Signs,Robert Bohrer,16,5
+366a,74,Variance Estimation Based on a Superpopulation Model in Two-Stage Sampling,Richard K. Burdick & Robert L. Sielken Jr.,14,2
+366a,74,Neyman's Smooth Goodness-of-Fit Test When the Hypothesis is Composite,David R. Thomas & Donald A. Pierce,18,17
+366a,74,On the Exactness of Confidence Bands about a Linear Model,Fariborz Khorasani & George A. Milliken,13,4
+366a,74,Estimating the Lag Structure of a Nonlinear Time Series Model,Melvin J. Hinich,12,2
+366a,74,Nonparametric Prediction Intervals for a Future Sample Median,Michael A. Fligner & Douglas A. Wolfe,21,5
+366a,74,Rows Adjusted for Columns versus Simple Row Means in Two-Way ANOVA: When are the Two Hypotheses Equivalent?,Donald S. Burdick,13,0
+366a,74,The Exact Noncentral Distributions of Spearman's r and other Related Correlation Coefficients,Fritz H.-H. Henze,16,1
+366a,74,Dispersion Matrices for Variance Components Models,S. R. Searle & Harold Y. Henderson,21,8
+366a,74,A Comparison of Procedures for Multiple Comparisons of Means with Unequal Variances,Ajit C. Tamhane,33,31
+366a,74,Log-Linear Models for Categorical Data with Misclassification and Double Sampling,T. Timothy Chen,15,10
+366a,74,Single-Variable Poisson Regression: A Goodness-of-Fit Test and the Comparison of Regression Coefficients,David A. Pyne,18,0
+366a,74,A Test for Heteroscedasticity Based on Ordinary Least Squares Residuals,M. J. Harrison & B. P. M. McCabe,34,15
+366a,74,Book Reviews,,8,0
+366a,74,Corrigenda,,7,0
+366a,74,Editorial Board Page,,7,0
 365,74,Some Problems of Statistics and Everyday Life,George E. P. Box,562,36
 365,74,Testing Disease Dependence in Survival Experiments with Serial Sacrifice,"Bengt Berlin, Joel Brodsky & Peter Clifford",17,7
 365,74,Short-term Forecasting and Seasonal Adjustment,Charles I. Plosser,18,6
@@ -3621,7 +3621,7 @@ NA,74,Editorial Board Page,,7,0
 365,74,Comments on a Criterion of Transformation Proposed by Schlesselman,Camil Fuchs,13,0
 365,74,Book Reviews,,11,0
 365,74,Editorial Board Page,,11,0
-364,73,Choosing between Logistic Regression and Discriminant Analysis,S. James Press & Sandra Wilson,265,273
+364,73,Choosing between Logistic Regression and Discriminant Analysis,S. James Press & Sandra Wilson,266,273
 364,73,A Generalized Compound Poisson Model for Consumer Purchase Panel Data Analysis,Allan E. Paull,30,5
 364,73,The Bias Problem in Smear-and-Sweep Analysis,Robert C. Scott,15,2
 364,73,Small-Sample Properties of Simultaneous Equation Estimators with Multicollinearity,Scott E. Atkinson,12,2
@@ -3644,7 +3644,7 @@ NA,74,Editorial Board Page,,7,0
 364,73,A Scale-Free Goodness-of-Fit Test for the Exponential Distribution Based on the Lorenz Curve,Mitchell H. Gail & Joseph L. Gastwirth,29,11
 364,73,The Logistic Model and Estimation of Latent Structure,Lalitha Sanathanan & Saul Blumenthal,21,19
 364,73,A Class of Alternatives to Independence in Contingency Tables,D. V. Gokhale & N. S. Johnson,12,1
-364,73,Nonparametric Maximum Likelihood Estimation of a Mixing Distribution,Nan Laird,115,171
+364,73,Nonparametric Maximum Likelihood Estimation of a Mixing Distribution,Nan Laird,116,171
 364,73,Estimation of Parameters and Large Quantiles Based on the k Largest Observations,Ishay Weissman,36,41
 364,73,An Exact Test for the Presence of Random Walk Coefficients in a Linear Regression Model,Lynn Roy Lamotte & Archer McWhorter Jr.,18,0
 364,73,Normal Discrimination with Unclassified Observations,Terence J. O'neill,19,35
@@ -3682,7 +3682,7 @@ NA,74,Editorial Board Page,,7,0
 363,73,Modified t Tests and Confidence Intervals for Asymmetrical Populations,Norman J. Johnson,46,40
 363,73,Efficacies of Measures of Association for Ordinal Contingency Tables,Gary A. Simon,25,6
 363,73,A Decision-Theoretic Approach to the Aggregation Problem at the Pre-Data-Collection Stage,Itzhak Venezia,10,0
-363,73,An Application of an Urn Model to the Design of Sequential Controlled Clinical Trials,L. J. Wei,32,76
+363,73,An Application of an Urn Model to the Design of Sequential Controlled Clinical Trials,L. J. Wei,32,77
 363,73,Generalized Linear and Quadratic Discriminant Functions Using Robust Estimates,"Ronald H. Randles, James D. Broffitt, John S. Ramberg & Robert V. Hogg",22,23
 363,73,Sample Size Determination in Bayesian Discriminant Analysis,Stephen C. Hora,15,1
 363,73,Bayesian Analysis of the Linear Model Subject to Linear Inequality Constraints,William W. Davis,16,8
@@ -3746,7 +3746,7 @@ NA,74,Editorial Board Page,,7,0
 361,73,An Interviewer Variance Study for the Eight Impact Cities of the National Crime Survey Cities Sample,"Leroy Bailey, Thomas F. Moore & Barbara A. Bailar",18,11
 361,73,Multivariate and Multipurpose Stratification,Leslie Kish & Dallas W. Anderson,25,11
 361,73,Randomized Response Technique in a National Survey,Iris M. Shimizu & Gordon Scott Bonham,29,8
-361,73,Sampling Methods for Random Digit Dialing,Joseph Waksberg,97,342
+361,73,Sampling Methods for Random Digit Dialing,Joseph Waksberg,97,343
 361,73,A Comparison of the Modified-Tukey and Scheffé Methods of Multiple Comparisons for Pairwise Contrasts,H. J. Keselman & Joanne C. Rogan,31,9
 361,73,Optimum Subsample Sizes for the Bartlett-Kendall Homogeneity of Variance Test,"Larry E. Toothaker, Jana L. Hicks & James M. Price",21,0
 361,73,Evolution Times of Languages,Annette J. Dobson,17,1
@@ -3766,7 +3766,7 @@ NA,74,Editorial Board Page,,7,0
 361,73,Methods of Analysis of Linear Models with Unbalanced Data,"F. M. Speed, R. R. Hocking & O. P. Hackney",47,0
 361,73,Regression and ANOVA with Zero-One Data: Measures of Residual Variation,Bradley Efron,51,79
 361,73,Estimating the Order of Autoregressive Models: The Max x 2 Method,James T. McClave,27,7
-361,73,Size and Power Assessments of Tests of Hypotheses on Survival Parameters,Karl E. Peace & Roger E. Flora,12,8
+361,73,Size and Power Assessments of Tests of Hypotheses on Survival Parameters,Karl E. Peace & Roger E. Flora,13,8
 361,73,Selection of Trimming Proportions for Robust Adaptive Trimmed Means,P. Prescott,20,19
 361,73,Estimation of Variance Components Using Residuals,Kenneth G. Brown,22,6
 361,73,Components of Variance Estimation for the Split-Plot Design,Shou-Hua Li & Jerome H. Klotz,17,1
@@ -3786,49 +3786,49 @@ NA,74,Editorial Board Page,,7,0
 361,73,Book Reviews,,13,0
 361,73,Corrigenda,,14,1
 361,73,Editorial Board Page,,14,0
-NA,72,Articles,,23,2
-NA,72,Book Reviews,,17,0
-NA,72,Book Reviewers,,9,0
-NA,72,Editorial Board Page,,7,0
-NA,72,A Bayesian Data Analysis System for the Evaluation of Social Programs,"Ming-Mei Wang, Melvin R. Novick, Gerald L. Isaacs & Dan Ozenne",19,0
-NA,72,Response Errors of Nonblack Males in Models of the Stratification Process,"William T. Bielby, Robert M. Hauser & David L. Featherman",15,2
-NA,72,Measuring and Testing Relative Advertising Effectiveness with Split-Cable TV Panel Data,Timothy W. McGuire,17,0
-NA,72,On the Relation between Change and Initial Value,Nils Blomqvist,23,6
-NA,72,An Empirical Stopping Rule for Debugging and Testing Computer Software,Ernest H. Forman & Nozer D. Singpurwalla,22,11
-NA,72,Optimum Allocation in Stratified Random Network Sampling for Estimating the Prevalence of Attributes in Rare Populations,Paul S. Levy,26,2
-NA,72,Elasticities of Substitution among Capital and Occupations in U.S. Manufacturing,Randall D. Weiss,15,4
-NA,72,Development of a Mathematical Formula for the Calculation of Fingerprint Probabilities Based on Individual Characteristics,"James W. Osterburg, T. Parthasarathy, T. E. S. Raghavan & Stanley L. Sclove",44,4
-NA,72,Developments in Multiple Comparisons 1966–1976,Rupert G. Miller Jr.,43,12
-NA,72,Conditional Confidence Statements and Confidence Estimators,J. Kiefer,35,21
-NA,72,Comment,George A. Barnard,16,0
-NA,72,Comment,Lawrence D. Brown,17,4
-NA,72,Comment,Robert J. Buehler,17,0
-NA,72,Comment,Arthur P. Dempster,17,0
-NA,72,Comment,Oscar Kempthorne,17,0
-NA,72,Comment,Dennis V. Lindley,19,0
-NA,72,Comment,J. Wolfowitz,19,0
-NA,72,Rejoinder,J. Kiefer,16,1
-NA,72,Two Robust Alternatives to Least-Squares Regression,Richard W. Hill & Paul W. Holland,33,26
-NA,72,The Estimation of the Prediction Error Variance,E. J. Hannan & D. F. Nicholls,23,5
-NA,72,An Efficient Sequential Ranking Procedure,Leo Katz,14,0
-NA,72,Likelihood and Bayesian Inference from Selectively Reported Data,A. P. Dawid & James M. Dickey,29,3
-NA,72,Wald's Test as Applied to Hypotheses in Logit Analysis,Walter W. Hauck Jr. & Allan Donner,62,40
-NA,72,Expressing the Kaplan-Meier Estimator as a Function of Empirical Subsurvival Functions,Arthur V. Peterson Jr.,54,32
-NA,72,Counting the Number of r×c Contingency Tables with Fixed Margins,Mitchell Gail & Nathan Mantel,22,9
-NA,72,Tolerance and Condition in Regression Computations,Kenneth N. Berk,27,10
-NA,72,Computation of MINQUE Variance Component Estimates,Lon-Mu Liu & Jerome Senturia,19,2
-NA,72,A Bayesian Approach to Some Multinomial Estimation and Pretesting Problems,Tom Leonard,24,12
-NA,72,On the Roy-Tiku Approximation to the Distribution of Sample Variances from Nonnormal Universes,W. Y. Tan & S. P. Wong,16,5
-NA,72,Distribution of a Sum of Weighted Chi-Square Variables,Herbert Solomon & Michael A. Stephens,67,23
-NA,72,Simultaneous Confidence Bands for Percentile Lines in the General Linear Model,David L. Turner & David C. Bowden,17,6
-NA,72,Estimation of Linear Models with Time and Cross-Sectionally Varying Coefficients,P. A. V. B. Swamy & J. S. Mehta,25,4
-NA,72,Uncertainty Functions with a Constant Rate of Reduction and Comparison of Experiments,Hans U. Gerber,14,0
-NA,72,A Comparison of Two Approaches to Fixed-Width Confidence Interval Estimation,Raymond J. Carroll,15,2
-NA,72,Tolerance Intervals for the Double Exponential Distribution,Russell F. Kappenman,20,6
-NA,72,A Comparison of Preliminary Estimators for Robust Regression,A. C. Harvey,17,6
-NA,72,On the Use of Double Sampling Schemes in Analyzing Categorical Data with Misclassification Errors,Yosef Hochberg,20,16
-NA,72,Book Reviews,,12,0
-NA,72,Editorial Board Page,,11,0
+360b,72,Articles,,23,2
+360b,72,Book Reviews,,17,0
+360b,72,Book Reviewers,,9,0
+360b,72,Editorial Board Page,,7,0
+360a,72,A Bayesian Data Analysis System for the Evaluation of Social Programs,"Ming-Mei Wang, Melvin R. Novick, Gerald L. Isaacs & Dan Ozenne",19,0
+360a,72,Response Errors of Nonblack Males in Models of the Stratification Process,"William T. Bielby, Robert M. Hauser & David L. Featherman",15,2
+360a,72,Measuring and Testing Relative Advertising Effectiveness with Split-Cable TV Panel Data,Timothy W. McGuire,17,0
+360a,72,On the Relation between Change and Initial Value,Nils Blomqvist,23,6
+360a,72,An Empirical Stopping Rule for Debugging and Testing Computer Software,Ernest H. Forman & Nozer D. Singpurwalla,22,11
+360a,72,Optimum Allocation in Stratified Random Network Sampling for Estimating the Prevalence of Attributes in Rare Populations,Paul S. Levy,26,2
+360a,72,Elasticities of Substitution among Capital and Occupations in U.S. Manufacturing,Randall D. Weiss,15,4
+360a,72,Development of a Mathematical Formula for the Calculation of Fingerprint Probabilities Based on Individual Characteristics,"James W. Osterburg, T. Parthasarathy, T. E. S. Raghavan & Stanley L. Sclove",44,4
+360a,72,Developments in Multiple Comparisons 1966–1976,Rupert G. Miller Jr.,43,12
+360a,72,Conditional Confidence Statements and Confidence Estimators,J. Kiefer,35,21
+360a,72,Comment,George A. Barnard,16,0
+360a,72,Comment,Lawrence D. Brown,17,4
+360a,72,Comment,Robert J. Buehler,17,0
+360a,72,Comment,Arthur P. Dempster,17,0
+360a,72,Comment,Oscar Kempthorne,17,0
+360a,72,Comment,Dennis V. Lindley,19,0
+360a,72,Comment,J. Wolfowitz,19,0
+360a,72,Rejoinder,J. Kiefer,16,1
+360a,72,Two Robust Alternatives to Least-Squares Regression,Richard W. Hill & Paul W. Holland,33,26
+360a,72,The Estimation of the Prediction Error Variance,E. J. Hannan & D. F. Nicholls,23,5
+360a,72,An Efficient Sequential Ranking Procedure,Leo Katz,14,0
+360a,72,Likelihood and Bayesian Inference from Selectively Reported Data,A. P. Dawid & James M. Dickey,29,3
+360a,72,Wald's Test as Applied to Hypotheses in Logit Analysis,Walter W. Hauck Jr. & Allan Donner,63,40
+360a,72,Expressing the Kaplan-Meier Estimator as a Function of Empirical Subsurvival Functions,Arthur V. Peterson Jr.,54,32
+360a,72,Counting the Number of r×c Contingency Tables with Fixed Margins,Mitchell Gail & Nathan Mantel,22,9
+360a,72,Tolerance and Condition in Regression Computations,Kenneth N. Berk,27,10
+360a,72,Computation of MINQUE Variance Component Estimates,Lon-Mu Liu & Jerome Senturia,19,2
+360a,72,A Bayesian Approach to Some Multinomial Estimation and Pretesting Problems,Tom Leonard,24,12
+360a,72,On the Roy-Tiku Approximation to the Distribution of Sample Variances from Nonnormal Universes,W. Y. Tan & S. P. Wong,16,5
+360a,72,Distribution of a Sum of Weighted Chi-Square Variables,Herbert Solomon & Michael A. Stephens,67,23
+360a,72,Simultaneous Confidence Bands for Percentile Lines in the General Linear Model,David L. Turner & David C. Bowden,17,6
+360a,72,Estimation of Linear Models with Time and Cross-Sectionally Varying Coefficients,P. A. V. B. Swamy & J. S. Mehta,25,4
+360a,72,Uncertainty Functions with a Constant Rate of Reduction and Comparison of Experiments,Hans U. Gerber,14,0
+360a,72,A Comparison of Two Approaches to Fixed-Width Confidence Interval Estimation,Raymond J. Carroll,15,2
+360a,72,Tolerance Intervals for the Double Exponential Distribution,Russell F. Kappenman,20,6
+360a,72,A Comparison of Preliminary Estimators for Robust Regression,A. C. Harvey,17,6
+360a,72,On the Use of Double Sampling Schemes in Analyzing Categorical Data with Misclassification Errors,Yosef Hochberg,20,16
+360a,72,Book Reviews,,12,0
+360a,72,Editorial Board Page,,11,0
 359,72,Eight Centuries of Sampling Inspection: The Trial of the Pyx,Stephen M. Stigler,25,7
 359,72,On the Behavior of Statistical Estimators When Sampling Accounting Populations,John Neter & James K. Loebbecke,16,11
 359,72,Direct Approximations for Chi-Squared Percentage Points,David C. Hoaglin,20,10
@@ -3840,7 +3840,7 @@ NA,72,Editorial Board Page,,11,0
 359,72,Formalizing Subjective Notions about the Effect of Nonrespondents in Sample Surveys,Donald B. Rubin,44,118
 359,72,"Fractional Order Statistics, with Applications",Stephen M. Stigler,43,20
 359,72,Test Resistance,Donald Ylvisaker,21,24
-359,72,The Efficiency of Cox's Likelihood Function for Censored Data,Bradley Efron,144,234
+359,72,The Efficiency of Cox's Likelihood Function for Censored Data,Bradley Efron,145,234
 359,72,Stepwise Multiple Comparison Procedures,Roy E. Welsch,36,58
 359,72,On a Fundamental Theorem in Multiple Comparisons,E. L. Lehmann & Juliet Popper Shaffer,23,6
 359,72,On Estimating the Variance in Sampling with Probability Proportional to Aggregate Size,J. N. K. Rao & K. Vijayan,20,9
@@ -3912,7 +3912,7 @@ NA,72,Editorial Board Page,,11,0
 357,72,Comment,C. W. J. Granger,15,9
 357,72,Comment,Christopher A. Sims,14,39
 357,72,Rejoinder,David A. Pierce,10,7
-357,72,Covariance Analysis of Heart Transplant Survival Data,John Crowley & Marie Hu,119,104
+357,72,Covariance Analysis of Heart Transplant Survival Data,John Crowley & Marie Hu,120,104
 357,72,Considerations in Measuring Partial Association for Ordinal Categorical Data,Alan Agresti,25,8
 357,72,Comparison of Stopping Rules in Forward “Stepwise” Regression,Robert B. Bendel & A. A. Afifi,105,41
 357,72,Two Methods for Examining the Stability of Regression Coefficients,Kenneth Garbade,25,51
@@ -4122,7 +4122,7 @@ NA,72,Editorial Board Page,,11,0
 353,71,Sequential Estimation of a Linear Function of Means of Three Normal Populations,Nitis Mukhopadhyay,12,8
 353,71,Estimation of Standardized Regression Coefficients,Lawrence S. Mayer & Mary Sue Younger,22,3
 353,71,The Acceptability of Regression Solutions: Another Look at Computational Accuracy,"Albert E. Beaton, Donald B. Rubin & John L. Barone",17,42
-353,71,The Equivalence of Generalized Least Squares and Maximum Likelihood Estimates in the Exponential Family,"A. Charnes, E. L. Frome & P. L. Yu",92,59
+353,71,The Equivalence of Generalized Least Squares and Maximum Likelihood Estimates in the Exponential Family,"A. Charnes, E. L. Frome & P. L. Yu",92,60
 353,71,Combining Estimates of Location,Arthur Cohen,14,5
 353,71,Reduced Mean Square Error Estimation in Contingency Tables,Charles C. Brown & Larry R. Muenz,12,3
 353,71,Use of Restricted Residuals in SUR Systems: Some Finite Sample Results,Nagesh S. Revankar,16,16
