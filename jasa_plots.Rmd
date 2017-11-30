@@ -1,0 +1,11 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(readr)
+
+jasa_articles <- read_csv("./jasa_articles_dataset_complete.csv")
+
+```
