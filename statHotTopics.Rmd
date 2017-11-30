@@ -47,10 +47,11 @@ data_volume_year = matrix(data = unlist(list_volume_year), nrow = 75, ncol = 112
   
 ```
 
+
 ```{r issue_volume, cache = TRUE}
 
-issue.year <- data_volume_year$Year[1]
-issue.volume <- data_volume_year$Volume[1]
+#issue.year <- data_volume_year$Year[1]
+#issue.volume <- data_volume_year$Volume[1]
 
 read_issues <- function(issue.year, issue.volume) {
   
@@ -60,73 +61,148 @@ read_issues <- function(issue.year, issue.volume) {
   
   issue_list = h %>%
     html_nodes(".issue-num") %>%
-    html_text() %>% str_split(pattern = "Issue") %>%
+    html_text() %>% str_split(pattern = "Issue ") %>%
     unlist() %>%
     .[which(.  != "")]
   
-  data_frame(Volume = rep(as.character(issue[2]), length(issue_list)), Issue = issue_list)
+  data_frame(Year = rep(issue.year, length(issue_list)), 
+             Volume = rep(issue.volume, length(issue_list)), 
+             Issue = issue_list)
              
 }
 
-issues_volume_2 <- map2_df(data_volume_year$Year, data_volume_year$Volume, ~read_issues(.x,.y))
+#issues_volume <- map2_df(data_volume_year$Year, data_volume_year$Volume, ~read_issues(.x,.y))
 
 ```
 
 
 ```{r write_data}
 
+## This is only used to save the data, I don't want to run it everytime. 
+
 #write_csv(data_volume_year, "./data_volume_year.csv")
 #write_csv(issues_volume, "./data_issues_volume.csv")
+
+issues_volume <- read_csv("./data_issues_volume.csv")
 
 ```
 
 
 ```{r issue_articles, cache = TRUE}
 
-url <- "http://www.tandfonline.com/toc/uasa20/108/502?nav=tocList"
 
-read_page_reviews <- function(url) {
+read_articles <- function(volume, issue) {
+  
+  url <- str_c("http://www.tandfonline.com/toc/uasa20/",volume,"/",issue,"?nav=tocList")
+  
+  print(url)
   
   h = read_html(url)
   
   title = h %>%
     html_nodes(".hlFld-Title") %>%
     html_text() %>% 
-    as.data.frame() %>%
+    as.data.frame(stringsAsFactors = FALSE) %>%
     rename(title = ".")
   
+  url_data = h %>%
+    html_nodes(".tocDeliverFormatsLinks > a:nth-child(1)") %>%
+    html_attr('href') %>%
+    str_c("http://www.tandfonline.com",.) %>%
+    as.data.frame(stringsAsFactors = FALSE) %>%
+    rename(urls = ".")
   
   views = h %>%
     html_nodes("li:nth-child(1) span") %>%
     html_text() %>% 
-    as.data.frame() %>% 
+    as.data.frame(stringsAsFactors = FALSE) %>% 
     rename(views = ".")
-  
   
   citations = h %>%
     html_nodes("li:nth-child(2) span") %>%
     html_text() %>% 
-    as.data.frame() %>% 
+    as.data.frame(stringsAsFactors = FALSE) %>% 
     rename(citations = ".")
   
-  title_views_citations = cbind(title, views, citations) %>% 
-    filter(title != "Book Reviews")
+  scrap_authors <- function(url_author) {
+    
+    h_paper = read_html(url_author)
+    citation_link = h_paper %>%
+      html_nodes(".downloadCitations a") %>%
+      html_attr('href') %>%
+      str_c("http://www.tandfonline.com",.)
+    
+    h_citation = read_html(citation_link)
+    
+    authors = h_citation %>%
+      html_nodes(".entryAuthor") %>%
+      html_text() %>%
+      as.data.frame(stringsAsFactors = FALSE) %>%
+      rename(authors = ".")
+    
+  }
   
-  authors = h %>%
-    html_nodes(".all") %>%
-    html_text()
+  authors <- map_df(url_data$urls, ~scrap_authors(.x))
   
-title_views_citations = merge(title_views_citations, authors) %>% 
-  as.data.frame() %>% 
-  rename(authors = y)
+  title_views_citations = cbind(Issue = as.character(rep(issue, dim(title)[1])), 
+                                Volume = rep(volume, dim(title)[1]),
+                                title,
+                                authors,
+                                views,
+                                citations) %>% 
+                            as_tibble()
   
 }
 
-```
+## First 20 issues
+start.time <- Sys.time()
+#articles_data_1_20 <- map2_df(issues_volume$Volume[1:20], issues_volume$Issue[1:20], ~read_articles(.x,.y))
+#write_csv(articles_data_1_20, "./output_issues_1_20.csv")
+time.taken <- start.time - Sys.time()
+time.taken
 
-```{r write data}
+## From 21 to 70 issue
+start.time <- Sys.time()
+#articles_data_21_70 <- map2_df(issues_volume$Volume[21:70], issues_volume$Issue[21:70], ~read_articles(.x,.y))
+#write_csv(articles_data_21_70, "./output_issues_21_70.csv")
+time.taken <- start.time - Sys.time()
+time.taken
 
-write_csv(title_views_citations, "./title_views_citations.csv")
+## From 71 to 170 issue
+## For Soohyun
+
+start.time <- Sys.time()
+articles_data_71_170 <- map2_df(issues_volume$Volume[71:170], issues_volume$Issue[71:170], ~read_articles(.x,.y))
+write_csv(articles_data_71_170, "./output_issues_71_170.csv")
+time.taken <- start.time - Sys.time()
+time.taken
+
+## From 171 to 270 issue
+
+start.time <- Sys.time()
+#articles_data_171_270 <- map2_df(issues_volume$Volume[171:270], issues_volume$Issue[171:270], ~read_articles(.x,.y))
+#write_csv(articles_data_171_270, "./output_issues_171_270.csv")
+time.taken <- start.time - Sys.time()
+time.taken
+
+## From 271 to 370 issue
+start.time <- Sys.time()
+articles_data_271_370 <- map2_df(issues_volume$Volume[271:370], issues_volume$Issue[271:370], ~read_articles(.x,.y))
+write_csv(articles_data_271_370, "./output_issues_271_370.csv")
+time.taken <- start.time - Sys.time()
+time.taken
+
+## Remove supplement in 
+issues_volume <- issues_volume %>%
+                  filter(Issue != "Supp 1")
+
+## From 371 to 520 issue
+start.time <- Sys.time()
+#articles_data_371_520 <- map2_df(issues_volume$Volume[371:520], issues_volume$Issue[371:520], ~read_articles(.x,.y))
+#write_csv(articles_data_371_520, "./output_issues_371_520.csv")
+time.taken <- start.time - Sys.time()
+time.taken
+
 
 ```
 
