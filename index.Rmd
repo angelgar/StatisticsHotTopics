@@ -3,7 +3,6 @@ title: "Evolution of Statistics 'Hot Topics'"
 ---
 
 ```{r, load data, echo = FALSE, message = FALSE, warning = FALSE}
-
 library(readr)
 library(dplyr)
 library(stringr)
