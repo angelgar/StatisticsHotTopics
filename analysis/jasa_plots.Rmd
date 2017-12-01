@@ -1,11 +1,12 @@
 ---
-title: "R Notebook"
-output: html_notebook
-editor_options: 
-  chunk_output_type: inline
+title: "JASA Plots"
+author: ""
+date: "11/30/2017"
+output: html_document
 ---
 
 ```{r}
+
 library(readr)
 library(dplyr)
 library(stringr)
@@ -13,10 +14,12 @@ library(tidyverse)
 library(tidytext)
 library(janitor)
 library(ggplot2)
+library(ggridges)
 
 data("stop_words")
 
-jasa_articles = read_csv("./jasa_articles_dataset_complete.csv") %>%
+jasa_articles = read_csv("./data/jasa_articles_dataset_complete.csv",
+                         col_types = "ccccccc") %>%
   clean_names() %>% 
   separate(authors, into = paste("author", 1:18, sep = "_"), sep = ", ") %>% 
   separate(author_1, into = c("author_1", "author_19"), sep = " & ") %>% 
@@ -36,6 +39,5 @@ keywords = semi_join(jasa_articles, keywords)
   #ggplot(aes(year, word, fill = word)) + 
   #geom_density_ridges()
 
-
-
 ```
+

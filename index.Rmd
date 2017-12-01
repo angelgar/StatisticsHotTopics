@@ -3,6 +3,7 @@ title: "Evolution of Statistics 'Hot Topics'"
 ---
 
 ```{r, load data, echo = FALSE, message = FALSE, warning = FALSE}
+
 library(readr)
 library(dplyr)
 library(stringr)
@@ -16,13 +17,19 @@ library(knitr)
 
 data("stop_words")
 
+<<<<<<< HEAD:index.Rmd
 jasa_articles = read_csv("./jasa_articles_dataset_complete.csv") %>%
+=======
+jasa_articles = read_csv("./analysis/data/jasa_articles_dataset_complete.csv",
+                         col_types = "ccccccc") %>%
+>>>>>>> 88a132f8530db8b1885b3346a681cb24f8acb0db:index.Rmd
   clean_names() %>% 
   separate(authors, into = c("author1", "author19"), sep = " & ") %>% 
   separate(author1, into = paste("author", 1:18), sep = ", ") %>% 
   unnest_tokens(word, title)
 
 jasa_articles = anti_join(jasa_articles, stop_words)
+
 ```
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}

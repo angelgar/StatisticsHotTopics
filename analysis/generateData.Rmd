@@ -22,7 +22,7 @@ library(janitor)
 
 ```
 
-```{r year_volume, cache = TRUE}
+```{r year_volume, cache = TRUE, eval = FALSE}
 
 url <- "http://www.tandfonline.com/loi/uasa20"
 
@@ -77,8 +77,8 @@ issues_volume <- map2_df(data_volume_year$Year, data_volume_year$Volume, ~read_i
 
 ## This is only used to save the data, I don't want to run it everytime. 
 
-#write_csv(data_volume_year, "./data_volume_year.csv")
-#write_csv(issues_volume, "./data_issues_volume.csv")
+write_csv(data_volume_year, "./analysis/data/data_volume_year.csv")
+write_csv(issues_volume, "./analysis/data/data_issues_volume.csv")
 
 
 ```
@@ -158,19 +158,19 @@ read_articles <- function(volume, issue) {
 
 ```{r, eval = FALSE}
 
-issues_volume <- read_csv("./data_issues_volume.csv")
+issues_volume <- read_csv("./analysis/data/data_issues_volume.csv")
 
 ## First 20 issues
 start.time <- Sys.time()
 articles_data_1_20 <- map2_df(issues_volume$Volume[1:20], issues_volume$Issue[1:20], ~read_articles(.x,.y))
-#write_csv(articles_data_1_20, "./output_issues_1_20.csv")
+write_csv(articles_data_1_20, "./analysis/data/output_issues_1_20.csv")
 time.taken <- start.time - Sys.time()
 time.taken
 
 ## From 21 to 70 issue
 start.time <- Sys.time()
 articles_data_21_70 <- map2_df(issues_volume$Volume[21:70], issues_volume$Issue[21:70], ~read_articles(.x,.y))
-#write_csv(articles_data_21_70, "./output_issues_21_70.csv")
+write_csv(articles_data_21_70, "./analysis/data/output_issues_21_70.csv")
 time.taken <- start.time - Sys.time()
 time.taken
 
@@ -179,7 +179,7 @@ time.taken
 
 start.time <- Sys.time()
 articles_data_71_170 <- map2_df(issues_volume$Volume[71:170], issues_volume$Issue[71:170], ~read_articles(.x,.y))
-#write_csv(articles_data_71_170, "./output_issues_71_170.csv")
+write_csv(articles_data_71_170, "./analysis/data/output_issues_71_170.csv")
 time.taken <- start.time - Sys.time()
 time.taken
 
@@ -187,14 +187,14 @@ time.taken
 
 start.time <- Sys.time()
 articles_data_171_270 <- map2_df(issues_volume$Volume[171:270], issues_volume$Issue[171:270], ~read_articles(.x,.y))
-#write_csv(articles_data_171_270, "./output_issues_171_270.csv")
+write_csv(articles_data_171_270, "./analysis/data/output_issues_171_270.csv")
 time.taken <- start.time - Sys.time()
 time.taken
 
 ## From 271 to 370 issue
 start.time <- Sys.time()
 articles_data_271_370 <- map2_df(issues_volume$Volume[271:370], issues_volume$Issue[271:370], ~read_articles(.x,.y))
-#write_csv(articles_data_271_370, "./output_issues_271_370.csv")
+write_csv(articles_data_271_370, "./analysis/data/output_issues_271_370.csv")
 time.taken <- start.time - Sys.time()
 time.taken
 
@@ -205,7 +205,7 @@ issues_volume <- issues_volume %>%
 ## From 371 to 520 issue
 start.time <- Sys.time()
 articles_data_371_520 <- map2_df(issues_volume$Volume[371:520], issues_volume$Issue[371:520], ~read_articles(.x,.y))
-#write_csv(articles_data_371_520, "./output_issues_371_520.csv")
+write_csv(articles_data_371_520, "./analysis/data/output_issues_371_520.csv")
 time.taken <- start.time - Sys.time()
 time.taken
 
@@ -213,15 +213,22 @@ time.taken
 ```
 
 
-```{r}
+```{r, eval = FALSE}
 
-issues_volume <- read_csv("./data_issues_volume.csv")
-issues_1_20 <- read_csv("./output_issues_1_20.csv")
-issues_21_70 <- read_csv("./output_issues_21_70.csv")
-issues_71_170 <- read_csv("./output_issues_71_170.csv")
-issues_171_270 <- read_csv("./output_issues_171_270.csv")
-issues_271_370 <- read_csv("./output_issues_271_370.csv")
-issues_371_520 <- read_csv("./output_issues_371_520.csv")
+issues_volume <- read_csv("./analysis/data/data_issues_volume.csv", 
+                          col_types = "ccc")
+issues_1_20 <- read_csv("./analysis/data/output_issues_1_20.csv", 
+                          col_types = "cccccc")
+issues_21_70 <- read_csv("./analysis/data/output_issues_21_70.csv", 
+                          col_types = "cccccc")
+issues_71_170 <- read_csv("./analysis/data/output_issues_71_170.csv", 
+                          col_types = "cccccc")
+issues_171_270 <- read_csv("./analysis/data/output_issues_171_270.csv", 
+                          col_types = "cccccc")
+issues_271_370 <- read_csv("./analysis/data/output_issues_271_370.csv", 
+                          col_types = "cccccc")
+issues_371_520 <- read_csv("./analysis/data/output_issues_371_520.csv", 
+                          col_types = "cccccc")
 
 data_articles <- rbind(issues_1_20,
                        issues_21_70,
@@ -244,16 +251,7 @@ data_articles <- left_join(data_articles, issues_volume, by = c("Issue","Volume"
   mutate(title = stringi::stri_trans_general(title, "latin-ascii"),
          authors = stringi::stri_trans_general(authors, "latin-ascii"))
 
-#write_csv(data_articles, "jasa_articles_dataset_complete.csv")
+write_csv(data_articles, "./analysis/data/jasa_articles_dataset_complete.csv")
 
 ```
-
-```{r}
-
-data_test <- read_csv("jasa_articles_dataset_complete.csv")
-
-
-```
-
-
 
