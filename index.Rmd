@@ -16,7 +16,7 @@ library(knitr)
 
 data("stop_words")
 
-jasa_articles = read_csv("../jasa_articles_dataset_complete.csv") %>%
+jasa_articles = read_csv("./jasa_articles_dataset_complete.csv") %>%
   clean_names() %>% 
   separate(authors, into = c("author1", "author19"), sep = " & ") %>% 
   separate(author1, into = paste("author", 1:18), sep = ", ") %>% 
