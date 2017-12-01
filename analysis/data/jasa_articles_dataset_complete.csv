@@ -5415,6 +5415,46 @@ Issue,Volume,title,authors,views,citations,Year
 367,74,Between-Groups Comparison of Principal Components,W. J. Krzanowski,124,123,1979
 367,74,Multivariate Tests for Clusters,Kerry L. Lee,25,11,1979
 367,74,Distribution of the Normal Scores Statistic for Nonparametric One-Way Analysis of Variance,Hollington T. Lu & Paul J. Smith,14,6,1979
+366b,74,Acknowledgments,Linda D. Anderson & Stephen E. Fienberg,8,0,1979
+366a,74,Estimates of Income for Small Places: An Application of James-Stein Procedures to Census Data,Robert E. Fay III & Roger A. Herriot,114,209,1979
+366a,74,The Use of the Jackknife to Estimate Proportions from Toxicological Data in the Presence of Litter Effects,Beth Gladen,18,9,1979
+366a,74,Karhunen-Loeve Analysis of Historical Time Series with an Application to Plantation Births in Jamaica,Alexander Basilevsky & Derek P. J. Hum,15,2,1979
+366a,74,Comovements in Stock Prices in the Very Short Run,Thomas W. Epps,35,35,1979
+366a,74,Comparing Two Probability Appraisers,Glen Meeden,13,0,1979
+366a,74,Fixed-State Assessment of Utility Functions,Melvin R. Novick & Dennis V. Lindley,15,1,1979
+366a,74,Approximate Bayesian Predictive Distributions and Model Selection,William W. Davis,21,0,1979
+366a,74,Using Multivariate Matched Sampling and Regression Adjustment to Control Bias in Observational Studies,Donald B. Rubin,59,26,1979
+366a,74,An Iterative Method for Estimating a Multivariate Mode and Isopleth,Thomas W. Sager,14,1,1979
+366a,74,Union-Intersection Test for the Mean Vector When the Covariance Matrix is Totally Reducible,Bimal Kumar Sinha & H. S. Wieand,14,0,1979
+366a,74,Robust Estimates of the ED50,Martin A. Hamilton,19,0,1979
+366a,74,A Predictive Approach to Subdomain Estimation in Finite Populations,Petter Laake,17,1,1979
+366a,74,On Rounding Percentages,Persi Diaconis & David Freedman,29,4,1979
+366a,74,On the Likelihood Ratio Test for a Shift in Location of Normal Populations,K. J. Worsley,38,25,1979
+366a,74,Confidence Intervals for Proportions of Variability in Two-Factor Nested Variance Component Models,Franklin A. Graybill & Chih-Ming Wang,21,8,1979
+366a,74,"Bounding Moments, the Gini Index and Lorenz Curve from Grouped Data for Unimodal Density Functions",Abba M. Krieger,16,3,1979
+366a,74,Nonparametric Multiple Comparison Procedures,J. J. Shuster & James M. Boyett,21,2,1979
+366a,74,The Bayesian Analysis of a Nonadditive Model,Mary A. Hartz & Donald L. Meyer,14,0,1979
+366a,74,An Asymptotic Expansion for Unbalanced Quadratic Forms in Normal Variables,Joseph J. Walker,15,0,1979
+366a,74,Efficiency of Smooth Goodness-of-Fit Tests,Kenneth J. Kopecky & Donald A. Pierce,14,12,1979
+366a,74,Some Two-Stage K-Sample Tests,John E. Hewett & John D. Spurrier,14,3,1979
+366a,74,A Model-Based Approach to Estimation for Small Subgroups of a Population,"D. Holt, T. M. F. Smith & T. J. Tomberlin",27,1,1979
+366a,74,Regression Analysis Based on the Signs of the Residuals,Dana Quade,14,0,1979
+366a,74,Sampling from the Binomial Distribution on a Computer,George S. Fishman,28,5,1979
+366a,74,A Note on the Influence of the Sample on the Posterior Distribution,Ward Whitt,15,4,1979
+366a,74,Distribution of the Estimators for Autoregressive Time Series with a Unit Root,David A. Dickey & Wayne A. Fuller,458,1489,1979
+366a,74,Multiple Three-Decision Rules for Parametric Signs,Robert Bohrer,16,5,1979
+366a,74,Variance Estimation Based on a Superpopulation Model in Two-Stage Sampling,Richard K. Burdick & Robert L. Sielken Jr.,14,2,1979
+366a,74,Neyman's Smooth Goodness-of-Fit Test When the Hypothesis is Composite,David R. Thomas & Donald A. Pierce,18,17,1979
+366a,74,On the Exactness of Confidence Bands about a Linear Model,Fariborz Khorasani & George A. Milliken,13,4,1979
+366a,74,Estimating the Lag Structure of a Nonlinear Time Series Model,Melvin J. Hinich,12,2,1979
+366a,74,Nonparametric Prediction Intervals for a Future Sample Median,Michael A. Fligner & Douglas A. Wolfe,21,5,1979
+366a,74,Rows Adjusted for Columns versus Simple Row Means in Two-Way ANOVA: When are the Two Hypotheses Equivalent?,Donald S. Burdick,13,0,1979
+366a,74,The Exact Noncentral Distributions of Spearman's r and other Related Correlation Coefficients,Fritz H.-H. Henze,16,1,1979
+366a,74,Dispersion Matrices for Variance Components Models,S. R. Searle & Harold Y. Henderson,21,8,1979
+366a,74,A Comparison of Procedures for Multiple Comparisons of Means with Unequal Variances,Ajit C. Tamhane,33,31,1979
+366a,74,Log-Linear Models for Categorical Data with Misclassification and Double Sampling,T. Timothy Chen,15,10,1979
+366a,74,Single-Variable Poisson Regression: A Goodness-of-Fit Test and the Comparison of Regression Coefficients,David A. Pyne,18,0,1979
+366a,74,A Test for Heteroscedasticity Based on Ordinary Least Squares Residuals,M. J. Harrison & B. P. M. McCabe,34,15,1979
 365,74,Some Problems of Statistics and Everyday Life,George E. P. Box,562,36,1979
 365,74,Testing Disease Dependence in Survival Experiments with Serial Sacrifice,"Bengt Berlin, Joel Brodsky & Peter Clifford",17,7,1979
 365,74,Short-term Forecasting and Seasonal Adjustment,Charles I. Plosser,18,6,1979
@@ -5564,6 +5604,35 @@ Issue,Volume,title,authors,views,citations,Year
 361,73,On Testing a Multivariate Linear Hypothesis When the Covariance Matrix and its Inverse Have the Same Pattern,Gerald S. Rogers & Dennis L. Young,17,3,1978
 361,73,A Note on the Efficient Estimation of the Linear Expenditure System,John C. Ham,15,3,1978
 361,73,Maximum Likelihood Estimates of the Parameters of the Cauchy Distribution for Samples of Size 3 and 4,Thomas S. Ferguson,39,9,1978
+360a,72,A Bayesian Data Analysis System for the Evaluation of Social Programs,"Ming-Mei Wang, Melvin R. Novick, Gerald L. Isaacs & Dan Ozenne",19,0,1977
+360a,72,Response Errors of Nonblack Males in Models of the Stratification Process,"William T. Bielby, Robert M. Hauser & David L. Featherman",15,2,1977
+360a,72,Measuring and Testing Relative Advertising Effectiveness with Split-Cable TV Panel Data,Timothy W. McGuire,17,0,1977
+360a,72,On the Relation between Change and Initial Value,Nils Blomqvist,23,6,1977
+360a,72,An Empirical Stopping Rule for Debugging and Testing Computer Software,Ernest H. Forman & Nozer D. Singpurwalla,22,11,1977
+360a,72,Optimum Allocation in Stratified Random Network Sampling for Estimating the Prevalence of Attributes in Rare Populations,Paul S. Levy,26,2,1977
+360a,72,Elasticities of Substitution among Capital and Occupations in U.S. Manufacturing,Randall D. Weiss,15,4,1977
+360a,72,Development of a Mathematical Formula for the Calculation of Fingerprint Probabilities Based on Individual Characteristics,"James W. Osterburg, T. Parthasarathy, T. E. S. Raghavan & Stanley L. Sclove",44,4,1977
+360a,72,Developments in Multiple Comparisons 1966-1976,Rupert G. Miller Jr.,43,12,1977
+360a,72,Conditional Confidence Statements and Confidence Estimators,J. Kiefer,35,21,1977
+360a,72,Two Robust Alternatives to Least-Squares Regression,Richard W. Hill & Paul W. Holland,33,26,1977
+360a,72,The Estimation of the Prediction Error Variance,E. J. Hannan & D. F. Nicholls,23,5,1977
+360a,72,An Efficient Sequential Ranking Procedure,Leo Katz,14,0,1977
+360a,72,Likelihood and Bayesian Inference from Selectively Reported Data,A. P. Dawid & James M. Dickey,29,3,1977
+360a,72,Wald's Test as Applied to Hypotheses in Logit Analysis,Walter W. Hauck Jr. & Allan Donner,63,40,1977
+360a,72,Expressing the Kaplan-Meier Estimator as a Function of Empirical Subsurvival Functions,Arthur V. Peterson Jr.,54,32,1977
+360a,72,Counting the Number of r*c Contingency Tables with Fixed Margins,Mitchell Gail & Nathan Mantel,22,9,1977
+360a,72,Tolerance and Condition in Regression Computations,Kenneth N. Berk,27,10,1977
+360a,72,Computation of MINQUE Variance Component Estimates,Lon-Mu Liu & Jerome Senturia,19,2,1977
+360a,72,A Bayesian Approach to Some Multinomial Estimation and Pretesting Problems,Tom Leonard,24,12,1977
+360a,72,On the Roy-Tiku Approximation to the Distribution of Sample Variances from Nonnormal Universes,W. Y. Tan & S. P. Wong,16,5,1977
+360a,72,Distribution of a Sum of Weighted Chi-Square Variables,Herbert Solomon & Michael A. Stephens,67,23,1977
+360a,72,Simultaneous Confidence Bands for Percentile Lines in the General Linear Model,David L. Turner & David C. Bowden,17,6,1977
+360a,72,Estimation of Linear Models with Time and Cross-Sectionally Varying Coefficients,P. A. V. B. Swamy & J. S. Mehta,25,4,1977
+360a,72,Uncertainty Functions with a Constant Rate of Reduction and Comparison of Experiments,Hans U. Gerber,14,0,1977
+360a,72,A Comparison of Two Approaches to Fixed-Width Confidence Interval Estimation,Raymond J. Carroll,15,2,1977
+360a,72,Tolerance Intervals for the Double Exponential Distribution,Russell F. Kappenman,20,6,1977
+360a,72,A Comparison of Preliminary Estimators for Robust Regression,A. C. Harvey,17,6,1977
+360a,72,On the Use of Double Sampling Schemes in Analyzing Categorical Data with Misclassification Errors,Yosef Hochberg,20,16,1977
 359,72,Eight Centuries of Sampling Inspection: The Trial of the Pyx,Stephen M. Stigler,25,7,1977
 359,72,On the Behavior of Statistical Estimators When Sampling Accounting Populations,John Neter & James K. Loebbecke,16,11,1977
 359,72,Direct Approximations for Chi-Squared Percentage Points,David C. Hoaglin,20,10,1977
