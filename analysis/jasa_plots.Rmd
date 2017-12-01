@@ -1,0 +1,41 @@
+---
+title: "R Notebook"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r}
+library(readr)
+library(dplyr)
+library(stringr)
+library(tidyverse)
+library(tidytext)
+library(janitor)
+library(ggplot2)
+
+data("stop_words")
+
+jasa_articles = read_csv("./jasa_articles_dataset_complete.csv") %>%
+  clean_names() %>% 
+  separate(authors, into = paste("author", 1:18, sep = "_"), sep = ", ") %>% 
+  separate(author_1, into = c("author_1", "author_19"), sep = " & ") %>% 
+  unnest_tokens(word, title)
+
+jasa_articles = anti_join(jasa_articles, stop_words)
+
+word = c("analysis", "bayesian", "data", "estimation", "inference", "model", "nonparametric", "regression", "statistics")
+keywords = as.data.frame(word)
+
+keywords = semi_join(jasa_articles, keywords)
+
+# keywords over time
+keywords %>% 
+  group_by(year) %>% 
+  count(word) %>% 
+  ggplot(aes(year, word, fill = word)) + 
+  geom_density_ridges()
+
+
+
+```

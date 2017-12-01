@@ -1,0 +1,32 @@
+---
+title: "Final Report"
+author: "Hyewon Choi, Angel Garcia de la Garza, Soo Hyun Kim, Rebecca Venetianer"
+output: html_document
+---
+
+## Motivation
+The goal of our analysis is to understand the evolution of statistics over time, specifically in regards to "hot topics" used in research. We analyzed the titles of articles published in the Journal of the American Statistical Association (JASA) since 1888, as well as other factors such as authors, number of citations, etc. We used data gathered to create exploratory plots regarding the aforementioned factors. Specifically, we then found correlations of specific "hot topics" with article impact as measured by article views and citations.
+
+## Related work
+Anything that inspired you, such as a paper, a web site, or something we discussed in class.
+
+@ Angel talk about the seminar you went to
+
+## Initial questions
+The main question of interest is to undertand if/how keywords used in the titles of JASA-published papers have evolved over time, and when certain topcs arose to be of interest in research. While scraping the data and further investigating the JASA website, we came up with other questions, such as how do certain keywords affect the number of citations, and how has the average number of authors changed over time, and what is the most common word in titles for each year?
+
+## Data
+Source, scraping method, cleaning, etc.
+
+@ Angel
+
+## Exploratory analysis
+After data were cleaned, we created visualization plots to illustrate our questions of interest.
+
+Visualizations, summaries, and exploratory statistical analyses. Justify the steps you took, and show any major changes to your ideas.
+
+## Additional analysis
+If you undertake formal statistical analyses, describe these in detail
+
+## Discussion
+What were your findings? Are they what you expect? What insights into the data can you make?
