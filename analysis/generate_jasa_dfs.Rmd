@@ -1,0 +1,40 @@
+---
+title: "JASA Dataframes"
+author: ""
+date: "11/30/2017"
+output: html_document
+---
+
+```{r}
+
+library(readr)
+library(dplyr)
+library(stringr)
+library(tidyverse)
+library(tidytext)
+library(janitor)
+
+# Use jasa_articles df when we need the full article title
+
+jasa_articles = read_csv("./analysis/data/jasa_articles_dataset_complete.csv",
+                         col_types = "ccccccc") %>%
+  clean_names() %>% 
+  separate(authors, into = paste("author", 1:18, sep = "_"), sep = ", ") %>% 
+  separate(author_1, into = c("author_1", "author_19"), sep = " & ") %>% 
+  mutate(id = as.character(c(1:nrow(jasa_articles)))) %>% 
+  select(id,issue:year)
+
+# Use jasa_rm.stopwords df when interested in some words of the title
+
+data("stop_words")
+
+jasa_rm.stopwords = jasa_articles %>% 
+  unnest_tokens(word, title)
+jasa_rm.stopwords = full_join(jasa_rm.stopwords, jasa_articles) # contains full title and unnested words
+
+rm(stop_words)
+
+
+
+```
+
