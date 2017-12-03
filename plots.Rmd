@@ -2,26 +2,28 @@
 title: "Visual Analysis"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: rows
+    storyboard: true
+    social: menu
+    source: embed
     theme: yeti 
 ---
-Row
--------------------------------------
-    
-### Top words per year
-    
-```{r}
+
+```{r setup, include = FALSE}
+library(flexdashboard)
 library(plyr)
 library(ggplot2)
 library(ggridges)
-
-
 ```
- 
-### Trend of keywords over time
-    
+
+### Top statistical "hot topics" by year from 1888 - 2017
+
 ```{r}
 
+```
+
+### Trends of 10 statistical "hot topics" from 1888 - 2017
+
+```{r}
 # words = c("analysis", "bayes", "bio", "clinical", "cluster", "data", "estimation", "inference", "missing", "model", "parametric", "p-value", "regression", "shrink", "statistic", "survival") 
 
 
@@ -49,14 +51,9 @@ library(ggridges)
 
 
 #jasa_keywords = map(words, search_word)
-
-
-``` 
-
-Row
--------------------------------------
+```
     
-### Number of collaborators per article per year
+### Number of collaborators per article for every year from 1888 - 2017
     
 ```{r}
 
@@ -65,7 +62,7 @@ Row
 
 ```
     
-### Number of citations per keyword
+### Number of citations per statistical "hot topic" 
 
 ```{r}
 ```
