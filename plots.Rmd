@@ -22,7 +22,7 @@ library(ggridges)
     
 ```{r}
 
-words = c("analysis", "bayes", "bio", "clinical", "cluster", "data", "estimation", "inference", "missing", "model", "parametric", "p-value", "regression", "shrink", "statistic", "survival") 
+# words = c("analysis", "bayes", "bio", "clinical", "cluster", "data", "estimation", "inference", "missing", "model", "parametric", "p-value", "regression", "shrink", "statistic", "survival") 
 
 
 # Search for words containing patterns in 'words' vector --> need function
@@ -60,8 +60,8 @@ Row
     
 ```{r}
 
-jasa_articles %>% 
-  mutate(no_collaborators = )
+# jasa_articles %>% 
+  # mutate(no_collaborators = )
 
 ```
     

@@ -8,9 +8,9 @@ output: html_document
 The goal of our analysis is to understand the evolution of statistics over time, specifically in regards to "hot topics" used in research. We analyzed the titles of articles published in the Journal of the American Statistical Association (JASA) since 1888, as well as other factors such as authors, number of citations, etc. We used data gathered to create exploratory plots regarding the aforementioned factors. Specifically, we then found correlations of specific "hot topics" with article impact as measured by article views and citations.
 
 ## Related work
-Anything that inspired you, such as a paper, a web site, or something we discussed in class.
+When beginning this project, we struggled to come to a conclusion about the type of data we wanted to analyze and represent visually. We agreed on the importance of creating a comprehensive visual for readers to explore, but had a plethora of ideas about the topic. After exploring datasets on happiness, crime rates, and general health data from NHANES, we switched gears and decided to create our own dataset using published papers from JASA. Each group members comes with various interests in health, data analytics, data visualization, etc. Our combined interest in statistics makes the exploration of statistical hot topics over time a perfect fit.
 
-@ Angel talk about the seminar you went to
+@ Angel talk about the seminar you went to if you want.
 
 ## Initial questions
 The main question of interest is to undertand if/how keywords used in the titles of JASA-published papers have evolved over time, and when certain topcs arose to be of interest in research. While scraping the data and further investigating the JASA website, we came up with other questions, such as how do certain keywords affect the number of citations, and how has the average number of authors changed over time, and what is the most common word in titles for each year?
@@ -21,12 +21,9 @@ Source, scraping method, cleaning, etc.
 @ Angel
 
 ## Exploratory analysis
-After data were cleaned, we created visualization plots to illustrate our questions of interest.
+After data were cleaned, we created visualization plots to illustrate our questions of interest. Once data were in a readable format for plot creation, minimal steps were needed between data cleaning and plot creation. Early on in the evolution of our project, we determined the types of questions we wanted to ask, and how to appropriately answer these questions visually. We concluded on representing our output through the use of four plots, in addition to one on the landing page of our website.
 
-Visualizations, summaries, and exploratory statistical analyses. Justify the steps you took, and show any major changes to your ideas.
-
-## Additional analysis
-If you undertake formal statistical analyses, describe these in detail
+The landing page of our website is a word cloud to illustrate the frequency of the top 100 words used, with larger words indicating greater frequency. This plot serves as an introduction/opening to the additional plots presented on a flexdashboard. The additional plots include: (1) top word per year, (2) trend of keywords over time, (3) number of collaborators per article per year, (4) number of citations per keyword. For the first plot, we created a ... For the second plot, we focused on ten keywords and created a spaghetti plot with "year" on the x-axis and and "frequency" on the y-axis. This allowed us to visually demostrate increasing and decreasing trends of various words over time. For the third plot, we created a histogram with "year" on the y-axis and "count" on the y-axis, with "count" referring to the number of citations per article. The goal of this was to understand trends in citation use over time. Similarly to the third plot, we created the fourth plot to determine a visual relationship between "number of citations" and "keyword".
 
 ## Discussion
 What were your findings? Are they what you expect? What insights into the data can you make?
