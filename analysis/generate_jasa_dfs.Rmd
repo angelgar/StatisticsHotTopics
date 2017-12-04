@@ -18,8 +18,9 @@ library(Hmisc) # need for %nin% function
 
  # Use jasa_articles df when we need the full article title
 
-jasa_articles = read_csv("./analysis/data/jasa_articles_dataset_complete.csv") 
-jasa_articles = jasa_articles %>%
+jasa_articles = readr::read_csv("./analysis/data/jasa_articles_dataset_complete.csv",
+                                col_types = "ccccccc")  
+jasa_articles = jasa_articles %>% 
   clean_names() %>% 
   separate(authors, into = paste("author", 1:18, sep = "_"), sep = ", ") %>% 
   separate(author_1, into = c("author_1", "author_19"), sep = " & ") %>% 
@@ -37,5 +38,6 @@ jasa_rm.stopwords = full_join(jasa_rm.stopwords, jasa_articles) %>% # contains f
 
 
 write_csv(jasa_rm.stopwords, "./analysis/data/jasa_rm.stopwords.csv")
+
 
 
