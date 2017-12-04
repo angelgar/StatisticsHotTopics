@@ -9,56 +9,74 @@ output:
 ---
 
 ```{r setup, include = FALSE}
+
 library(flexdashboard)
 library(plyr)
 library(ggplot2)
 library(ggridges)
+library(plotly)
+library(dplyr)
+
 ```
 
 ### Top statistical "hot topics" by year from 1888 - 2017
 
 ```{r}
 
+jasa_rm.stopwords = read_csv("./analysis/data/jasa_rm.stopwords.csv")
+
+pop_word = jasa_rm.stopwords %>% 
+  group_by(year) %>% 
+  dplyr::count(word) %>% # DONT DELETE dplyr:: 
+  top_n(1) %>% 
+  ggplot(aes(x = year, y = n, fill = word)) + 
+    geom_bar(stat = "identity", position = "dodge") +
+    scale_x_discrete(name = "Year", breaks = seq(1889, 2017, 10)) +
+    labs(title = "Top Words by Year")
+
+ggplotly(pop_word)
+
+# "statistics" in late 1800's to early 1900's popular
+# "data", "models" popular in late 1900's and 2000's ("data" in 2006)
+
+
 ```
 
-### Trends of 10 statistical "hot topics" from 1888 - 2017
+### Trends of statistical "hot topics" from 1888 - 2017
 
 ```{r}
-# words = c("analysis", "bayes", "bio", "clinical", "cluster", "data", "estimation", "inference", "missing", "model", "parametric", "p-value", "regression", "shrink", "statistic", "survival") 
+
+words = c("analysis", "bayes", "bootstrap", "clinical", "data", "estimation", "inference", "model", "nonparametric", "regression", "statistics")
+
+# OPTION 1
+
+words_scatterplot = jasa_rm.stopwords %>% 
+  filter(word %in% c("analysis", "bayes", "bootstrap", "clinical", "data", "estimation", "inference", "model", "nonparametric", "regression", "statistics")) %>% 
+  group_by(year, word) %>% 
+  dplyr::count(word) %>% 
+  ggplot(aes(x = year, y = n, color = word, size = n)) + 
+    geom_point() +
+    scale_x_discrete(name = "Year", breaks = seq(1889, 2017, 10)) +
+    labs(title = "Trend of Keywords Over Time")
+
+ggplotly(words_scatterplot)
+
+# OPTION 2
+
+words_ridges = jasa_rm.stopwords %>% 
+  filter(word %in% c("analysis", "bayes", "bootstrap", "clinical", "data", "estimation", "inference", "model", "nonparametric", "regression", "statistics")) %>% 
+  ggplot(aes(x = year, y = word, fill = word)) + geom_density_ridges() +
+    labs(title = "Trends of Hot Topics from 1888 to 2017") + theme(legend.position="none")
+
+words_ridges
 
 
-# Search for words containing patterns in 'words' vector --> need function
-# TOO SLOW
-
-#search_word = function(pattern){
-  
-#  for(i in 1: length(pattern)){
-#    
-#        extract_keywords_col = 
-#        jasa_rm.stopwords %>% 
-#        filter(str_detect(word, regex(pattern[i], ignore_case = TRUE))) %>% 
-#        mutate(word_match = str_replace(word, regex(pattern[i], ignore_case = TRUE))) %>% 
-#        select(id, title, word)
-    
-#        while(i == 1){
-#          jasa_keywords = extract_keywords_col
-#        }
-        
-#        jasa_keywords = full_join(jasa_keywords, extract_keywords_col)
-#  }
-
-#}
-
-
-#jasa_keywords = map(words, search_word)
 ```
     
 ### Number of collaborators per article for every year from 1888 - 2017
     
 ```{r}
 
-# jasa_articles %>% 
-  # mutate(no_collaborators = )
 
 ```
     
@@ -66,3 +84,5 @@ library(ggridges)
 
 ```{r}
 ```
+
+
