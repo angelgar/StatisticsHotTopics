@@ -50,16 +50,16 @@ words = c("analysis", "bayes", "bootstrap", "clinical", "data", "estimation", "i
 
 # OPTION 1
 
-words_scatterplot = jasa_rm.stopwords %>% 
-  filter(word %in% c("analysis", "bayes", "bootstrap", "clinical", "data", "estimation", "inference", "model", "nonparametric", "regression", "statistics")) %>% 
-  group_by(year, word) %>% 
-  dplyr::count(word) %>% 
-  ggplot(aes(x = year, y = n, color = word, size = n)) + 
-    geom_point() +
-    scale_x_discrete(name = "Year", breaks = seq(1889, 2017, 10)) +
-    labs(title = "Trend of Keywords Over Time")
+#words_scatterplot = jasa_rm.stopwords %>% 
+#  filter(word %in% c("analysis", "bayes", "bootstrap", "clinical", "data", "estimation", "inference", "model", #"nonparametric", "regression", "statistics")) %>% 
+#  group_by(year, word) %>% 
+#  dplyr::count(word) %>% 
+#  ggplot(aes(x = year, y = n, color = word, size = n)) + 
+#    geom_point() +
+#    scale_x_discrete(name = "Year", breaks = seq(1889, 2017, 10)) +
+#    labs(title = "Trend of Keywords Over Time")
 
-ggplotly(words_scatterplot)
+#ggplotly(words_scatterplot)
 
 # OPTION 2
 
