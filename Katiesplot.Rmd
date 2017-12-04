@@ -1,0 +1,84 @@
+---
+title: "finaldraft"
+author: "Hyewon Choi"
+date: "11/30/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(readr)
+library(dplyr)
+library(stringr)
+library(tidyverse)
+library(tidytext)
+library(janitor)
+library(ggplot2)
+library(forcats)
+library(plotly)
+
+
+data("stop_words")
+#jasa = read_csv("./jasa_articles_dataset_complete.csv")
+jasa_articles = read_csv("./jasa_articles_dataset_complete.csv") %>%
+  clean_names() %>% 
+  separate(authors, into = c("author1", "author19"), sep = " & ") %>% 
+  separate(author1, into = paste("author", 1:18), sep = ", ") %>% 
+  unnest_tokens(word, title)
+
+jasa_articles = anti_join(jasa_articles, stop_words)
+
+```
+
+Bar plot
+```{r}
+library(forcats)
+library(plotly)
+jasa_articles %>% 
+  count(word, sort = TRUE) %>% 
+  top_n(20) %>% 
+  mutate(top_words = fct_reorder(word, n)) %>% 
+  plot_ly(x = ~top_words, y = ~n, color = ~top_words, type = "bar")
+
+```
+
+
+Plot showing the trend of mean number of authors per year
+```{r}
+jasa_articles <- jasa_articles %>% 
+  select(`author 1`:author19, year) 
+
+no_authors_year <- jasaa %>%  
+  mutate( number_authors = rowSums(!is.na(jasaa)) - 1) %>% 
+  select(number_authors, year) %>% 
+  group_by(year) %>% 
+  summarize( Mean_no_authors = mean(number_authors)) 
+
+#Final ggplot
+ggplot(no_authors_year, aes(x = year, y = Mean_no_authors, color = year)) + 
+  geom_smooth(se = FALSE) + labs(
+    title = "Trend of the mean number of authors",
+    x = "Year",
+    y = "Mean number of authors"
+    )
+
+#Final plotly
+no_authors_year %>% 
+  plot_ly(x = ~year, y = ~Mean_no_authors, color = ~Mean_no_authors ) 
+
+#another option: with points connected
+no_authors_year %>% 
+  plot_ly(x = ~year, y = ~Mean_no_authors, color = ~Mean_no_authors, mode="lines" ) 
+
+
+```
+
+```{r}
+#notes
+# jasaa <- jasa_articles %>% 
+#   select(`author 1`:author19) 
+# 
+# na_sum<- rowSums(!is.na(jasaa))
+# 
+# na_sum1 <- as.data.frame(na_sum)
+```
+
