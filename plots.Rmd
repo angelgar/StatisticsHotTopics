@@ -16,12 +16,12 @@ library(ggplot2)
 library(ggridges)
 library(plotly)
 library(dplyr)
-
+library(readr)
 ```
 
 ### Top statistical "hot topics" by year from 1888 - 2017
 
-```{r}
+```{r, echo = FALSE, message = FALSE}
 
 jasa_rm.stopwords = read_csv("./analysis/data/jasa_rm.stopwords.csv")
 
