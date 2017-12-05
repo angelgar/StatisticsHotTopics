@@ -19,11 +19,15 @@ When beginning this project, we struggled to come to a conclusion about the type
 The main question of interest is to undertand if/how keywords used in the titles of JASA-published papers have evolved over time, and when certain topcs arose to be of interest in research. While scraping the data and further investigating the JASA website, we came up with other questions, such as how do certain keywords affect the number of citations, and how has the average number of authors changed over time, and what is the most common word in titles for each year?
 
 ## Data
-Source, scraping method, cleaning, etc.
 
-@ Angel
+We scrapped this data from the Journal of the American Statistical Association website. We used the "rvest" package to download the data from the internet and the the "SelectorGadget" tool to find the correct CSS selectors. We first obtained the issue number, chapter and publication year. With this information, we were able to access the issue-specific site and scrapped the tile, number of views and number of citations for each of these articles. Furthermore, we accessed the individual article's website to scrap the list of authors for each author. 
+
+We started the data cleaning process by eliminating those entries in our dataset that were not statistical articles. These included all those entries labeled as "Comment", "Book Review", "Correction", "Editorial". 
+
+@Soohyun
 
 ## Exploratory analysis
+
 After data were cleaned, we created visualization plots to illustrate our questions of interest. Once data were in a readable format for plot creation, minimal steps were needed between data cleaning and plot creation. Early on in the evolution of our project, we determined the types of questions we wanted to ask, and how to appropriately answer these questions visually. We concluded on representing our output through the use of four plots, in addition to one on the landing page of our website.
 
 The landing page of our website is a word cloud to illustrate the frequency of the top 100 words used, with larger words indicating greater frequency. This plot serves as an introduction/opening to the additional plots presented on a flexdashboard. The additional plots include: (1) top word per year, (2) trend of keywords over time, (3) number of collaborators per article per year, (4) number of citations per keyword. For the first plot, we created a barplot with "year" on the x-axis and "proportion" on the y-axis. "Proportion" represents the proportion of times the most common word for the year of interest appears in a title, out of the total number of papers published for that year.  For this plot, we removed stop words and other non-useful words from being the most common, allowing only relevant words such as "model" to appear as the most frequent. Without doing so, the plot would produce data showing words such as "the" and "and" as the most frequent.
