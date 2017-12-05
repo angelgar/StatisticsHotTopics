@@ -22,9 +22,57 @@ The main question of interest is to undertand if/how keywords used in the titles
 
 We scrapped this data from the Journal of the American Statistical Association website. We used the "rvest" package to download the data from the internet and the the "SelectorGadget" tool to find the correct CSS selectors. We first obtained the issue number, chapter and publication year. With this information, we were able to access the issue-specific site and scrapped the tile, number of views and number of citations for each of these articles. Furthermore, we accessed the individual article's website to scrap the list of authors for each author. 
 
-We started the data cleaning process by eliminating those entries in our dataset that were not statistical articles. These included all those entries labeled as "Comment", "Book Review", "Correction", "Editorial". 
+We started the data cleaning process by eliminating those entries in our dataset that were not statistical articles. These included all those entries in the "title" variable that contained words such as "Comment", "Book Review", "Correction", "Editorial". 
 
-@Soohyun
+We proceeded to generate two new dataframes for the purpose of convenience when creating plots. In the dataframe "jasa_articles", we split the author column so that entries of author_1 to author_19 columns contain only one author. We also added an id column, in order to make identifying articles convenient from here on forward. 
+
+```{r jasa_articles df}
+
+jasa_articles = readr::read_csv("./analysis/data/jasa_articles_dataset_complete.csv",
+                                col_types = "ccccccc")  
+jasa_articles = jasa_articles %>% 
+  clean_names() %>% 
+  separate(authors, into = paste("author", 1:18, sep = "_"), sep = ", ") %>% 
+  separate(author_1, into = c("author_1", "author_19"), sep = " & ") %>% 
+  mutate(id = as.character(c(1:nrow(jasa_articles)))) %>% 
+  select(id,issue:year)
+
+```
+
+For the dataframe, "jasa_rm.stopwords", we unnest the "title" column; the "word" column now contains each of the words from its respective title. Also, note that we kept all hyphenated words as one word (we wanted to keep the word "p-value" as one). We also joined jasa_articles and jasa_rm_stopwords so that we have a column for each unnested word and its corresponding title column. After some analysis, some words (for example, prepositions, conjunctions, articles, etc.) were found to be most frequent by year, but were uninformative, so we removed them. 
+
+
+```{r jasa_rm.stopwords df}
+
+data("stop_words")
+
+jasa_rm_stopwords = jasa_articles %>% 
+  unnest(word = str_split(title, " ")) 
+jasa_rm_stopwords = full_join(jasa_rm_stopwords, jasa_articles) %>% # contains full title and unnested words
+  filter(word %nin% c("A", "and", "a", "an", "An", "1958.", "at", "the", "The", "of", "in", "by", "for", "the", "with", "With", "by", "or", "on", "On", "Pp.", "because", "under", "about", "over", "to", "New", "Discussion", "Marriage", "1929", "Index", "Insurance", "Recent", "States", "is", "Two", "Massachusetts", "Hampshire", "Note", "Time", "When", "when", "York:", "Some", "1967", "from", "United", "Vital", "Book", "Note", "Some", "Recent", "Volume")) 
+
+```
+
+Lastly, we chose some words (contained in the "words" vector) manually that we wanted to do some analysis on. We chose some words that did not necessarily appear most frequently for each year, but more interesting. It should be noted that "bayes" would be matched to "bayes" and "bayesian", "estimate" would be matched to "estimate" and "estimate", "parametric" would be matched to "nonparametric", "parametric" and "semiparametric" and "sampl" would be matched to "sample" and "sampling". We created a new column in "jasa_rm_stopwords" that indicated what the words were matched to, because we would like to group similar words together, as explained above. The final dataframe was written as a csv file and saved into our data folder.
+
+```{r}
+
+
+words = c("analysis", "bayes", "bootstrap", "clinical", "data", "estimat", "inference", "model", "parametric", "p-value", "regression", "sampl", "statistic")
+
+
+jasa_rm_stopwords$matched_word <- rep(NA, dim(jasa_rm_stopwords)[1])
+
+for (i in words) {
+  jasa_rm_stopwords$matched_word[grep(i, 
+                                      jasa_rm_stopwords$word, 
+                                      ignore.case = T)] <- i
+  
+}
+
+write_csv(jasa_rm_stopwords, "./analysis/data/jasa_rm_stopwords.csv")
+```
+
 
 ## Exploratory analysis
 

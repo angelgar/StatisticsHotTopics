@@ -51,8 +51,6 @@ for (i in words) {
   
 }
 
-
-
 write_csv(jasa_rm_stopwords, "./analysis/data/jasa_rm_stopwords.csv")
 ```
 
