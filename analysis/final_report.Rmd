@@ -21,7 +21,8 @@ library(janitor)
 library(wordcloud)
 library(RColorBrewer)
 library(knitr)
-
+library(Hmisc)
+library(forcats)
 ```
 
 ```{r, load_data, echo = FALSE, message = FALSE, warning = FALSE, eval = TRUE}
@@ -115,7 +116,7 @@ After data were cleaned, we created visualization plots to illustrate our questi
 
 The landing page of our website is a word cloud to illustrate the frequency of the top 100 words used, with larger words indicating greater frequency. This plot serves as an introduction/opening to the additional plots presented on a flexdashboard. 
 
-```{r word_cloud, echo = FALSE, message = FALSE, warning = FALSE, out.width = '250%'}
+```{r word_cloud, message = FALSE, warning = FALSE, out.width = '250%'}
 
 # Word cloud
 word_map_data <- jasa_articles %>% 
@@ -133,23 +134,79 @@ wordcloud(words = word_map_data$word, freq = word_map_data$n, min.freq = 50,
 
 For the first plot, we created a barplot with "year" on the x-axis and "proportion" on the y-axis. "Proportion" represents the proportion of times the most common word for the year of interest appears in a title, out of the total number of papers published for that year.  For this plot, we removed stop words and other non-useful words from being the most common, allowing only relevant words such as "model" to appear as the most frequent. Without doing so, the plot would produce data showing words such as "the" and "and" as the most frequent.
 
-```{r}
+```{r, message = FALSE, warning = FALSE}
+# Top statistical "hot topics" by year from 1888 - 2017
 
+jasa_rm_stopwords = read_csv(".//data/jasa_rm_stopwords.csv")
+
+pop_word = jasa_rm_stopwords %>% 
+  group_by(year) %>% 
+  dplyr::count(word) %>% # DONT DELETE dplyr:: 
+  top_n(1) %>% 
+  ggplot(aes(x = year, y = n, fill = word)) + 
+    geom_bar(stat = "identity", position = "dodge") +
+    scale_x_discrete(name = "Year", breaks = seq(1889, 2017, 10)) +
+    labs(title = "Top Words by Year")
+
+ggplotly(pop_word)
+
+# "statistics" in late 1800's to early 1900's popular
+# "data", "models" popular in late 1900's and 2000's ("data" in 2006)
 ```
 
 #### (2) Trend of keywords over time
 
 For the second plot, we focused on ten keywords and created a spaghetti plot with "year" on the x-axis and and "proportion" on the y-axis. These ten keywords were chosen as words that all group members thought would be important to examine the trends of. This plot allowed us to visually demostrate increasing and decreasing trends of various words over time. "Proportion" in this plot corresponds to the same ratio method used for the previous plot. 
 
-```{r}
+```{r, message = FALSE, warning = FALSE}
+# Trends of statistical "hot topics" from 1888 - 2017
 
+words_ridges = jasa_rm_stopwords %>% 
+  filter(matched_word != "NA") %>% 
+  ggplot(aes(x = year, y = matched_word, fill = matched_word)) + 
+  geom_density_ridges() +
+  labs(title = "Trends of Hot Topics from 1888 to 2017") + theme(legend.position="none")
+
+words_ridges
 ```
 
 #### (3) Number of collaborators per article per year
 
 For the third plot, we created a dot plot with "year" on the x-axis and "count" on the y-axis, with "count" referring to the mean number of collaborators per article per year. The goal of this was to understand trends in collaboration over time, with the hypothesis that collaboration has increased, and therefore the mean number of collaborators per article per year has also increased.
 
-```{r}
+```{r, message = FALSE, warning = FALSE}
+# Number of collaborators per article for every year from 1888 - 2017
+
+jasa_articles <- read_csv(".//data/jasa_articles_dataset_complete.csv")
+
+jasa_articles <- jasa_articles %>% 
+  clean_names() %>% 
+  separate(authors, into = c("author1", "author19"), sep = " & ") %>% 
+  separate(author1, into = paste("author", 1:18), sep = ", ") %>% 
+  unnest_tokens(word, title)
+data("stop_words")
+
+jasa_articles = anti_join(jasa_articles, stop_words)
+
+jasa_articles <- jasa_articles %>%
+  dplyr::select(`author 1`:author19, year)
+
+no_authors_year <- jasa_articles %>%
+  dplyr::mutate( number_authors = rowSums(!is.na(jasa_articles)) - 1) %>%
+  dplyr::select(number_authors, year) %>%
+  group_by(year) %>%
+  dplyr::summarize( Mean_no_authors = mean(number_authors))
+
+finalplot <- no_authors_year %>%
+  ggplot(aes(x = year, y = Mean_no_authors, color = Mean_no_authors)) +
+  geom_point() +
+  geom_smooth(se = FALSE) + labs(
+    title = "Trend of the mean number of authors",
+    x = "Year",
+    y = "Mean number of authors"
+    )
+
+ggplotly(finalplot)
 
 ```
 
@@ -157,7 +214,21 @@ For the third plot, we created a dot plot with "year" on the x-axis and "count" 
 
 Similarly to the third plot, we created the fourth plot to determine a visual relationship between "number of citations" and "keyword".
 
-```{r}
+```{r, message = FALSE, warning = FALSE}
+# Number of citations per statistical "hot topic" 
+
+jasa_rm_sw = read_csv(".//data/jasa_rm_stopwords.csv")
+
+citation_top10 <- jasa_rm_sw %>% 
+  dplyr::filter(!is.na(matched_word)) %>%
+  dplyr::select(id, citations, matched_word) %>% 
+  group_by(matched_word) %>% 
+  dplyr::summarize( Total_number_of_citations = sum(citations))  %>%
+  rename(word = matched_word)
+
+citation_top10 %>% 
+  dplyr::mutate(Hot_topics = fct_reorder(word, Total_number_of_citations)) %>% 
+  plot_ly(x = ~Hot_topics, y = ~Total_number_of_citations, color = ~Hot_topics, type = "bar")
 
 ```
 
