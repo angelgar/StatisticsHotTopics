@@ -122,6 +122,10 @@ $(document).ready(function () {
 </div>
 
 
+<div id="data-access" class="section level3">
+<h3>Data access</h3>
+<p>The project is located inside our GitHub <a href="https://github.com/angelgar/StatisticsHotTopics">repository</a>. Inside this repository includes an “analysis” folder, which further includes our <a href="https://github.com/angelgar/StatisticsHotTopics/tree/master/analysis/data">data</a> folder. The final dataset is named “jasa_articles_dataset_complete” and can be found <a href="https://github.com/angelgar/StatisticsHotTopics/blob/master/analysis/data/jasa_articles_dataset_complete.csv">here</a>.</p>
+</div>
 <div id="motivation" class="section level2">
 <h2>Motivation</h2>
 <p>The goal of our analysis is to understand the evolution of statistics over time, specifically in regards to “hot topics” used in research. We analyzed the titles of articles published in the Journal of the American Statistical Association (JASA) since 1888, as well as other factors such as authors, number of citations, etc. We used data gathered to create exploratory plots regarding the aforementioned factors. Specifically, we then found correlations of specific “hot topics” with article impact as measured by article views and citations.</p>
@@ -143,11 +147,13 @@ $(document).ready(function () {
 <div id="exploratory-analysis" class="section level2">
 <h2>Exploratory analysis</h2>
 <p>After data were cleaned, we created visualization plots to illustrate our questions of interest. Once data were in a readable format for plot creation, minimal steps were needed between data cleaning and plot creation. Early on in the evolution of our project, we determined the types of questions we wanted to ask, and how to appropriately answer these questions visually. We concluded on representing our output through the use of four plots, in addition to one on the landing page of our website.</p>
-<p>The landing page of our website is a word cloud to illustrate the frequency of the top 100 words used, with larger words indicating greater frequency. This plot serves as an introduction/opening to the additional plots presented on a flexdashboard. The additional plots include: (1) top word per year, (2) trend of keywords over time, (3) number of collaborators per article per year, (4) number of citations per keyword. For the first plot, we created a … For the second plot, we focused on ten keywords and created a spaghetti plot with “year” on the x-axis and and “frequency” on the y-axis. This allowed us to visually demostrate increasing and decreasing trends of various words over time. For the third plot, we created a histogram with “year” on the y-axis and “count” on the y-axis, with “count” referring to the number of citations per article. The goal of this was to understand trends in citation use over time. Similarly to the third plot, we created the fourth plot to determine a visual relationship between “number of citations” and “keyword”.</p>
+<p>The landing page of our website is a word cloud to illustrate the frequency of the top 100 words used, with larger words indicating greater frequency. This plot serves as an introduction/opening to the additional plots presented on a flexdashboard. The additional plots include: (1) top word per year, (2) trend of keywords over time, (3) number of collaborators per article per year, (4) number of citations per keyword. For the first plot, we created a barplot with “year” on the x-axis and “proportion” on the y-axis. “Proportion” represents the proportion of times the most common word for the year of interest appears in a title, out of the total number of papers published for that year. For this plot, we removed stop words and other non-useful words from being the most common, allowing only relevant words such as “model” to appear as the most frequent. Without doing so, the plot would produce data showing words such as “the” and “and” as the most frequent.</p>
+<p>For the second plot, we focused on ten keywords and created a spaghetti plot with “year” on the x-axis and and “proportion” on the y-axis. These ten keywords were chosen as words that all group members thought would be important to examine the trends of. This plot allowed us to visually demostrate increasing and decreasing trends of various words over time. “Proportion” in this plot corresponds to the same ratio method used for the previous plot.</p>
+<p>For the third plot, we created a dot plot with “year” on the x-axis and “count” on the y-axis, with “count” referring to the mean number of collaborators per article per year. The goal of this was to understand trends in collaboration over time, with the hypothesis that collaboration has increased, and therefore the mean number of collaborators per article per year has also increased..</p>
+<p>Similarly to the third plot, we created the fourth plot to determine a visual relationship between “number of citations” and “keyword”.</p>
 </div>
 <div id="discussion" class="section level2">
 <h2>Discussion</h2>
-<p>What were your findings? Are they what you expect? What insights into the data can you make?</p>
 </div>
 
 

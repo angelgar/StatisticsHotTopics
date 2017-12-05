@@ -32,12 +32,22 @@ jasa_articles = jasa_articles %>%
 data("stop_words")
 
 jasa_rm.stopwords = jasa_articles %>% 
-  unnest_tokens(word, title)
+  unnest(word = str_split(title, " ")) 
 jasa_rm.stopwords = full_join(jasa_rm.stopwords, jasa_articles) %>% # contains full title and unnested words
-  filter(word %nin% c("and", "a", "an", "at", "the", "of", "in", "by", "for", "the", "with", "by", "or", "because", "under", "about", "over", "to")) 
+  filter(word %nin% c("A", "and", "a", "an", "An", "1958.", "at", "the", "The", "of", "in", "by", "for", "the", "with", "With", "by", "or", "on", "On", "Pp.", "because", "under", "about", "over", "to", "New", "Discussion", "Marriage", "1929", "Index", "Insurance", "Recent", "States", "is", "Two", "Massachusetts", "Hampshire", "Note", "Time", "When", "when", "York:", "Some", "1967", "from", "United", "Vital", "Book", "Note", "Some", "Recent", "Volume")) 
+
+
+
+
+words = c("analysis", "bayes", "bootstrap", "clinical", "data", "estimat", "inference", "model", "parametric", "p-value", "regression", "sampl", "statistic")
+
+
+# Search for words containing patterns in 'words' vector --> need function
+# DO THIS ANGEL
+
 
 
 write_csv(jasa_rm.stopwords, "./analysis/data/jasa_rm.stopwords.csv")
-
+```
 
 
