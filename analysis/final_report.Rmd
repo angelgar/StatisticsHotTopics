@@ -1,8 +1,20 @@
 ---
 title: "Final Report"
 author: "Hyewon Choi, Angel Garcia de la Garza, Soo Hyun Kim, Rebecca Venetianer"
-output: html_document
+output: 
+  html_document:
+    code_folding: hide
 ---
+
+```{r setup, include = FALSE}
+library(flexdashboard)
+library(plyr)
+library(ggplot2)
+library(ggridges)
+library(plotly)
+library(dplyr)
+library(readr)
+```
 
 ### Data access
 The project is located inside our GitHub <a href="https://github.com/angelgar/StatisticsHotTopics">repository</a>. Inside this repository includes an "analysis" folder, which further includes our <a href="https://github.com/angelgar/StatisticsHotTopics/tree/master/analysis/data">data</a> folder. The final dataset is named "jasa_articles_dataset_complete" and can be found <a href="https://github.com/angelgar/StatisticsHotTopics/blob/master/analysis/data/jasa_articles_dataset_complete.csv">here</a>.
@@ -12,8 +24,6 @@ The goal of our analysis is to understand the evolution of statistics over time,
 
 ## Related work
 When beginning this project, we struggled to come to a conclusion about the type of data we wanted to analyze and represent visually. We agreed on the importance of creating a comprehensive visual for readers to explore, but had a plethora of ideas about the topic. After exploring datasets on happiness, crime rates, and general health data from NHANES, we switched gears and decided to create our own dataset using published papers from JASA. Each group members comes with various interests in health, data analytics, data visualization, etc. Our combined interest in statistics makes the exploration of statistical hot topics over time a perfect fit.
-
-@ Angel talk about the seminar you went to if you want.
 
 ## Initial questions
 The main question of interest is to undertand if/how keywords used in the titles of JASA-published papers have evolved over time, and when certain topcs arose to be of interest in research. While scraping the data and further investigating the JASA website, we came up with other questions, such as how do certain keywords affect the number of citations, and how has the average number of authors changed over time, and what is the most common word in titles for each year?
@@ -57,9 +67,7 @@ Lastly, we chose some words (contained in the "words" vector) manually that we w
 
 ```{r, eval = FALSE}
 
-
 words = c("analysis", "bayes", "bootstrap", "clinical", "data", "estimat", "inference", "model", "parametric", "p-value", "regression", "sampl", "statistic")
-
 
 jasa_rm_stopwords$matched_word <- rep(NA, dim(jasa_rm_stopwords)[1])
 
@@ -71,8 +79,8 @@ for (i in words) {
 }
 
 write_csv(jasa_rm_stopwords, "./analysis/data/jasa_rm_stopwords.csv")
-```
 
+```
 
 ## Exploratory analysis
 

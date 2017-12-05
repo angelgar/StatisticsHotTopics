@@ -9,7 +9,6 @@ output:
 ---
 
 ```{r setup, include = FALSE}
-
 library(flexdashboard)
 library(plyr)
 library(ggplot2)
@@ -38,7 +37,6 @@ ggplotly(pop_word)
 
 # "statistics" in late 1800's to early 1900's popular
 # "data", "models" popular in late 1900's and 2000's ("data" in 2006)
-
 
 ```
 
