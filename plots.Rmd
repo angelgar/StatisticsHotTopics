@@ -40,7 +40,7 @@ ggplotly(pop_word)
 
 ```
 
-### Trends of statistical "hot topics" from 1888 - 2017
+### Trends of key statistical "hot topics" from 1888 - 2017
 
 ```{r}
 
@@ -55,7 +55,7 @@ words_ridges
 ```
 
     
-### Number of collaborators per article for every year from 1888 - 2017
+### Average number of collaborators per article for every year from 1888 - 2017
     
 ```{r, 3rd plot}
 
@@ -98,8 +98,7 @@ ggplotly(finalplot)
 
 ```
     
-
-### Number of citations per statistical "hot topic" 
+### Number of citations for key statistical "hot topics" 
 
 ```{r, 4th plot}
 
