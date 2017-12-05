@@ -26,7 +26,7 @@ We started the data cleaning process by eliminating those entries in our dataset
 
 We proceeded to generate two new dataframes for the purpose of convenience when creating plots. In the dataframe "jasa_articles", we split the author column so that entries of author_1 to author_19 columns contain only one author. We also added an id column, in order to make identifying articles convenient from here on forward. 
 
-```{r jasa_articles df}
+```{r jasa_articles df, eval = FALSE}
 
 jasa_articles = readr::read_csv("./analysis/data/jasa_articles_dataset_complete.csv",
                                 col_types = "ccccccc")  
@@ -42,7 +42,7 @@ jasa_articles = jasa_articles %>%
 For the dataframe, "jasa_rm.stopwords", we unnest the "title" column; the "word" column now contains each of the words from its respective title. Also, note that we kept all hyphenated words as one word (we wanted to keep the word "p-value" as one). We also joined jasa_articles and jasa_rm_stopwords so that we have a column for each unnested word and its corresponding title column. After some analysis, some words (for example, prepositions, conjunctions, articles, etc.) were found to be most frequent by year, but were uninformative, so we removed them. 
 
 
-```{r jasa_rm.stopwords df}
+```{r jasa_rm.stopwords df, eval = FALSE}
 
 data("stop_words")
 
@@ -55,7 +55,7 @@ jasa_rm_stopwords = full_join(jasa_rm_stopwords, jasa_articles) %>% # contains f
 
 Lastly, we chose some words (contained in the "words" vector) manually that we wanted to do some analysis on. We chose some words that did not necessarily appear most frequently for each year, but more interesting. It should be noted that "bayes" would be matched to "bayes" and "bayesian", "estimate" would be matched to "estimate" and "estimate", "parametric" would be matched to "nonparametric", "parametric" and "semiparametric" and "sampl" would be matched to "sample" and "sampling". We created a new column in "jasa_rm_stopwords" that indicated what the words were matched to, because we would like to group similar words together, as explained above. The final dataframe was written as a csv file and saved into our data folder.
 
-```{r}
+```{r, eval = FALSE}
 
 
 words = c("analysis", "bayes", "bootstrap", "clinical", "data", "estimat", "inference", "model", "parametric", "p-value", "regression", "sampl", "statistic")
