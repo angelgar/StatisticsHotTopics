@@ -44,8 +44,6 @@ ggplotly(pop_word)
 
 ```{r}
 
-words = c("analysis", "bayes", "bootstrap", "clinical", "data", "estimat", "inference", "model", "parametric", "regression", "statistic")
-
 # OPTION 1
 
 #words_scatterplot = jasa_rm_stopwords %>% 
@@ -62,9 +60,8 @@ words = c("analysis", "bayes", "bootstrap", "clinical", "data", "estimat", "infe
 # OPTION 2
 
 words_ridges = jasa_rm_stopwords %>% 
-  filter(word %in% c("analysis", "bayes", "bootstrap", "clinical", "data", "estimation", 
-                     "inference", "model", "nonparametric", "regression", "statistics")) %>% 
-  ggplot(aes(x = year, y = word, fill = word)) + 
+  filter(matched_word != "NA") %>% 
+  ggplot(aes(x = year, y = matched_word, fill = matched_word)) + 
   geom_density_ridges() +
   labs(title = "Trends of Hot Topics from 1888 to 2017") + theme(legend.position="none")
 
