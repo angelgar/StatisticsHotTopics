@@ -77,11 +77,14 @@ words_ridges
     
 ### Number of collaborators per article for every year from 1888 - 2017
     
-```{r}
+```{r, 3rd plot}
+
 library(janitor)
 library(tidyverse)
 library(tidytext)
 jasa_articles <- read_csv("./analysis/data/jasa_articles_dataset_complete.csv")
+
+
 jasa_articles <- jasa_articles %>% 
   clean_names() %>% 
   separate(authors, into = c("author1", "author19"), sep = " & ") %>% 
@@ -89,18 +92,21 @@ jasa_articles <- jasa_articles %>%
   unnest_tokens(word, title)
 data("stop_words")
 
+
 jasa_articles = anti_join(jasa_articles, stop_words)
 
-jasa_articles <- jasa_articles %>% 
-  select(`author 1`:author19, year) 
+jasa_articles <- jasa_articles %>%
+  dplyr::select(`author 1`:author19, year)
 
-no_authors_year <- jasa_articles %>%  
-  mutate( number_authors = rowSums(!is.na(jasa_articles)) - 1) %>% 
-  select(number_authors, year) %>% 
-  group_by(year) %>% 
-  summarize( Mean_no_authors = mean(number_authors)) 
+no_authors_year <- jasa_articles %>%
+  dplyr::mutate( number_authors = rowSums(!is.na(jasa_articles)) - 1) %>%
+  dplyr::select(number_authors, year) %>%
+  group_by(year) %>%
+  dplyr::summarize( Mean_no_authors = mean(number_authors))
 
-finalplot <- ggplot(no_authors_year, aes(x = year, y = Mean_no_authors, color = Mean_no_authors)) + geom_point() +
+finalplot <- no_authors_year %>%
+  ggplot(aes(x = year, y = Mean_no_authors, color = Mean_no_authors)) +
+  geom_point() +
   geom_smooth(se = FALSE) + labs(
     title = "Trend of the mean number of authors",
     x = "Year",
@@ -112,27 +118,30 @@ ggplotly(finalplot)
 
 ```
     
+    
+    
+    
 ### Number of citations per statistical "hot topic" 
 
-```{r}
+```{r, 4th plot}
+
 library(forcats)
 jasa_rm_sw = read_csv("./analysis/data/jasa_rm.stopwords.csv")
 
 citation <- jasa_rm_sw %>% 
-  select(id, citations, word, title)
+  dplyr::select(id, citations, word, title)
 
 citation_top10 <- citation %>% 
   group_by(id) %>% 
-  filter( word %in% c("analysis", "bayes", "bootstrap", "clinical", "data", "estimation", "inference", "model", "nonparametric", "regression", "statistics")) %>% 
-  select(id, citations, word) %>% 
+  dplyr::filter( word %in% c("analysis", "bayes", "bootstrap", "clinical", "data", "estimation", "inference", "model", "nonparametric", "regression", "statistics")) %>% 
+  dplyr::select(id, citations, word) %>% 
   group_by(word) %>% 
-  summarize( Total_number_of_citations = sum(citations)) 
+  dplyr::summarize( Total_number_of_citations = sum(citations)) 
 
 
  citation_top10 %>% 
-  mutate( Hot_topics = fct_reorder(word, Total_number_of_citations)) %>% 
+  dplyr::mutate( Hot_topics = fct_reorder(word, Total_number_of_citations)) %>% 
   plot_ly(x = ~Hot_topics, y = ~Total_number_of_citations, color = ~Hot_topics, type = "bar")
-
 ```
 
 
