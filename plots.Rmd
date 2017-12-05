@@ -23,9 +23,9 @@ library(readr)
 
 ```{r, echo = FALSE, message = FALSE}
 
-jasa_rm.stopwords = read_csv("./analysis/data/jasa_rm.stopwords.csv")
+jasa_rm_stopwords = read_csv("./analysis/data/jasa_rm_stopwords.csv")
 
-pop_word = jasa_rm.stopwords %>% 
+pop_word = jasa_rm_stopwords %>% 
   group_by(year) %>% 
   dplyr::count(word) %>% # DONT DELETE dplyr:: 
   top_n(1) %>% 
@@ -50,7 +50,7 @@ words = c("analysis", "bayes", "bootstrap", "clinical", "data", "estimat", "infe
 
 # OPTION 1
 
-#words_scatterplot = jasa_rm.stopwords %>% 
+#words_scatterplot = jasa_rm_stopwords %>% 
 #  filter(word %in% c("analysis", "bayes", "bootstrap", "clinical", "data", "estimation", "inference", "model", #"nonparametric", "regression", "statistics")) %>% 
 #  group_by(year, word) %>% 
 #  dplyr::count(word) %>% 
@@ -63,7 +63,7 @@ words = c("analysis", "bayes", "bootstrap", "clinical", "data", "estimat", "infe
 
 # OPTION 2
 
-words_ridges = jasa_rm.stopwords %>% 
+words_ridges = jasa_rm_stopwords %>% 
   filter(word %in% c("analysis", "bayes", "bootstrap", "clinical", "data", "estimation", 
                      "inference", "model", "nonparametric", "regression", "statistics")) %>% 
   ggplot(aes(x = year, y = word, fill = word)) + 
@@ -127,22 +127,21 @@ ggplotly(finalplot)
 ```{r, 4th plot}
 
 library(forcats)
-jasa_rm_sw = read_csv("./analysis/data/jasa_rm.stopwords.csv")
+library(tidyverse)
+jasa_rm_sw = read_csv("./analysis/data/jasa_rm_stopwords.csv")
 
-citation <- jasa_rm_sw %>% 
-  dplyr::select(id, citations, word, title)
-
-citation_top10 <- citation %>% 
-  group_by(id) %>% 
-  dplyr::filter( word %in% c("analysis", "bayes", "bootstrap", "clinical", "data", "estimation", "inference", "model", "nonparametric", "regression", "statistics")) %>% 
-  dplyr::select(id, citations, word) %>% 
-  group_by(word) %>% 
-  dplyr::summarize( Total_number_of_citations = sum(citations)) 
+citation_top10 <- jasa_rm_sw %>% 
+  dplyr::filter(!is.na(matched_word)) %>%
+  dplyr::select(id, citations, matched_word) %>% 
+  group_by(matched_word) %>% 
+  dplyr::summarize( Total_number_of_citations = sum(citations))  %>%
+  rename(word = matched_word)
 
 
- citation_top10 %>% 
-  dplyr::mutate( Hot_topics = fct_reorder(word, Total_number_of_citations)) %>% 
+citation_top10 %>% 
+  dplyr::mutate(Hot_topics = fct_reorder(word, Total_number_of_citations)) %>% 
   plot_ly(x = ~Hot_topics, y = ~Total_number_of_citations, color = ~Hot_topics, type = "bar")
+ 
 ```
 
 
