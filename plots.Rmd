@@ -78,6 +78,9 @@ words_ridges
 ### Number of collaborators per article for every year from 1888 - 2017
     
 ```{r}
+library(janitor)
+library(tidyverse)
+library(tidytext)
 jasa_articles <- read_csv("./analysis/data/jasa_articles_dataset_complete.csv")
 jasa_articles <- jasa_articles %>% 
   clean_names() %>% 
@@ -112,6 +115,24 @@ ggplotly(finalplot)
 ### Number of citations per statistical "hot topic" 
 
 ```{r}
+library(forcats)
+jasa_rm_sw = read_csv("./analysis/data/jasa_rm.stopwords.csv")
+
+citation <- jasa_rm_sw %>% 
+  select(id, citations, word, title)
+
+citation_top10 <- citation %>% 
+  group_by(id) %>% 
+  filter( word %in% c("analysis", "bayes", "bootstrap", "clinical", "data", "estimation", "inference", "model", "nonparametric", "regression", "statistics")) %>% 
+  select(id, citations, word) %>% 
+  group_by(word) %>% 
+  summarize( Total_number_of_citations = sum(citations)) 
+
+
+ citation_top10 %>% 
+  mutate( Hot_topics = fct_reorder(word, Total_number_of_citations)) %>% 
+  plot_ly(x = ~Hot_topics, y = ~Total_number_of_citations, color = ~Hot_topics, type = "bar")
+
 ```
 
 
