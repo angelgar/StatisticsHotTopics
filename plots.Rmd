@@ -78,6 +78,33 @@ words_ridges
 ### Number of collaborators per article for every year from 1888 - 2017
     
 ```{r}
+jasa_articles <- read_csv("./analysis/data/jasa_articles_dataset_complete.csv")
+jasa_articles <- jasa_articles %>% 
+  clean_names() %>% 
+  separate(authors, into = c("author1", "author19"), sep = " & ") %>% 
+  separate(author1, into = paste("author", 1:18), sep = ", ") %>% 
+  unnest_tokens(word, title)
+data("stop_words")
+
+jasa_articles = anti_join(jasa_articles, stop_words)
+
+jasa_articles <- jasa_articles %>% 
+  select(`author 1`:author19, year) 
+
+no_authors_year <- jasa_articles %>%  
+  mutate( number_authors = rowSums(!is.na(jasa_articles)) - 1) %>% 
+  select(number_authors, year) %>% 
+  group_by(year) %>% 
+  summarize( Mean_no_authors = mean(number_authors)) 
+
+finalplot <- ggplot(no_authors_year, aes(x = year, y = Mean_no_authors, color = Mean_no_authors)) + geom_point() +
+  geom_smooth(se = FALSE) + labs(
+    title = "Trend of the mean number of authors",
+    x = "Year",
+    y = "Mean number of authors"
+    )
+
+ggplotly(finalplot)
 
 
 ```
