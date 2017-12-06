@@ -24,14 +24,17 @@ library(gridExtra)
 ```{r, 1st plot, echo = FALSE, message = FALSE}
 
 jasa_rm_stopwords = read_csv("./analysis/data/jasa_rm_stopwords.csv")
+
  
 # Top word by year, proportion
  
 pop_word_prop = jasa_rm_stopwords %>%
   group_by(year) %>%
-  dplyr::count(word) %>% # DONT DELETE dplyr::
-  mutate(sum = sum(n),
-         proportion = n/sum) %>%
+  dplyr::count(word) # DONT DELETE dplyr::
+  
+pop_word_prop = full_join(pop_word_prop, jasa_rm_stopwords) %>% 
+  group_by(year) %>% 
+  mutate(proportion = n/length(unique(title))) %>%
   arrange(proportion) %>%
   top_n(1) %>%
   ggplot(aes(x = year, y = proportion, fill = word)) +
@@ -42,6 +45,8 @@ ggplotly(pop_word_prop)
  
 # "statistics" in late 1800's to early 1900's popular
 # "data", "models" popular in late 1900's and 2000's ("data" in 2006)
+ 
+
 ```
 
 
