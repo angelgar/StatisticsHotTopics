@@ -44,12 +44,6 @@ ggplotly(pop_word_prop)
 # "data", "models" popular in late 1900's and 2000's ("data" in 2006)
 ```
 
-<<<<<<< HEAD
-ggplotly(pop_word_prop)
-
-=======
-***
->>>>>>> feb7a71a63beed3fdf7c3f1aa474f42009072d3e
 
 - Note: missing years before 1923 are due to two-year chapters, which shorten to one-year chapters following
 
@@ -65,20 +59,11 @@ words_ridges = jasa_rm_stopwords %>%
   filter(matched_word != "NA") %>%
   ggplot(aes(x = year, y = matched_word, fill = matched_word)) +
   geom_density_ridges() +
-<<<<<<< HEAD
   labs(title = "Trends of Hot Topics from 1888 to 2017") + 
   theme(legend.position = "none") +
   ylab("Keyword") +
   xlab("Year")
-  
 
-=======
-  labs(title = "Trends of Hot Topics from 1888 to 2017") +
-  theme(legend.position = "none") +
-  ylab("Keyword") +
-  xlab("Year")
- 
->>>>>>> feb7a71a63beed3fdf7c3f1aa474f42009072d3e
 words_ridges
 
 ```
@@ -133,11 +118,7 @@ finalplot <- no_authors_year %>%
     y = "Mean number of authors"
     ) +
   theme(legend.position = "none")
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> feb7a71a63beed3fdf7c3f1aa474f42009072d3e
 ggplotly(finalplot)
 
 ```
@@ -164,17 +145,10 @@ citation_top10 <- jasa_rm_sw %>%
   group_by(matched_word) %>%
   dplyr::summarize( Total_number_of_citations = sum(citations))  %>%
   rename(word = matched_word)
-<<<<<<< HEAD
 
 
 citation_top10 %>% 
   dplyr::mutate(Hot_topics = fct_reorder(word, Total_number_of_citations)) %>% 
-=======
- 
- 
-citation_top10 %>%
-  dplyr::mutate(Hot_topics = fct_reorder(word, Total_number_of_citations)) %>%
->>>>>>> feb7a71a63beed3fdf7c3f1aa474f42009072d3e
   plot_ly(x = ~Hot_topics, y = ~Total_number_of_citations, color = ~Hot_topics, type = "bar") %>%
   layout(
     xaxis = list(
