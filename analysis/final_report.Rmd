@@ -414,24 +414,31 @@ wordcloud(words = word_map_data$word, freq = word_map_data$n,
 
 #### (1) Top word per year
 
-For the first plot, we created a barplot with "year" on the x-axis and "proportion" on the y-axis. "Proportion" represents the proportion of times the most common word for the year of interest appears in a title, out of the total number of papers published for that year.  For this plot, we removed stop words and other non-useful words from being the most common, allowing only relevant words such as "model" to appear as the most frequent. Without doing so, the plot would produce data showing words such as "the" and "and" as the most frequent.
+For the first plot, we created a barplot with "year" on the x-axis and "proportion" on the y-axis. Each bar in the plot indicates the percentage of article titles the “top word” of the year appears in, for that year. For this plot, we removed stop words and other non-useful words from being the most common, allowing only relevant words such as "model" to appear as the most frequent. Without doing so, the plot would produce data showing words such as "the" and "and" as the most frequent.
 
 ```{r plot_1 , message = FALSE, warning = FALSE}
 
-# We find the most common word per each year and it's frequency
+jasa_rm_stopwords = read_csv(".//data/jasa_rm_stopwords.csv")
 
-pop_word = jasa_rm_stopwords %>% 
-              group_by(year) %>% 
-              dplyr::count(word) %>%  
-              top_n(1) %>% 
-              ggplot(aes(x = year, y = n, fill = word)) + 
-                geom_bar(stat = "identity", position = "dodge") +
-                scale_x_discrete(name = "Year", breaks = seq(1889, 2017, 10)) +
-                labs(title = "Top Words by Year")
-
-# We first generate a ggplot object and use ggplotly
-
-ggplotly(pop_word)
+# Top word by year, proportion
+ 
+pop_word_prop = jasa_rm_stopwords %>%
+  group_by(year) %>%
+  dplyr::count(word) # DONT DELETE dplyr::
+  
+pop_word_prop = full_join(pop_word_prop, jasa_rm_stopwords) %>% 
+  group_by(year) %>% 
+  mutate(proportion = n/length(unique(title))) %>%
+  arrange(proportion) %>%
+  top_n(1) %>%
+  ggplot(aes(x = year, y = proportion, fill = word)) +
+    geom_bar(stat = "identity", position = "dodge") +
+    labs(title = "Top Words by Year")
+ 
+ggplotly(pop_word_prop)
+ 
+# "statistics" in late 1800's to early 1900's popular
+# "data", "models" popular in late 1900's and 2000's ("data" in 2006)
 
 ```
 
@@ -446,13 +453,13 @@ For the second plot, we focused on 13 keywords and created a spaghetti plot with
 # Proportion is how articles the word has over total number of articles per year
 
 words_ridges = jasa_rm_stopwords %>%
-                  filter(matched_word != "NA") %>%
-                  ggplot(aes(x = year, y = matched_word, fill = matched_word)) +
-                  geom_density_ridges() +
-                  labs(title = "Trends of Hot Topics from 1888 to 2017") + 
-                  theme(legend.position = "none") +
-                  ylab("Keyword") +
-                  xlab("Year")
+  filter(matched_word != "NA") %>%
+  ggplot(aes(x = year, y = matched_word, fill = matched_word)) +
+  geom_density_ridges() +
+  labs(title = "Trends of Hot Topics from 1888 to 2017") + 
+  theme(legend.position = "none") +
+  ylab("Keyword") +
+  xlab("Year")
 
 words_ridges
 
@@ -467,22 +474,35 @@ For the third plot, we created a dot plot with "year" on the x-axis and "mean nu
 # Number of collaborators per article for every year from 1888 - 2017
 # We calculate the mean number of collaborators for each year
 
+jasa_articles <- read_csv(".//data/jasa_articles_dataset_complete.csv")
+ 
+jasa_articles <- jasa_articles %>%
+  clean_names() %>%
+  separate(authors, into = c("author1", "author19"), sep = " & ") %>%
+  separate(author1, into = paste("author", 1:18), sep = ", ") %>%
+  unnest_tokens(word, title)
+data("stop_words")
+ 
+jasa_articles = anti_join(jasa_articles, stop_words)
+ 
+jasa_articles <- jasa_articles %>%
+  dplyr::select(`author 1`:author19, year)
+ 
 no_authors_year <- jasa_articles %>%
-                      select(id, year, author_1:author_19) %>%
-                      dplyr::mutate(number_authors = rowSums(!is.na(.)) - 2) %>%
-                      dplyr::select(number_authors, year) %>%
-                      group_by(year) %>%
-                      dplyr::summarize( Mean_no_authors = mean(number_authors)) %>%
-                      mutate(year = as.numeric(year))
-
+  dplyr::mutate( number_authors = rowSums(!is.na(jasa_articles)) - 1) %>%
+  dplyr::select(number_authors, year) %>%
+  group_by(year) %>%
+  dplyr::summarize( Mean_no_authors = mean(number_authors))
+ 
 finalplot <- no_authors_year %>%
-                ggplot(aes(x = year, y = Mean_no_authors, color = Mean_no_authors)) +
-                geom_point() +
-                geom_smooth(se = FALSE, color = "dodgerblue3") + 
-                labs(title = "Trend of the mean number of authors", 
-                     x = "Year", 
-                     y = "Mean number of authors") +
-                theme(legend.position = "none")
+  ggplot(aes(x = year, y = Mean_no_authors, color = Mean_no_authors)) +
+  geom_point() +
+  geom_smooth(se = FALSE, color = "dodgerblue3") + labs(
+    title = "Trend of the mean number of authors",
+    x = "Year",
+    y = "Mean number of authors"
+    ) +
+  theme(legend.position = "none")
 
 ggplotly(finalplot)
 
@@ -496,19 +516,28 @@ Similarly to the third plot, we created the fourth plot to determine a visual re
 
 # Number of total citations per statistical "hot topic" 
 
-citation_top10 <- jasa_rm_stopwords %>% 
-                    dplyr::filter(!is.na(matched_word)) %>%
-                    dplyr::select(id, citations, matched_word) %>% 
-                    group_by(matched_word) %>% 
-                    mutate(citations = as.numeric(citations)) %>%
-                    dplyr::summarize(Total_number_of_citations = sum(citations))  %>%
-                    dplyr::rename(word = matched_word)
+jasa_rm_sw = read_csv(".//data/jasa_rm_stopwords.csv")
+ 
+citation_top10 <- jasa_rm_sw %>%
+  dplyr::filter(!is.na(matched_word)) %>%
+  dplyr::select(id, citations, matched_word) %>%
+  group_by(matched_word) %>%
+  dplyr::summarize( Total_number_of_citations = sum(citations))  %>%
+  rename(word = matched_word)
+
 
 citation_top10 %>% 
   dplyr::mutate(Hot_topics = fct_reorder(word, Total_number_of_citations)) %>% 
   plot_ly(x = ~Hot_topics, y = ~Total_number_of_citations, color = ~Hot_topics, type = "bar") %>%
-  layout(xaxis = list(type = 'category', title = 'Keyword'),
-         yaxis = list(title = 'Total Number of Citations'))
+  layout(
+    xaxis = list(
+      type = 'category',
+      title = 'Keyword'
+    ),
+    yaxis = list(
+      title = 'Total Number of Citations'
+    )
+  )
 
 ```
 
