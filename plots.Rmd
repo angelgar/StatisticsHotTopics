@@ -16,6 +16,7 @@ library(ggridges)
 library(plotly)
 library(dplyr)
 library(readr)
+library(gridExtra)
 ```
 
 ### Top statistical "hot topics" by year from 1888 - 2017
@@ -24,23 +25,29 @@ library(readr)
 
 jasa_rm_stopwords = read_csv("./analysis/data/jasa_rm_stopwords.csv")
 
-pop_word = jasa_rm_stopwords %>% 
+# Top word by year, proportion
+
+pop_word_prop = jasa_rm_stopwords %>% 
   group_by(year) %>% 
   dplyr::count(word) %>% # DONT DELETE dplyr:: 
+  mutate(sum = sum(n),
+         proportion = n/sum) %>% 
+  arrange(proportion) %>% 
   top_n(1) %>% 
-  ggplot(aes(x = year, y = n, fill = word)) + 
+  ggplot(aes(x = year, y = proportion, fill = word)) + 
     geom_bar(stat = "identity", position = "dodge") +
-    scale_x_discrete(name = "Year", breaks = seq(1889, 2017, 10)) +
     labs(title = "Top Words by Year")
 
-ggplotly(pop_word)
+ggplotly(pop_word_prop) %>% layout(showlegend = FALSE)
+
+
 
 # "statistics" in late 1800's to early 1900's popular
 # "data", "models" popular in late 1900's and 2000's ("data" in 2006)
 
 ```
 
-### Trends of key statistical "hot topics" from 1888 - 2017
+### Trends of statistical "hot topics" from 1888 - 2017
 
 ```{r}
 
@@ -52,10 +59,11 @@ words_ridges = jasa_rm_stopwords %>%
 
 words_ridges
 
+
 ```
 
     
-### Average number of collaborators per article for every year from 1888 - 2017
+### Number of collaborators per article for every year from 1888 - 2017
     
 ```{r, 3rd plot}
 
@@ -98,7 +106,10 @@ ggplotly(finalplot)
 
 ```
     
-### Number of citations for key statistical "hot topics" 
+    
+    
+    
+### Number of citations per statistical "hot topic" 
 
 ```{r, 4th plot}
 
@@ -119,5 +130,3 @@ citation_top10 %>%
   plot_ly(x = ~Hot_topics, y = ~Total_number_of_citations, color = ~Hot_topics, type = "bar")
  
 ```
-
-
