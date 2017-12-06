@@ -43,11 +43,11 @@ When beginning this project, we struggled to come to a conclusion about the type
 
 ## Initial questions
 
-The main question of interest is to undertand if/how keywords used in the titles of JASA-published papers have evolved over time, and when certain topcs arose to be of interest in research. While scraping the data and further investigating the JASA website, we came up with other questions, such as how do certain keywords affect the number of citations, and how has the average number of authors changed over time, and what is the most common word in titles for each year?
+The main question of interest is to understand if/how keywords used in the titles of JASA-published papers have evolved over time, and when certain topics arose to be of interest in research. While scraping the data and further investigating the JASA website, we came up with other questions, such as how do certain keywords affect the number of citations, and how has the average number of authors changed over time, and what is the most common word in titles for each year?
 
 ## Data
 
-We scraped this data from the Journal of the American Statistical Association website. We used the "rvest" package to download the data from the internet and the the "SelectorGadget" tool to find the correct CSS selectors. We first obtained the issue number, chapter and publication year. With this information, we were able to access the issue-specific site and scraped the tile, number of views, and number of citations for each of these articles. Furthermore, we accessed the individual article's website to scrape the list of authors for each author. 
+We scraped this data from the Journal of the American Statistical Association website. We used the "rvest" package to download it from the internet and the the "SelectorGadget" tool to find the correct CSS selectors. We first obtained the issue number, chapter and publication year. With this information, we were able to access the issue-specific site and scraped the tile, number of views, and number of citations for each of these articles. Furthermore, we accessed the individual article's website to scrape the list of authors for each article. 
 
 This code is used to scrape the year and volume from the JASA website:
 
@@ -361,7 +361,7 @@ jasa_rm_stopwords = jasa_rm_stopwords %>%
 
 ```
 
-Lastly, we chose some words (contained in the "words" vector) manually that we wanted to analyze. We chose some words that did not necessarily appear most frequently for each year, but were more interesting to us. It should be noted that "bayes" would be matched to "bayes" and "bayesian", "estimate" would be matched to "estimate" and "estimate", "parametric" would be matched to "nonparametric", "parametric" and "semiparametric" and "sampl" would be matched to "sample" and "sampling". We created a new column in "jasa_rm_stopwords" that indicated what the words were matched to, because we would like to group similar words together, as explained above. The final dataframe was written as a csv file and saved into our data folder.
+Lastly, we chose some words (contained in the "words" vector) manually that we wanted to analyze. We chose some words that did not necessarily appear most frequently for each year, but were more interesting to us. It should be noted that "Bayes" would be matched to "Bayes" and "Bayesian", "estimate" would be matched to "estimate" and "estimate", "parametric" would be matched to "non-parametric", "parametric" and "semi-parametric" and "sampl" would be matched to "sample" and "sampling". We created a new column in "jasa_rm_stopwords" that indicated what the words were matched to, because we would like to group similar words together, as explained above. The final dataframe was written as a csv file and saved into our data folder.
 
 ```{r keywords_data, eval = FALSE}
 
@@ -418,22 +418,22 @@ For the first plot, we created a barplot with "year" on the x-axis and "proporti
 
 ```{r plot_1 , message = FALSE, warning = FALSE}
 
-jasa_rm_stopwords = read_csv(".//data/jasa_rm_stopwords.csv")
+## Proportion of top words by year
 
-# Top word by year, proportion
+jasa_rm_stopwords = read_csv("./data/jasa_rm_stopwords.csv")
  
 pop_word_prop = jasa_rm_stopwords %>%
-  group_by(year) %>%
-  dplyr::count(word) # DONT DELETE dplyr::
+                  group_by(year) %>%
+                  dplyr::count(word) 
   
 pop_word_prop = full_join(pop_word_prop, jasa_rm_stopwords) %>% 
-  group_by(year) %>% 
-  mutate(proportion = n/length(unique(title))) %>%
-  arrange(proportion) %>%
-  top_n(1) %>%
-  ggplot(aes(x = year, y = proportion, fill = word)) +
-    geom_bar(stat = "identity", position = "dodge") +
-    labs(title = "Top Words by Year")
+                  group_by(year) %>% 
+                  mutate(proportion = n/length(unique(title))) %>%
+                  arrange(proportion) %>%
+                  top_n(1) %>%
+                  ggplot(aes(x = year, y = proportion, fill = word)) +
+                    geom_bar(stat = "identity", position = "dodge") +
+                    labs(title = "Top Words by Year")
  
 ggplotly(pop_word_prop)
  
@@ -444,7 +444,7 @@ ggplotly(pop_word_prop)
 
 #### (2) Trend of keywords over time
 
-For the second plot, we focused on 13 keywords and created a spaghetti plot with "year" on the x-axis and and "proportion" and "keyword" on the y-axis. These 13 keywords were chosen as words that all group members thought would be important to examine the trends of. This plot allowed us to visually demostrate increasing and decreasing trends of various words over time. "Proportion" in this plot corresponds to the same ratio method used for the previous plot. 
+For the second plot, we focused on 13 keywords and created a ridge plot with "year" on the x-axis and and keyword frequency on the y-axis. These 13 keywords were chosen as words that all group members thought would be important to examine the trends of. This plot allowed us to visually demonstrate increasing and decreasing trends of various words over time. "Proportion" in this plot corresponds to the same ratio method used for the previous plot. 
 
 ```{r plot_2, message = FALSE, warning = FALSE}
 
@@ -467,7 +467,7 @@ words_ridges
 
 #### (3) Number of collaborators per article per year
 
-For the third plot, we created a dot plot with "year" on the x-axis and "mean number of authors" on the y-axis, with "mean number of authors" referring to the mean number of collaborators per article per year. The goal of this was to understand trends in collaboration over time, with the hypothesis that collaboration has increased, and therefore the mean number of collaborators per article per year has also increased.
+For the third plot, we created a scatterplot with "year" on the x-axis and "mean number of authors" on the y-axis, with "mean number of authors" referring to the mean number of collaborators per article per year. The goal of this was to understand trends in collaboration over time, with the hypothesis that collaboration has increased, and therefore the mean number of collaborators per article per year has also increased.
 
 ```{r plo_3, message = FALSE, warning = FALSE}
 
@@ -543,7 +543,7 @@ citation_top10 %>%
 
 ## Discussion
 
-Since our analysis relied on visual representations of data scraped form JASA, no formal statistical conclusions can be made. However, it is interesting to examine trends that appeared as a result of looking at the relationship between statistical "hot topics." Major trends are noted in the remainder of the discussion. From the first plot, we can see that "statistics" and "statistical" dominated word proportion until the 1960s, when words such as "estimation", "models", and "data" began to appear. It is imporant to note here that proportions of key words likely decreased over time because as more papers were published into the 1940s, there became more vairability in the titles. From the second plot, we can see that only "statistic" has remained relatively steady over time, and there was a spike in "p-value" after the year 2000, consistent with the growing attention p-values are getting. The third plot shows a clear positive trend in the number of authors cited, illustrating an increase in collaboration on statistical papers. It will be interesting to note if this trend continues to increase and/or ever reaches a plateau or decrease in the trend. From the fourth plot we know that "estimate", "model", and "regression" generate the greatest number of citations and "p-value", "clinical", and "bootstrap" generate the fewest number of citations.
+Since our analysis relied on visual representations of data scraped form JASA, no formal statistical conclusions can be made. However, it is interesting to examine trends that appeared as a result of looking at the relationship between statistical "hot topics." Major trends are noted in the remainder of the discussion. From the first plot, we can see that "statistics" and "statistical" dominated word proportion until the 1960s, when words such as "estimation", "models", and "data" began to appear. It is important to note here that proportions of key words likely decreased over time because as more papers were published into the 1940s, there is more variability in the titles. From the second plot, we can see that only "statistic" has remained relatively steady over time, and there was a spike in "p-value" after the year 2000, consistent with the growing attention p-values are getting. The third plot shows a clear positive trend in the number of authors in each article, illustrating an increase in collaboration on statistical papers. It will be interesting to note if this trend continues to increase and/or ever reaches a plateau or decrease in the trend. From the fourth plot we know that "estimate", "model", and "regression" generate the greatest number of citations and "p-value", "clinical", and "bootstrap" generate the fewest number of citations.
 
 For future analysis, it would be interesting to examine the relationship between tagged phrases by authors and number of citations, trends in the words over time, etc. Additionally, it would be useful to follow the project with a formal statistical analysis of when certain words increased in prevalence, not only in titles but in words used throughout the papers.
 
