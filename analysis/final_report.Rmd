@@ -68,7 +68,7 @@ We proceeded to generate two new dataframes for the purpose of convenience when 
 
 ```{r jasa_articles_df, eval = FALSE}
 
-jasa_articles = readr::read_csv(".//data/jasa_articles_dataset_complete.csv",
+jasa_articles = readr::read_csv("./data/jasa_articles_dataset_complete.csv",
                                 col_types = "ccccccc")  
 jasa_articles = jasa_articles %>% 
   clean_names() %>% 
