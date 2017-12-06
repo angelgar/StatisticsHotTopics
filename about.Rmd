@@ -16,7 +16,7 @@ The main question of interest is to undertand if/how keywords used in the titles
 
 ## Data
 
-We scrapped this data from the Journal of the American Statistical Association website. We used the "rvest" package to download the data from the internet and the the "SelectorGadget" tool to find the correct CSS selectors. We first obtained the issue number, chapter and publication year. With this information, we were able to access the issue-specific site and scrapped the tile, number of views and number of citations for each of these articles. Furthermore, we accessed the individual article's website to scrap the list of authors for each author. 
+We scraped this data from the Journal of the American Statistical Association website. We used the "rvest" package to download the data from the internet and the the "SelectorGadget" tool to find the correct CSS selectors. We first obtained the issue number, chapter and publication year. With this information, we were able to access the issue-specific site and scraped the tile, number of views and number of citations for each of these articles. Furthermore, we accessed the individual article's website to scrape the list of authors for each author. 
 
 We started the data cleaning process by eliminating those entries in our dataset that were not statistical articles. These included all those entries in the "title" variable that contained words such as "Comment", "Book Review", "Correction", "Editorial". 
 
