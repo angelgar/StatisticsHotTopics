@@ -29,18 +29,17 @@ library(forcats)
 library(tidytext)
 ```
 
-
 ### Data access
 
 The project is located inside our GitHub <a href="https://github.com/angelgar/StatisticsHotTopics">repository</a>. Inside this repository includes an "analysis" folder, which further includes our <a href="https://github.com/angelgar/StatisticsHotTopics/tree/master/analysis/data">data</a> folder. The final dataset is named "jasa_articles_dataset_complete" and can be found <a href="https://github.com/angelgar/StatisticsHotTopics/blob/master/analysis/data/jasa_articles_dataset_complete.csv">here</a>.
 
 ## Motivation
 
-The goal of our analysis is to understand the evolution of statistics over time, specifically in regards to "hot topics" used in research. We analyzed the titles of articles published in the Journal of the American Statistical Association (JASA) since 1888, as well as other factors such as authors, number of citations, etc. We used data gathered to create exploratory plots regarding the aforementioned factors. Specifically, we then found correlations of specific "hot topics" with article impact as measured by article views and citations.
+The goal of our analysis is to understand the evolution of statistics over time, specifically in regards to "hot topics" used in research. We analyzed the titles of articles published in the Journal of the American Statistical Association (JASA) since 1888, as well as other factors such as authors, number of citations, etc. We used data gathered to create exploratory plots regarding the aforementioned factors. Specifically, we then found correlations of specific "hot topics" with article impact as measured by citations and collaboration.
 
 ## Related work
 
-When beginning this project, we struggled to come to a conclusion about the type of data we wanted to analyze and represent visually. We agreed on the importance of creating a comprehensive visual for readers to explore, but had a plethora of ideas about the topic. After exploring datasets on happiness, crime rates, and general health data from NHANES, we switched gears and decided to create our own dataset using published papers from JASA. Each group members comes with various interests in health, data analytics, data visualization, etc. Our combined interest in statistics makes the exploration of statistical hot topics over time a perfect fit.
+When beginning this project, we struggled to come to a conclusion about the type of data we wanted to analyze and represent visually. We agreed on the importance of creating a comprehensive visual for readers to explore, but had a plethora of ideas about the topic. After exploring datasets on happiness, crime rates, and general health data from NHANES, we switched gears and decided to create our own dataset using published papers on JASA from 1888 to today. Each group member comes with various interests in health, data analytics, data visualization, etc. Our combined interest in statistics makes the exploration of statistical hot topics over time a perfect fit.
 
 ## Initial questions
 
@@ -48,13 +47,13 @@ The main question of interest is to undertand if/how keywords used in the titles
 
 ## Data
 
-We scrapped this data from the Journal of the American Statistical Association website. We used the "rvest" package to download the data from the internet and the the "SelectorGadget" tool to find the correct CSS selectors. We first obtained the issue number, chapter and publication year. With this information, we were able to access the issue-specific site and scrapped the tile, number of views and number of citations for each of these articles. Furthermore, we accessed the individual article's website to scrap the list of authors for each author. 
+We scraped this data from the Journal of the American Statistical Association website. We used the "rvest" package to download the data from the internet and the the "SelectorGadget" tool to find the correct CSS selectors. We first obtained the issue number, chapter and publication year. With this information, we were able to access the issue-specific site and scraped the tile, number of views, and number of citations for each of these articles. Furthermore, we accessed the individual article's website to scrape the list of authors for each author. 
 
-This code is used to scrap the year and volume from the JASA website:
+This code is used to scrape the year and volume from the JASA website:
 
-```{r year_volume_scrap, eval = FALSE}
+```{r year_volume_scrape, eval = FALSE}
 
-# This code is used to scrap the year and volume from the JASA website
+# This code is used to scrape the year and volume from the JASA website
 
 url <- "http://www.tandfonline.com/loi/uasa20"
 
@@ -85,7 +84,7 @@ This code uses the year and volume to extract the issue numbers for each year an
 
 ```{r issue_volume_scrap, eval = FALSE}
 
-# After having year and volume we scrap the issue.
+# After having year and volume we scrape the issue
 
 read_issues <- function(issue.year, issue.volume) {
   
@@ -153,7 +152,7 @@ read_articles <- function(volume, issue) {
     as.data.frame(stringsAsFactors = FALSE) %>% 
     rename(citations = ".")
   
-  # I needed to scrap the authors from the article specific site
+  # I needed to scrape the authors from the article specific site
   # This function does that
   
   scrap_authors <- function(url_author) {
@@ -314,7 +313,7 @@ write_csv(data_articles, "./analysis/data/jasa_articles_dataset_complete.csv")
 
 ```
 
-We started the data cleaning process by eliminating those entries in our dataset that were not statistical articles. These included all those entries in the "title" variable that contained words such as "Comment", "Book Review", "Correction", "Editorial". 
+We started the data cleaning process by eliminating those entries in our dataset that were not statistical articles. These included all those entries in the "title" variable that contained words such as "Comment", "Book Review", "Correction", and "Editorial". 
 
 We proceeded to generate two new dataframes for the purpose of convenience when creating plots. In the dataframe "jasa_articles", we split the author column so that entries of author_1 to author_19 columns contain only one author. We also added an id column, in order to make identifying articles convenient from here on forward. 
 
@@ -346,7 +345,6 @@ jasa_rm_stopwords = jasa_articles %>%
 
 For the dataframe, "jasa_rm_stopwords", we unnest the "title" column; the "word" column now contains each of the words from its respective title. Also, note that we kept all hyphenated words as one word (we wanted to keep the word "p-value" as one). We also joined jasa_articles and jasa_rm_stopwords so that we have a column for each unnested word and its corresponding title column. After some analysis, some words (for example, prepositions, conjunctions, articles, etc.) were found to be most frequent by year, but were uninformative, so we removed them. 
 
-
 ```{r jasa_rm_stopwords_df, eval = FALSE}
 
 ## We remove other words that are meaningless for the analysis.
@@ -363,7 +361,7 @@ jasa_rm_stopwords = jasa_rm_stopwords %>%
 
 ```
 
-Lastly, we chose some words (contained in the "words" vector) manually that we wanted to do some analysis on. We chose some words that did not necessarily appear most frequently for each year, but more interesting. It should be noted that "bayes" would be matched to "bayes" and "bayesian", "estimate" would be matched to "estimate" and "estimate", "parametric" would be matched to "nonparametric", "parametric" and "semiparametric" and "sampl" would be matched to "sample" and "sampling". We created a new column in "jasa_rm_stopwords" that indicated what the words were matched to, because we would like to group similar words together, as explained above. The final dataframe was written as a csv file and saved into our data folder.
+Lastly, we chose some words (contained in the "words" vector) manually that we wanted to analyze. We chose some words that did not necessarily appear most frequently for each year, but were more interesting to us. It should be noted that "bayes" would be matched to "bayes" and "bayesian", "estimate" would be matched to "estimate" and "estimate", "parametric" would be matched to "nonparametric", "parametric" and "semiparametric" and "sampl" would be matched to "sample" and "sampling". We created a new column in "jasa_rm_stopwords" that indicated what the words were matched to, because we would like to group similar words together, as explained above. The final dataframe was written as a csv file and saved into our data folder.
 
 ```{r keywords_data, eval = FALSE}
 
@@ -439,7 +437,7 @@ ggplotly(pop_word)
 
 #### (2) Trend of keywords over time
 
-For the second plot, we focused on ten keywords and created a spaghetti plot with "year" on the x-axis and and "proportion" on the y-axis. These ten keywords were chosen as words that all group members thought would be important to examine the trends of. This plot allowed us to visually demostrate increasing and decreasing trends of various words over time. "Proportion" in this plot corresponds to the same ratio method used for the previous plot. 
+For the second plot, we focused on 13 keywords and created a spaghetti plot with "year" on the x-axis and and "proportion" and "keyword" on the y-axis. These 13 keywords were chosen as words that all group members thought would be important to examine the trends of. This plot allowed us to visually demostrate increasing and decreasing trends of various words over time. "Proportion" in this plot corresponds to the same ratio method used for the previous plot. 
 
 ```{r plot_2, message = FALSE, warning = FALSE}
 
@@ -462,7 +460,7 @@ words_ridges
 
 #### (3) Number of collaborators per article per year
 
-For the third plot, we created a dot plot with "year" on the x-axis and "count" on the y-axis, with "count" referring to the mean number of collaborators per article per year. The goal of this was to understand trends in collaboration over time, with the hypothesis that collaboration has increased, and therefore the mean number of collaborators per article per year has also increased.
+For the third plot, we created a dot plot with "year" on the x-axis and "mean number of authors" on the y-axis, with "mean number of authors" referring to the mean number of collaborators per article per year. The goal of this was to understand trends in collaboration over time, with the hypothesis that collaboration has increased, and therefore the mean number of collaborators per article per year has also increased.
 
 ```{r plo_3, message = FALSE, warning = FALSE}
 
@@ -492,7 +490,7 @@ ggplotly(finalplot)
 
 #### (4) Number of citations per keyword. 
 
-Similarly to the third plot, we created the fourth plot to determine a visual relationship between "number of citations" and "keyword". Number of citations refers to the number of people who have cited the given paper directly from JASA. Keywords were selected by group members to determine "hot topics" of interest.
+Similarly to the third plot, we created the fourth plot to determine a visual relationship between "number of citations" and "keyword". Number of citations refers to the number of people who have cited the given paper directly from JASA. Keywords were selected by group members to determine "hot topics" of interest. We did not have any strong hypotheses regarding the appearance of this plot, but it is interesting to understand the large differences in citations based on certain keywords.
 
 ```{r plot_4, message = FALSE, warning = FALSE}
 
