@@ -29,9 +29,11 @@ library(forcats)
 library(tidytext)
 ```
 
-### Data access
+## Data access
 
 The project is located inside our GitHub <a href="https://github.com/angelgar/StatisticsHotTopics">repository</a>. Inside this repository includes an "analysis" folder, which further includes our <a href="https://github.com/angelgar/StatisticsHotTopics/tree/master/analysis/data">data</a> folder. The final dataset is named "jasa_articles_dataset_complete" and can be found <a href="https://github.com/angelgar/StatisticsHotTopics/blob/master/analysis/data/jasa_articles_dataset_complete.csv">here</a>.
+
+Our website can be found <a href="https://angelgar.github.io/StatisticsHotTopics/">here</a>.
 
 ## Motivation
 

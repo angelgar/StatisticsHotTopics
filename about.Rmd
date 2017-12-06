@@ -2,7 +2,7 @@
 title: "Project Information"
 ---
 
-The purpose of this website is to serve as an interactive exploratory analysis to demonstrate the evolution of statistics over time, specifically in regards to "hot topics" used in research. Here you will find plots depicting the distribution of keywords, trends in the number of collaborators over time, as well as the number of citations per paper.
+The purpose of this website is to serve as an interactive exploratory analysis to demonstrate the evolution of statistics over time, specifically in regards to "hot topics" used in research. Here you will find plots depicting the distribution of keywords, trends in the number of collaborators over time, as well as the number of citations per top keyword.
 
 Data were gathered from the Journal of the American Statistical Association <a href="http://amstat.tandfonline.com/loi/uasa20">(JASA)</a> and compiled into one comprehensive dataset that was used in the analysis.
 
@@ -12,11 +12,11 @@ The project is located inside our GitHub <a href="https://github.com/angelgar/St
 
 ## Initial questions
 
-The main question of interest is to undertand if/how keywords used in the titles of JASA-published papers have evolved over time, and when certain topcs arose to be of interest in research. While scraping the data and further investigating the JASA website, we came up with other questions, such as how do certain keywords affect the number of citations, and how has the average number of authors changed over time, and what is the most common word in titles for each year?
+The main question of interest is to undertand if/how keywords used in the titles of JASA-published papers have evolved over time, and when certain topics arose to be of interest in research. While scraping the data and further investigating the JASA website, we came up with other questions, such as how do certain keywords affect the number of citations, and how has the average number of authors changed over time, and what is the most common word in titles for each year?
 
 ## Data
 
-We scraped this data from the Journal of the American Statistical Association website. We used the "rvest" package to download the data from the internet and the the "SelectorGadget" tool to find the correct CSS selectors. We first obtained the issue number, chapter and publication year. With this information, we were able to access the issue-specific site and scraped the tile, number of views and number of citations for each of these articles. Furthermore, we accessed the individual article's website to scrape the list of authors for each author. 
+We scraped this data from the Journal of the American Statistical Association website. We used the "rvest" package to download the data from the internet and the the "SelectorGadget" tool to find the correct CSS selectors. We first obtained the issue number, chapter and publication year. With this information, we were able to access the issue-specific site and scraped the title, number of views and number of citations for each of these articles. Furthermore, we accessed the individual article's website to scrape the list of authors for each author. 
 
 We started the data cleaning process by eliminating those entries in our dataset that were not statistical articles. These included all those entries in the "title" variable that contained words such as "Comment", "Book Review", "Correction", "Editorial". 
 
@@ -44,7 +44,9 @@ The landing page of our website is a word cloud to illustrate the frequency of t
 
 ## Discussion
 
-Since our analysis relied on visual representations of data scraped form JASA, no formal statistical conclusions can be made. However, it is interesting to examine trends that appeared as a result of looking at the relationship between statistical "hot topics." Major trends are noted in the remainder of the discussion. From the first plot, we can see that "statistics" and "statistical" dominated word proportion until the 1960s, when words such as "estimation", "models", and "data" began to appear. It is imporant to note here that proportions of key words likely decreased over time because as more papers were published into the 1940s, there became more vairability in the titles. From the second plot, we can see that only "statistic" has remained relatively steady over time, and there was a spike in "p-value" after the year 2000, consistent with the growing attention p-values are getting. The third plot shows a clear positive trend in the number of authors cited, illustrating an increase in collaboration on statistical papers. It will be interesting to note if this trend continues to increase and/or ever reaches a plateau or decrease in the trend. From the fourth plot we know that "estimate", "model", and "regression" generate the greatest number of citations and "p-value", "clinical", and "bootstrap" generate the fewest number of citations.
+Since our analysis relied on visual representations of data scraped form JASA, no formal statistical conclusions can be made. However, it is interesting to examine trends that appeared as a result of looking at the relationship between statistical "hot topics." Major trends are noted in the remainder of the discussion. From the first plot, we can see that "statistics" and "statistical" dominated word proportion until the 1960s, when words such as "estimation", "models", and "data" began to appear. It is important to note here that proportions of keywords likely decreased over time because as more papers were published into the 1940s, there became more vairability in the titles. From the second plot, we can see that only "statistic" has remained relatively steady over time, and there was a spike in "p-value" after the year 2000, consistent with the growing attention p-values are getting. The third plot shows a clear positive trend in the number of authors cited, illustrating an increase in collaboration on statistical papers. It will be interesting to note if this trend continues to increase and/or ever reaches a plateau or decrease in the trend. From the forth plot we know that "estimate", "model", and "regression" generate the greatest number of citations and "p-value", "clinical", and "bootstrap" generate the fewest number of citations.
 
 For future analysis, it would be interesting to examine the relationship between tagged phrases by authors and number of citations, trends in the words over time, etc. Additionally, it would be useful to follow the project with a formal statistical analysis of when certain words increased in prevalence, not only in titles but in words used throughout the papers.
+
+For more information, code, etc. visit: <a href="https://github.com/angelgar/StatisticsHotTopics/tree/master/analysis">here</a>
 

@@ -49,6 +49,8 @@ ggplotly(pop_word_prop)
 
 ```
 
+***
+
 - Note: missing years before 1923 are due to two-year chapters, which shorten to one-year chapters following
 
 - "Statistics" and "statistical" dominated word proportion until the 1960s, when words such as "estimation", "models", and "data" began to appear
