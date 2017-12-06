@@ -38,7 +38,7 @@ pop_word_prop = jasa_rm_stopwords %>%
     geom_bar(stat = "identity", position = "dodge") +
     labs(title = "Top Words by Year")
 
-ggplotly(pop_word_prop) %>% layout(showlegend = FALSE)
+ggplotly(pop_word_prop)
 
 
 
@@ -55,7 +55,11 @@ words_ridges = jasa_rm_stopwords %>%
   filter(matched_word != "NA") %>% 
   ggplot(aes(x = year, y = matched_word, fill = matched_word)) + 
   geom_density_ridges() +
-  labs(title = "Trends of Hot Topics from 1888 to 2017") + theme(legend.position="none")
+  labs(title = "Trends of Hot Topics from 1888 to 2017") + 
+  theme(legend.position = "none") +
+  ylab("Keyword") +
+  xlab("Year")
+  
 
 words_ridges
 
@@ -95,11 +99,12 @@ no_authors_year <- jasa_articles %>%
 finalplot <- no_authors_year %>%
   ggplot(aes(x = year, y = Mean_no_authors, color = Mean_no_authors)) +
   geom_point() +
-  geom_smooth(se = FALSE) + labs(
+  geom_smooth(se = FALSE, color = "dodgerblue3") + labs(
     title = "Trend of the mean number of authors",
     x = "Year",
     y = "Mean number of authors"
-    )
+    ) +
+  theme(legend.position = "none")
 
 ggplotly(finalplot)
 
@@ -127,6 +132,15 @@ citation_top10 <- jasa_rm_sw %>%
 
 citation_top10 %>% 
   dplyr::mutate(Hot_topics = fct_reorder(word, Total_number_of_citations)) %>% 
-  plot_ly(x = ~Hot_topics, y = ~Total_number_of_citations, color = ~Hot_topics, type = "bar")
+  plot_ly(x = ~Hot_topics, y = ~Total_number_of_citations, color = ~Hot_topics, type = "bar") %>%
+  layout(
+    xaxis = list(
+      type = 'category',
+      title = 'Keyword'
+    ),
+    yaxis = list(
+      title = 'Total Number of Citations'
+    )
+  )
  
 ```

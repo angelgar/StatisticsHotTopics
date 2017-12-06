@@ -7,6 +7,9 @@ output:
 ---
 
 ```{r setup, include = FALSE}
+
+# We load the required libraries
+
 library(flexdashboard)
 library(plyr)
 library(ggplot2)
@@ -25,20 +28,6 @@ library(Hmisc)
 library(forcats)
 ```
 
-```{r, load_data, echo = FALSE, message = FALSE, warning = FALSE, eval = TRUE}
-
-data("stop_words")
-
-jasa_articles = read_csv("./data/jasa_articles_dataset_complete.csv",
-                         col_types = "ccccccc") %>%
-  clean_names() %>% 
-  separate(authors, into = c("author1", "author19"), sep = " & ") %>% 
-  separate(author1, into = paste("author", 1:18), sep = ", ") %>% 
-  unnest_tokens(word, title)
-
-jasa_articles = anti_join(jasa_articles, stop_words)
-
-```
 
 ### Data access
 
@@ -64,30 +53,46 @@ We started the data cleaning process by eliminating those entries in our dataset
 
 We proceeded to generate two new dataframes for the purpose of convenience when creating plots. In the dataframe "jasa_articles", we split the author column so that entries of author_1 to author_19 columns contain only one author. We also added an id column, in order to make identifying articles convenient from here on forward. 
 
-```{r jasa_articles_df, eval = FALSE}
+```{r jasa_articles_df, eval = TRUE, warning = FALSE}
 
-jasa_articles = readr::read_csv(".//data/jasa_articles_dataset_complete.csv",
-                                col_types = "ccccccc")  
+# We load our dataset containing the articles
+
+jasa_articles = readr::read_csv("./data/jasa_articles_dataset_complete.csv",
+                                col_types = "ccccccc") 
+
+# Separate authors into invidiual columns
+# Separate words into rows
+
 jasa_articles = jasa_articles %>% 
   clean_names() %>% 
   separate(authors, into = paste("author", 1:18, sep = "_"), sep = ", ") %>% 
   separate(author_1, into = c("author_1", "author_19"), sep = " & ") %>% 
   mutate(id = as.character(c(1:nrow(jasa_articles)))) %>% 
-  select(id,issue:year)
+  select(id,issue:year) %>%
+  unnest_tokens(word, title)
+
+# Anti Join with stop words
+
+jasa_articles = anti_join(jasa_articles, stop_words, by = "word")
 
 ```
 
-For the dataframe, "jasa_rm.stopwords", we unnest the "title" column; the "word" column now contains each of the words from its respective title. Also, note that we kept all hyphenated words as one word (we wanted to keep the word "p-value" as one). We also joined jasa_articles and jasa_rm_stopwords so that we have a column for each unnested word and its corresponding title column. After some analysis, some words (for example, prepositions, conjunctions, articles, etc.) were found to be most frequent by year, but were uninformative, so we removed them. 
+For the dataframe, "jasa_rm_stopwords", we unnest the "title" column; the "word" column now contains each of the words from its respective title. Also, note that we kept all hyphenated words as one word (we wanted to keep the word "p-value" as one). We also joined jasa_articles and jasa_rm_stopwords so that we have a column for each unnested word and its corresponding title column. After some analysis, some words (for example, prepositions, conjunctions, articles, etc.) were found to be most frequent by year, but were uninformative, so we removed them. 
 
 
 ```{r jasa_rm_stopwords_df, eval = FALSE}
 
-data("stop_words")
+## We remove other words that are meaningless for the analysis.
 
 jasa_rm_stopwords = jasa_articles %>% 
-  unnest(word = str_split(title, " ")) 
-jasa_rm_stopwords = full_join(jasa_rm_stopwords, jasa_articles) %>% # contains full title and unnested words
-  filter(word %in% c("A", "and", "a", "an", "An", "1958.", "at", "the", "The", "of", "in", "by", "for", "the", "with", "With", "by", "or", "on", "On", "Pp.", "because", "under", "about", "over", "to", "New", "Discussion", "Marriage", "1929", "Index", "Insurance", "Recent", "States", "is", "Two", "Massachusetts", "Hampshire", "Note", "Time", "When", "when", "York:", "Some", "1967", "from", "United", "Vital", "Book", "Note", "Some", "Recent", "Volume")) 
+  filter(word %in% c("A", "and", "a", "an", "An", "1958.", "at", "the", 
+                     "The", "of", "in", "by", "for", "the", "with", "With", 
+                     "by", "or", "on", "On", "Pp.", "because", "under", 
+                     "about", "over", "to", "New", "Discussion", "Marriage", 
+                     "1929", "Index", "Insurance", "Recent", "States", "is", 
+                     "Two", "Massachusetts", "Hampshire", "Note", "Time", 
+                     "When", "when", "York:", "Some", "1967", "from", "United", 
+                     "Vital", "Book", "Note", "Some", "Recent", "Volume")) 
 
 ```
 
@@ -95,7 +100,15 @@ Lastly, we chose some words (contained in the "words" vector) manually that we w
 
 ```{r keywords_data, eval = FALSE}
 
-words = c("analysis", "bayes", "bootstrap", "clinical", "data", "estimat", "inference", "model", "parametric", "p-value", "regression", "sampl", "statistic")
+# These are our keywords
+
+words = c("analysis", "bayes", "bootstrap", "clinical", "data", 
+          "estimat", "inference", "model", "parametric", "p-value", 
+          "regression", "sampl", "statistic")
+
+
+# We loop through each keyword to find the matches
+# We only save the specific keyword for that match.
 
 jasa_rm_stopwords$matched_word <- rep(NA, dim(jasa_rm_stopwords)[1])
 
@@ -103,10 +116,9 @@ for (i in words) {
   jasa_rm_stopwords$matched_word[grep(i, 
                                       jasa_rm_stopwords$word, 
                                       ignore.case = T)] <- i
-  
 }
 
-write_csv(jasa_rm_stopwords, ".//data/jasa_rm_stopwords.csv")
+write_csv(jasa_rm_stopwords, "./data/jasa_rm_stopwords.csv")
 
 ```
 
@@ -137,7 +149,7 @@ For the first plot, we created a barplot with "year" on the x-axis and "proporti
 ```{r, message = FALSE, warning = FALSE}
 # Top statistical "hot topics" by year from 1888 - 2017
 
-jasa_rm_stopwords = read_csv(".//data/jasa_rm_stopwords.csv")
+jasa_rm_stopwords = read_csv("./data/jasa_rm_stopwords.csv")
 
 pop_word = jasa_rm_stopwords %>% 
   group_by(year) %>% 
@@ -217,7 +229,7 @@ Similarly to the third plot, we created the fourth plot to determine a visual re
 ```{r, message = FALSE, warning = FALSE}
 # Number of citations per statistical "hot topic" 
 
-jasa_rm_sw = read_csv(".//data/jasa_rm_stopwords.csv")
+jasa_rm_sw = read_csv("./data/jasa_rm_stopwords.csv")
 
 citation_top10 <- jasa_rm_sw %>% 
   dplyr::filter(!is.na(matched_word)) %>%
