@@ -84,7 +84,7 @@ write_csv(issues_volume, "./analysis/data/data_issues_volume.csv")
 ```
 
 
-```{r issue_articles, cache = TRUE}
+```{r issue_articles, cache = TRUE, eval = FALSE}
 
 
 read_articles <- function(volume, issue) {

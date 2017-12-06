@@ -50,6 +50,270 @@ The main question of interest is to undertand if/how keywords used in the titles
 
 We scrapped this data from the Journal of the American Statistical Association website. We used the "rvest" package to download the data from the internet and the the "SelectorGadget" tool to find the correct CSS selectors. We first obtained the issue number, chapter and publication year. With this information, we were able to access the issue-specific site and scrapped the tile, number of views and number of citations for each of these articles. Furthermore, we accessed the individual article's website to scrap the list of authors for each author. 
 
+This code is used to scrap the year and volume from the JASA website:
+
+```{r year_volume_scrap, eval = FALSE}
+
+# This code is used to scrap the year and volume from the JASA website
+
+url <- "http://www.tandfonline.com/loi/uasa20"
+
+h = read_html(url)
+
+volume_year = h %>%
+    html_nodes(".volume_link h3") %>%
+    html_text()
+
+list_volume_year = str_split(volume_year, pattern = " ") 
+
+# I did some data reshuffling to create the clean dataset
+
+data_volume_year = matrix(data = unlist(list_volume_year), nrow = 75, ncol = 112) %>%
+                    t() %>%
+                    .[, which(.[1,] == "Volume"):(which(.[1,] == "Volume") + 2)] %>%
+                    as.data.frame() %>%
+                    as.tbl() %>%
+                    separate(V3, into = c("Year", "remove"), sep = "\n") %>%
+                    separate(Year, into = c("Year", "remove2"), sep = "-") %>%
+                    mutate(Year = pmax(Year, remove2, na.rm = T),
+                           Volume = as.character(V2)) %>%
+                    select(-remove, -remove2, -V1, -V2)
+  
+```
+
+This code uses the year and volume to extract the issue numbers for each year and volume:
+
+```{r issue_volume_scrap, eval = FALSE}
+
+# After having year and volume we scrap the issue.
+
+read_issues <- function(issue.year, issue.volume) {
+  
+  url <- str_c("http://www.tandfonline.com/loi/uasa20?open=",
+               issue.volume,"&year=",issue.year,"&repitition")
+
+  h = read_html(url)
+  
+  issue_list = h %>%
+    html_nodes(".issue-num") %>%
+    html_text() %>% str_split(pattern = "Issue ") %>%
+    unlist() %>%
+    .[which(.  != "")]
+  
+  data_frame(Year = rep(issue.year, length(issue_list)), 
+             Volume = rep(issue.volume, length(issue_list)), 
+             Issue = issue_list)
+             
+}
+
+# Use map to create a dataset for each of year and volume
+
+issues_volume <- map2_df(data_volume_year$Year, data_volume_year$Volume, ~read_issues(.x,.y))
+
+```
+
+This is the function used to get the article specific data for each issue:
+
+```{r issue_articles_func, eval = FALSE}
+
+# This function goes through each issue and pulls all data for each article.
+
+read_articles <- function(volume, issue) {
+  
+  url <- str_c("http://www.tandfonline.com/toc/uasa20/",volume,"/",issue,"?nav=tocList")
+  
+  print(url)
+  
+  h = read_html(url)
+  
+  ## Reads in html and pulls specific CSS selectors
+  
+  title = h %>%
+    html_nodes(".hlFld-Title") %>%
+    html_text() %>% 
+    as.data.frame(stringsAsFactors = FALSE) %>%
+    rename(title = ".")
+  
+  url_data = h %>%
+    html_nodes(".tocDeliverFormatsLinks > a:nth-child(1)") %>%
+    html_attr('href') %>%
+    str_c("http://www.tandfonline.com",.) %>%
+    as.data.frame(stringsAsFactors = FALSE) %>%
+    rename(urls = ".")
+  
+  views = h %>%
+    html_nodes("li:nth-child(1) span") %>%
+    html_text() %>% 
+    as.data.frame(stringsAsFactors = FALSE) %>% 
+    rename(views = ".")
+  
+  citations = h %>%
+    html_nodes("li:nth-child(2) span") %>%
+    html_text() %>% 
+    as.data.frame(stringsAsFactors = FALSE) %>% 
+    rename(citations = ".")
+  
+  # I needed to scrap the authors from the article specific site
+  # This function does that
+  
+  scrap_authors <- function(url_author) {
+    
+    h_paper = read_html(url_author)
+    citation_link = h_paper %>%
+      html_nodes(".downloadCitations a") %>%
+      html_attr('href') %>%
+      str_c("http://www.tandfonline.com",.)
+    
+    h_citation = read_html(citation_link)
+    
+    authors = h_citation %>%
+      html_nodes(".entryAuthor") %>%
+      html_text() %>%
+      as.data.frame(stringsAsFactors = FALSE) %>%
+      rename(authors = ".")
+    
+  }
+  
+  # I have to use map to go through each article in an issue
+  
+  authors <- map_df(url_data$urls, ~scrap_authors(.x))
+  
+  
+  # Clean the dataset
+  
+  title_views_citations = cbind(Issue = as.character(rep(issue, dim(title)[1])), 
+                                Volume = rep(volume, dim(title)[1]),
+                                title,
+                                authors,
+                                views,
+                                citations) %>% 
+                                as_tibble(stringsAsFactors = FALSE) %>%
+                                mutate(Issue = as.character(Issue))
+  
+}
+
+
+
+```
+
+It takes a long time to run the above function. We broke it down into several calls:
+
+```{r calls_scrap, eval = FALSE}
+
+## It takes hours to run each call. We broke this into several calls
+
+issues_volume <- read_csv("./analysis/data/data_issues_volume.csv")
+
+## First 20 issues
+start.time <- Sys.time()
+articles_data_1_20 <- map2_df(issues_volume$Volume[1:20], 
+                              issues_volume$Issue[1:20], ~read_articles(.x,.y))
+write_csv(articles_data_1_20, "./analysis/data/output_issues_1_20.csv")
+time.taken <- start.time - Sys.time()
+time.taken
+
+## From 21 to 70 issue
+start.time <- Sys.time()
+articles_data_21_70 <- map2_df(issues_volume$Volume[21:70], 
+                               issues_volume$Issue[21:70], ~read_articles(.x,.y))
+write_csv(articles_data_21_70, "./analysis/data/output_issues_21_70.csv")
+time.taken <- start.time - Sys.time()
+time.taken
+
+## From 71 to 170 issue
+## For Soohyun
+
+start.time <- Sys.time()
+articles_data_71_170 <- map2_df(issues_volume$Volume[71:170], 
+                                issues_volume$Issue[71:170], ~read_articles(.x,.y))
+write_csv(articles_data_71_170, "./analysis/data/output_issues_71_170.csv")
+time.taken <- start.time - Sys.time()
+time.taken
+
+## From 171 to 270 issue
+
+start.time <- Sys.time()
+articles_data_171_270 <- map2_df(issues_volume$Volume[171:270], 
+                                 issues_volume$Issue[171:270], ~read_articles(.x,.y))
+write_csv(articles_data_171_270, "./analysis/data/output_issues_171_270.csv")
+time.taken <- start.time - Sys.time()
+time.taken
+
+## From 271 to 370 issue
+start.time <- Sys.time()
+articles_data_271_370 <- map2_df(issues_volume$Volume[271:370], 
+                                 issues_volume$Issue[271:370], ~read_articles(.x,.y))
+write_csv(articles_data_271_370, "./analysis/data/output_issues_271_370.csv")
+time.taken <- start.time - Sys.time()
+time.taken
+
+## Remove supplement in 
+issues_volume <- issues_volume %>%
+                  filter(Issue != "Supp 1")
+
+## From 371 to 520 issue
+start.time <- Sys.time()
+articles_data_371_520 <- map2_df(issues_volume$Volume[371:520], 
+                                 issues_volume$Issue[371:520], ~read_articles(.x,.y))
+write_csv(articles_data_371_520, "./analysis/data/output_issues_371_520.csv")
+time.taken <- start.time - Sys.time()
+time.taken
+
+
+```
+
+I merge all the output together here:
+
+```{r merge_data, eval = FALSE}
+
+# This sample merges all previous samples and creates an overall dataset
+
+issues_volume <- read_csv("./analysis/data/data_issues_volume.csv", 
+                          col_types = "ccc")
+issues_1_20 <- read_csv("./analysis/data/output_issues_1_20.csv", 
+                          col_types = "cccccc")
+issues_21_70 <- read_csv("./analysis/data/output_issues_21_70.csv", 
+                          col_types = "cccccc")
+issues_71_170 <- read_csv("./analysis/data/output_issues_71_170.csv", 
+                          col_types = "cccccc")
+issues_171_270 <- read_csv("./analysis/data/output_issues_171_270.csv", 
+                          col_types = "cccccc")
+issues_271_370 <- read_csv("./analysis/data/output_issues_271_370.csv", 
+                          col_types = "cccccc")
+issues_371_520 <- read_csv("./analysis/data/output_issues_371_520.csv", 
+                          col_types = "cccccc")
+
+# Merge datasets using rbind
+
+data_articles <- rbind(issues_1_20,
+                       issues_21_70,
+                       issues_71_170,
+                       issues_171_270,
+                       issues_271_370,
+                       issues_371_520)
+
+## Use left_join to merge datasets
+## Get rid of articles that aren't actually articles
+## Accents make my computer crash so I got rid of any special characters
+
+data_articles <- left_join(data_articles, issues_volume, by = c("Issue","Volume")) %>%
+  filter(title != "Comment",
+         title != "Book Review",
+         title != "Correction",
+         !grepl("Comment",title),
+         title != "Rejoinder",
+         title != "A Rejoinder",
+         title != "Editorial",
+         title != "Editors Report",
+         title != "Reply",
+         complete.cases(.)) %>%
+  mutate(title = stringi::stri_trans_general(title, "latin-ascii"),
+         authors = stringi::stri_trans_general(authors, "latin-ascii"))
+
+write_csv(data_articles, "./analysis/data/jasa_articles_dataset_complete.csv")
+
+```
+
 We started the data cleaning process by eliminating those entries in our dataset that were not statistical articles. These included all those entries in the "title" variable that contained words such as "Comment", "Book Review", "Correction", "Editorial". 
 
 We proceeded to generate two new dataframes for the purpose of convenience when creating plots. In the dataframe "jasa_articles", we split the author column so that entries of author_1 to author_19 columns contain only one author. We also added an id column, in order to make identifying articles convenient from here on forward. 
