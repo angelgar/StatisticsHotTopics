@@ -21,48 +21,68 @@ library(gridExtra)
 
 ### Top statistical "hot topics" by year from 1888 - 2017
 
-```{r, echo = FALSE, message = FALSE}
+```{r, 1st plot, echo = FALSE, message = FALSE}
 
 jasa_rm_stopwords = read_csv("./analysis/data/jasa_rm_stopwords.csv")
-
+ 
 # Top word by year, proportion
-
-pop_word_prop = jasa_rm_stopwords %>% 
-  group_by(year) %>% 
-  dplyr::count(word) %>% # DONT DELETE dplyr:: 
+ 
+pop_word_prop = jasa_rm_stopwords %>%
+  group_by(year) %>%
+  dplyr::count(word) %>% # DONT DELETE dplyr::
   mutate(sum = sum(n),
-         proportion = n/sum) %>% 
-  arrange(proportion) %>% 
-  top_n(1) %>% 
-  ggplot(aes(x = year, y = proportion, fill = word)) + 
+         proportion = n/sum) %>%
+  arrange(proportion) %>%
+  top_n(1) %>%
+  ggplot(aes(x = year, y = proportion, fill = word)) +
     geom_bar(stat = "identity", position = "dodge") +
     labs(title = "Top Words by Year")
-
-ggplotly(pop_word_prop) %>% layout(showlegend = FALSE)
-
-
-
+ 
+ggplotly(pop_word_prop)
+ 
 # "statistics" in late 1800's to early 1900's popular
 # "data", "models" popular in late 1900's and 2000's ("data" in 2006)
-
 ```
+
+***
+
+- Note: missing years before 1923 are due to two-year chapters, which shorten to one-year chapters following
+
+- "Statistics" and "statistical" dominated word proportion until the 1960s, when words such as "estimation", "models", and "data" began to appear
+
+- Proportions of key words likely decreased over time because as more papers were published into the 1940s, there became more vairability in the titles
 
 ### Trends of statistical "hot topics" from 1888 - 2017
 
-```{r}
+```{r, 2nd plot}
 
-words_ridges = jasa_rm_stopwords %>% 
-  filter(matched_word != "NA") %>% 
-  ggplot(aes(x = year, y = matched_word, fill = matched_word)) + 
+words_ridges = jasa_rm_stopwords %>%
+  filter(matched_word != "NA") %>%
+  ggplot(aes(x = year, y = matched_word, fill = matched_word)) +
   geom_density_ridges() +
-  labs(title = "Trends of Hot Topics from 1888 to 2017") + theme(legend.position="none")
-
+  labs(title = "Trends of Hot Topics from 1888 to 2017") +
+  theme(legend.position = "none") +
+  ylab("Keyword") +
+  xlab("Year")
+ 
 words_ridges
-
 
 ```
 
-    
+***
+
+- Thirteen key words of interest were chosen to be examined for this plot 
+
+- Words such as "statistic", "sampl", and "estimat" are include all words that begin with such phrases (for example, "statistic" includes "statistical", "statistics", etc.)
+
+- Only "statistic" has remained relatively steady over time
+
+- Large spike in "p-value" after the year 2000, consistent with the growing attention p-values are getting
+
+- Large spike in "bootstrap" during the 1970s-1990s, which has since decreased
+
+- Increase in titles including "data" may be due in part to the growth of large data
+
 ### Number of collaborators per article for every year from 1888 - 2017
     
 ```{r, 3rd plot}
@@ -71,43 +91,46 @@ library(janitor)
 library(tidyverse)
 library(tidytext)
 jasa_articles <- read_csv("./analysis/data/jasa_articles_dataset_complete.csv")
-
-
-jasa_articles <- jasa_articles %>% 
-  clean_names() %>% 
-  separate(authors, into = c("author1", "author19"), sep = " & ") %>% 
-  separate(author1, into = paste("author", 1:18), sep = ", ") %>% 
+ 
+jasa_articles <- jasa_articles %>%
+  clean_names() %>%
+  separate(authors, into = c("author1", "author19"), sep = " & ") %>%
+  separate(author1, into = paste("author", 1:18), sep = ", ") %>%
   unnest_tokens(word, title)
 data("stop_words")
-
-
+ 
 jasa_articles = anti_join(jasa_articles, stop_words)
-
+ 
 jasa_articles <- jasa_articles %>%
   dplyr::select(`author 1`:author19, year)
-
+ 
 no_authors_year <- jasa_articles %>%
   dplyr::mutate( number_authors = rowSums(!is.na(jasa_articles)) - 1) %>%
   dplyr::select(number_authors, year) %>%
   group_by(year) %>%
   dplyr::summarize( Mean_no_authors = mean(number_authors))
-
+ 
 finalplot <- no_authors_year %>%
   ggplot(aes(x = year, y = Mean_no_authors, color = Mean_no_authors)) +
   geom_point() +
-  geom_smooth(se = FALSE) + labs(
+  geom_smooth(se = FALSE, color = "dodgerblue3") + labs(
     title = "Trend of the mean number of authors",
     x = "Year",
     y = "Mean number of authors"
-    )
-
+    ) +
+  theme(legend.position = "none")
+ 
 ggplotly(finalplot)
-
 
 ```
     
-    
-    
+***
+
+- "Mean number of authors" corresponds to the mean number of authors cited per paper per year
+
+- There is a clear positive trend in the number of authors cited, illustrating an increase in collaboration on statistical papers
+
+- It will be interesting to note if this trend continues to increase and/or ever reaches a plateau or decrease in the trend
     
 ### Number of citations per statistical "hot topic" 
 
@@ -116,17 +139,36 @@ ggplotly(finalplot)
 library(forcats)
 library(tidyverse)
 jasa_rm_sw = read_csv("./analysis/data/jasa_rm_stopwords.csv")
-
-citation_top10 <- jasa_rm_sw %>% 
+ 
+citation_top10 <- jasa_rm_sw %>%
   dplyr::filter(!is.na(matched_word)) %>%
-  dplyr::select(id, citations, matched_word) %>% 
-  group_by(matched_word) %>% 
+  dplyr::select(id, citations, matched_word) %>%
+  group_by(matched_word) %>%
   dplyr::summarize( Total_number_of_citations = sum(citations))  %>%
   rename(word = matched_word)
-
-
-citation_top10 %>% 
-  dplyr::mutate(Hot_topics = fct_reorder(word, Total_number_of_citations)) %>% 
-  plot_ly(x = ~Hot_topics, y = ~Total_number_of_citations, color = ~Hot_topics, type = "bar")
+ 
+ 
+citation_top10 %>%
+  dplyr::mutate(Hot_topics = fct_reorder(word, Total_number_of_citations)) %>%
+  plot_ly(x = ~Hot_topics, y = ~Total_number_of_citations, color = ~Hot_topics, type = "bar") %>%
+  layout(
+    xaxis = list(
+      type = 'category',
+      title = 'Keyword'
+    ),
+    yaxis = list(
+      title = 'Total Number of Citations'
+    )
+  )
  
 ```
+
+*** 
+
+- Plot depicts the number of people who have cited each paper with the given statistical "hot topic" in the title
+
+- Words such as "statistic", "sampl", and "estimat" are include all words that begin with such phrases (for example, "statistic" includes "statistical", "statistics", etc.)
+
+- "Estimat", "model", and "regression" generate the greatest number of citations
+
+- "P-value", "clinical", and "bootstrap" generate the fewest number of citations

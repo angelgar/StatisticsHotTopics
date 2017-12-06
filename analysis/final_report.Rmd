@@ -27,6 +27,8 @@ library(forcats)
 
 ```{r, load_data, echo = FALSE, message = FALSE, warning = FALSE, eval = TRUE}
 
+# Load stop words and article datasets
+
 data("stop_words")
 
 jasa_articles = read_csv("./data/jasa_articles_dataset_complete.csv",
@@ -119,6 +121,7 @@ The landing page of our website is a word cloud to illustrate the frequency of t
 ```{r word_cloud, message = FALSE, warning = FALSE, out.width = '250%'}
 
 # Word cloud
+
 word_map_data <- jasa_articles %>% 
   count(word, sort = TRUE) %>%
   top_n(200)
@@ -135,6 +138,7 @@ wordcloud(words = word_map_data$word, freq = word_map_data$n, min.freq = 50,
 For the first plot, we created a barplot with "year" on the x-axis and "proportion" on the y-axis. "Proportion" represents the proportion of times the most common word for the year of interest appears in a title, out of the total number of papers published for that year.  For this plot, we removed stop words and other non-useful words from being the most common, allowing only relevant words such as "model" to appear as the most frequent. Without doing so, the plot would produce data showing words such as "the" and "and" as the most frequent.
 
 ```{r, message = FALSE, warning = FALSE}
+
 # Top statistical "hot topics" by year from 1888 - 2017
 
 jasa_rm_stopwords = read_csv(".//data/jasa_rm_stopwords.csv")
@@ -152,6 +156,7 @@ ggplotly(pop_word)
 
 # "statistics" in late 1800's to early 1900's popular
 # "data", "models" popular in late 1900's and 2000's ("data" in 2006)
+
 ```
 
 #### (2) Trend of keywords over time
@@ -159,6 +164,7 @@ ggplotly(pop_word)
 For the second plot, we focused on ten keywords and created a spaghetti plot with "year" on the x-axis and and "proportion" on the y-axis. These ten keywords were chosen as words that all group members thought would be important to examine the trends of. This plot allowed us to visually demostrate increasing and decreasing trends of various words over time. "Proportion" in this plot corresponds to the same ratio method used for the previous plot. 
 
 ```{r, message = FALSE, warning = FALSE}
+
 # Trends of statistical "hot topics" from 1888 - 2017
 
 words_ridges = jasa_rm_stopwords %>% 
@@ -168,6 +174,7 @@ words_ridges = jasa_rm_stopwords %>%
   labs(title = "Trends of Hot Topics from 1888 to 2017") + theme(legend.position="none")
 
 words_ridges
+
 ```
 
 #### (3) Number of collaborators per article per year
@@ -175,6 +182,7 @@ words_ridges
 For the third plot, we created a dot plot with "year" on the x-axis and "count" on the y-axis, with "count" referring to the mean number of collaborators per article per year. The goal of this was to understand trends in collaboration over time, with the hypothesis that collaboration has increased, and therefore the mean number of collaborators per article per year has also increased.
 
 ```{r, message = FALSE, warning = FALSE}
+
 # Number of collaborators per article for every year from 1888 - 2017
 
 jasa_articles <- read_csv(".//data/jasa_articles_dataset_complete.csv")
@@ -212,9 +220,10 @@ ggplotly(finalplot)
 
 #### (4) Number of citations per keyword. 
 
-Similarly to the third plot, we created the fourth plot to determine a visual relationship between "number of citations" and "keyword".
+Similarly to the third plot, we created the fourth plot to determine a visual relationship between "number of citations" and "keyword". Number of citations refers to the number of people who have cited the given paper directly from JASA. Keywords were selected by group members to determine "hot topics" of interest.
 
 ```{r, message = FALSE, warning = FALSE}
+
 # Number of citations per statistical "hot topic" 
 
 jasa_rm_sw = read_csv(".//data/jasa_rm_stopwords.csv")
@@ -233,3 +242,9 @@ citation_top10 %>%
 ```
 
 ## Discussion
+
+Since our analysis relied on visual representations of data scraped form JASA, no formal statistical conclusions can be made. However, it is interesting to examine trends that appeared as a result of looking at the relationship between statistical "hot topics." Major trends are noted in the remainder of the discussion. From the first plot, we can see that "statistics" and "statistical" dominated word proportion until the 1960s, when words such as "estimation", "models", and "data" began to appear. It is imporant to note here that proportions of key words likely decreased over time because as more papers were published into the 1940s, there became more vairability in the titles. From the second plot, we can see that only "statistic" has remained relatively steady over time, and there was a spike in "p-value" after the year 2000, consistent with the growing attention p-values are getting. The third plot shows a clear positive trend in the number of authors cited, illustrating an increase in collaboration on statistical papers. It will be interesting to note if this trend continues to increase and/or ever reaches a plateau or decrease in the trend. From the fourth plot we know that "estimate", "model", and "regression" generate the greatest number of citations and "p-value", "clinical", and "bootstrap" generate the fewest number of citations.
+
+For future analysis, it would be interesting to examine the relationship between tagged phrases by authors and number of citations, trends in the words over time, etc. Additionally, it would be useful to follow the project with a formal statistical analysis of when certain words increased in prevalence, not only in titles but in words used throughout the papers.
+
+
