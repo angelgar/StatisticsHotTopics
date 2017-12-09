@@ -13,3 +13,4 @@ This website was created by the following students at Columbia University's Mail
 
 <a href="https://rvenetianer.github.io/-rebeccavenetianer-.github.io/">Venetianer, Rebecca</a>
 
+![](./Picture.jpg)
